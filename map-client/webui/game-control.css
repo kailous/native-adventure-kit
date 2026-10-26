@@ -1,0 +1,94 @@
+/* Figma 61:7556, built from shared map drawer and original component assets. */
+#right[data-nav-mode=control]{width:360px;padding:40px 20px;max-height:calc(100dvh - 40px);height:calc(100dvh - 40px)}
+#right[data-nav-mode=control]>.desktop-panel-head,#right[data-nav-mode=control]>.sheet-head{display:none}
+#app:has(#right[data-nav-mode=control]:not(.hidden)) #mapControls{right:400px}
+#right[data-nav-mode=control] #rightContent{padding:0}
+#right[data-nav-mode=control] .game-control-drawer{padding:0;margin:0;border:0;background:transparent;box-shadow:none}
+.game-control-drawer{color:#fff;font-size:12px;line-height:1.4}
+.gc-header{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;margin:0 0 70px;background:transparent;border:0;padding:0}
+.gc-header .gc-title{display:block;flex:none;max-width:none}
+.gc-header button{width:32px;height:32px;min-height:32px;padding:5px;display:flex;justify-content:center;align-items:center;border:2px solid #fff9eb;border-radius:50%;background:transparent}
+.gc-header button img{display:block;max-width:none}
+.gc-body{display:flex;flex-direction:column;gap:30px}
+.gc-hearts{display:grid;grid-template-columns:repeat(20,1fr);gap:0;min-height:32px;align-content:start}
+.gc-heart{position:relative;width:15.9px;height:15.9px}
+.gc-heart img{display:block;max-width:none;transform:scale(.6625);transform-origin:top left}
+.gc-block{display:flex;flex-direction:column;gap:14px;margin:0;padding:0;border:0}
+.gc-heading{display:flex;justify-content:space-between;align-items:center;gap:8px;font-weight:600;min-height:14px}
+.gc-heading label{margin:0;padding:0;display:block;font-size:12px}
+.gc-heading>div{display:flex;align-items:center;gap:6px;white-space:nowrap}
+.gc-heading output{font-size:10px;font-weight:400;white-space:nowrap}
+.gc-state{font-size:10px;color:#4cfeaa;white-space:nowrap}
+.gc-description{font-size:10px;color:#ffffff99;margin:-4px 0 0;line-height:1.5}
+.gc-row{display:flex;align-items:center;gap:14px;min-width:0}
+.gc-row>input,.gc-row>select,.gc-segments{flex:1;min-width:0}
+.game-control-drawer input,.game-control-drawer select{font-family:inherit;font-size:12px;font-weight:600;color:white;background:#29445e;border:1px solid transparent;border-radius:10px;height:30px;min-height:30px;padding:0 10px;width:100%;outline-offset:2px;box-shadow:none}
+.game-control-drawer input:focus{border-color:#fff}
+.game-control-drawer input::placeholder{font-size:12px;font-weight:300;color:#ffffff80}
+.game-control-drawer input[type=range]{appearance:none;-webkit-appearance:none;padding:0;cursor:pointer;background:linear-gradient(to right,#4cfeaa 0 var(--gc-fill,0%),#29445e var(--gc-fill,0%) 100%);border:0;overflow:hidden}
+.game-control-drawer input[type=range]::-webkit-slider-thumb{appearance:none;-webkit-appearance:none;width:12px;height:30px;background:transparent;border:0}
+.game-control-drawer input[type=range]::-moz-range-thumb{width:12px;height:30px;background:transparent;border:0}
+.game-control-drawer button{display:flex;align-items:center;justify-content:center;min-height:30px;padding:0 10px;color:white;background:#29445e;border:0;border-radius:10px;font-size:12px;font-weight:600;line-height:1.2;box-shadow:none;cursor:pointer}
+.game-control-drawer .gc-lock,.game-control-drawer .gc-reset{width:30px;height:30px;padding:6px;flex:none}
+.gc-lock img,.gc-reset img{display:block;max-width:none}
+.game-control-drawer :disabled{opacity:.45;cursor:not-allowed}
+.game-control-drawer button:focus-visible,.game-control-drawer input:focus-visible,.game-control-drawer select:focus-visible{outline:2px solid #4cfeaa;outline-offset:3px}
+.gc-divider{height:1px;overflow:hidden;flex:none}
+.gc-divider img{display:block;max-width:none}
+.gc-segments{display:flex;overflow:hidden;border-radius:10px;background:#29445e}
+.gc-segments button{flex:1;padding:0 3px;border-radius:10px;white-space:nowrap;font-size:11px}
+.gc-segments button.selected,.gc-weather button.selected{color:#06121e;background:#4cfeaa}
+.gc-switch{position:relative;display:block!important;width:80px;height:30px;flex:none;background:#29445e;border-radius:10px;padding:4px!important;cursor:pointer}
+.gc-switch input{position:absolute;inset:0;width:80px;height:30px;opacity:0;margin:0;cursor:pointer}
+.gc-switch span{display:block;width:30px;height:22px;background:#132333;border-radius:7px;pointer-events:none;transition:transform .15s,width .15s}
+.gc-switch:has(input:checked) span{width:40px;background:#4cfeaa;transform:translateX(32px)}
+.gc-switch:has(input:disabled){opacity:.45;cursor:not-allowed}
+.gc-switch:has(input:focus-visible){outline:2px solid #4cfeaa;outline-offset:3px}
+.game-control-drawer .gc-primary{background:#4cfeaa;color:#06121e;flex:none;font-size:11px}
+.gc-spawn select{appearance:none;-webkit-appearance:none;background:#29445e url('branding/game-control/select-arrow.svg') right 6px center/24px 24px no-repeat;padding-right:32px;font-size:12px}
+.gc-weather{display:flex;border-radius:10px;background:#29445e;overflow:hidden}
+.gc-weather button{flex:1;min-width:0;flex-direction:column;gap:5px;padding:5px 0;height:51px;min-height:51px}
+.gc-weather img{display:block;max-width:none}
+.gc-weather span{font-size:10px;font-weight:400;opacity:.6;white-space:nowrap}
+.game-control-drawer .gc-refresh{border:1px solid #f4dda5;color:#f4dda5;background:#f4dda533;height:46px;width:100%;padding:10px 20px;font-size:12px}
+.gc-footer{font-size:10px;color:#ffffff99;line-height:1.6;margin-top:-10px}
+.gc-footer p{margin:4px 0}
+@media(hover:hover){.game-control-drawer button:not(:disabled):hover{filter:brightness(1.15)}}
+@media(max-width:700px){#right[data-nav-mode=control]{top:12px;right:12px;left:auto;bottom:auto;width:min(360px,calc(100% - 24px));height:calc(100dvh - 90px);max-height:calc(100dvh - 90px);padding:30px 20px;border-radius:20px;z-index:40}#app:has(#right[data-nav-mode=control]:not(.hidden)) #mapControls{right:12px}.gc-header{margin-bottom:50px}.gc-heart{width:100%;height:15px}.gc-body{gap:26px}}
+
+.game-control-drawer .gc-header button{border:2px solid #fff9eb;border-radius:50%;background:transparent;width:32px;height:32px;padding:5px}
+
+/* Component measurements from Figma 61:7556. */
+#right[data-nav-mode=control]{padding:40px 20px;border-radius:20px;background-size:360px auto;box-shadow:none}
+.game-control-drawer{line-height:normal}
+.gc-heading{font-weight:700;height:14px}
+.gc-heading output,.gc-state{font-size:12px}
+.gc-heading output{font-weight:400}
+.gc-state{font-weight:600}
+.gc-description{margin:-4px 0 0;line-height:normal;color:#ffffff;opacity:.6}
+.gc-hearts{height:28px;min-height:28px;grid-auto-rows:14px}
+.gc-header{height:32px}
+.gc-range{position:relative;flex:1;min-width:0;height:30px;border-radius:10px;background:#29445e;overflow:hidden}
+.gc-range::before{content:"";position:absolute;left:0;top:0;height:100%;width:var(--gc-fill,0%);border-radius:10px;background:#4cfeaa;pointer-events:none}
+.game-control-drawer .gc-range input[type=range]{position:relative;display:block;z-index:1;background:transparent;margin:0;width:100%;height:30px}
+.gc-segments button,.game-control-drawer .gc-primary{font-size:12px;font-weight:700}
+.gc-heading>div{gap:5px}
+.gc-spawn-state:empty,.gc-spawn-state{display:none}
+.gc-divider{height:0;overflow:visible;position:relative}
+.gc-divider img{position:absolute;top:-.5px;left:0}
+#weatherState{color:#4cfeaa;font-weight:600}
+#right[data-nav-mode=control]{background-image:linear-gradient(#06121e99,#06121e99),url('branding/guide-sidebar/background.png')}
+.game-control-drawer input,.game-control-drawer select,.game-control-drawer button{font-weight:700}
+
+/* Local extracted inventory icons, including the expanded option rows. */
+.gc-item-picker{flex:1;min-width:0;position:relative}
+.game-control-drawer #spawnPicker{width:100%;min-height:42px;padding:5px 30px 5px 8px;text-align:left;justify-content:flex-start;background:#29445e url('branding/game-control/select-arrow.svg') right 4px center/24px no-repeat}
+#spawnSelection{display:flex;align-items:center;gap:8px;min-width:0}
+#spawnSelection span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#spawnSelection img,#spawnOptions img{object-fit:contain;flex:none}
+#spawnOptions{position:relative;width:calc(100% + 106px);max-width:calc(100vw - 64px);max-height:260px;overflow:auto;margin-top:6px;padding:6px;border:1px solid #597083;border-radius:10px;background:#132333;scrollbar-width:thin}
+.game-control-drawer #spawnOptions [role=option]{display:flex;align-items:center;justify-content:flex-start;gap:10px;width:100%;min-height:44px;padding:6px 8px;text-align:left;background:transparent;font-weight:400}
+.game-control-drawer #spawnOptions [aria-selected=true]{background:#29445e;color:#4cfeaa}
+.game-control-drawer #spawnOptions [role=option]:hover{background:#29445e;color:#fff9eb}
+.gc-item-group{padding:12px 8px 6px;color:#f4dda5;font-size:11px;font-weight:600}
+.gc-spawn:has(#spawnOptions:not([hidden])){align-items:flex-start}

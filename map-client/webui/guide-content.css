@@ -1,0 +1,8 @@
+.structured-summary{margin:0;display:grid;gap:14px;line-height:1.8}
+.structured-summary .guide-field{display:grid;gap:4px;padding-bottom:14px;border-bottom:1px solid #7794aa20}
+.structured-summary .guide-field:last-child{padding-bottom:0;border-bottom:0}
+.structured-summary dt{font-size:11px;color:#b9a165;font-weight:600;letter-spacing:.04em}
+.structured-summary dd{margin:0;white-space:pre-wrap;color:#d6e2ec;font-size:13px;overflow-wrap:anywhere}
+#readerBody .structured-summary{gap:18px}#readerBody .structured-summary dd{font-size:14px}
+
+.guide-article-paragraph{line-height:1.9;margin:14px 0;white-space:pre-wrap;overflow-wrap:anywhere}

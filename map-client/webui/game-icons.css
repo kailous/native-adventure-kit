@@ -1,0 +1,62 @@
+/* SVG masks; foreground colors sampled from original PNG artwork. */
+.game-icon{--icon-normal:#fff;--icon-selected:#f6df6a;--icon-color:var(--icon-normal);--icon-glow:0px;display:inline-block;flex-shrink:0;width:24px;height:24px;pointer-events:none;background-color:var(--icon-color);-webkit-mask:var(--icon-url) center/contain no-repeat;mask:var(--icon-url) center/contain no-repeat;filter:drop-shadow(.2px 0 0 #f4fbffe0) drop-shadow(-.2px 0 0 #f4fbffe0) drop-shadow(0 .2px 0 #f4fbffe0) drop-shadow(0 -.2px 0 #f4fbffe0) drop-shadow(0 1px 2px #000) drop-shadow(0 0 var(--icon-glow) var(--icon-color))}
+.category .game-icon{width:18px;height:18px}
+.pin .game-icon,.category.active .game-icon{--icon-color:var(--icon-selected);--icon-glow:1px}
+.pin.selected .game-icon,.pin:hover .game-icon{--icon-glow:5px}
+.game-icon[data-icon="个人标点 131"]{--icon-normal:#ef1808;--icon-selected:#ef1808}
+.game-icon[data-icon="个人标点 132"]{--icon-normal:#248bd9;--icon-selected:#248bd9}
+.game-icon[data-icon="个人标点 133"]{--icon-normal:#f7bf2e;--icon-selected:#f7bf2e}
+.game-icon[data-icon="个人标点 134"]{--icon-normal:#5ec53c;--icon-selected:#5ec53c}
+.game-icon[data-icon="个人标点 135"]{--icon-normal:#982de7;--icon-selected:#982de7}
+.game-icon[data-icon="个人标点 136"]{--icon-normal:#16cfb3;--icon-selected:#16cfb3}
+.game-icon[data-icon="井"]{--icon-normal:#ffffff;--icon-selected:#dab143}
+.game-icon[data-icon="人马（莱尼尔）"]{--icon-normal:#ffffff;--icon-selected:#f6df6a}
+.game-icon[data-icon="升级素材"]{--icon-normal:#ffffff;--icon-selected:#f6df6a}
+.game-icon[data-icon="卡邦达立牌"]{--icon-normal:#ffffff;--icon-selected:#f6df6a}
+.game-icon[data-icon="古代研究所"]{--icon-normal:#ffffff;--icon-selected:#4dbaf2}
+.game-icon[data-icon="克洛洛果实"]{--icon-normal:#ffffff;--icon-selected:#f2e3a2}
+.game-icon[data-icon="克洛洛果实 x2"]{--icon-normal:#ffffff;--icon-selected:#f2e3a2}
+.game-icon[data-icon="地洞入口"]{--icon-normal:#ffffff;--icon-selected:#dab143}
+.game-icon[data-icon="大妖精之泉"]{--icon-normal:#ffffff;--icon-selected:#f6df6a}
+.game-icon[data-icon="女神雕像"]{--icon-normal:#ffffff;--icon-selected:#f6df6a}
+.game-icon[data-icon="宝箱"]{--icon-normal:#ffffff;--icon-selected:#f6df6a}
+.game-icon[data-icon="岩石巨人"]{--icon-normal:#ffffff;--icon-selected:#f6df6a}
+.game-icon[data-icon="左纳乌制造机"]{--icon-normal:#ffffff;--icon-selected:#6dffa7}
+.game-icon[data-icon="弓与箭"]{--icon-normal:#ffffff;--icon-selected:#f6df6a}
+.game-icon[data-icon="怪物营地"]{--icon-normal:#ffffff;--icon-selected:#f6df6a}
+.game-icon[data-icon="情节挑战"]{--icon-normal:#ffffff;--icon-selected:#f6df6a}
+.game-icon[data-icon="旅馆"]{--icon-normal:#ffffff;--icon-selected:#c6b46c}
+.game-icon[data-icon="杂货店"]{--icon-normal:#ffffff;--icon-selected:#c6b46c}
+.game-icon[data-icon="村庄"]{--icon-normal:#ffffff;--icon-selected:#c6b46c}
+.game-icon[data-icon="破魔之根"]{--icon-normal:#ffffff;--icon-selected:#4dbaf2}
+.game-icon[data-icon="武器"]{--icon-normal:#ffffff;--icon-selected:#f6df6a}
+.game-icon[data-icon="残旧的地图"]{--icon-normal:#ffffff;--icon-selected:#f6df6a}
+.game-icon[data-icon="洞穴入口"]{--icon-normal:#ffffff;--icon-selected:#dab143}
+.game-icon[data-icon="滑翔伞布料"]{--icon-normal:#ffffff;--icon-selected:#f6df6a}
+.game-icon[data-icon="烹饪点"]{--icon-normal:#ffffff;--icon-selected:#f6df6a}
+.game-icon[data-icon="特殊NPC"]{--icon-normal:#ffffff;--icon-selected:#f6df6a}
+.game-icon[data-icon="独眼巨人"]{--icon-normal:#ffffff;--icon-selected:#f6df6a}
+.game-icon[data-icon="珠宝店"]{--icon-normal:#ffffff;--icon-selected:#c6b46c}
+.game-icon[data-icon="盾牌"]{--icon-normal:#ffffff;--icon-selected:#f6df6a}
+.game-icon[data-icon="矿场"]{--icon-normal:#ffffff;--icon-selected:#f6df6a}
+.game-icon[data-icon="神庙"]{--icon-normal:#ffffff;--icon-selected:#4dbaf2}
+.game-icon[data-icon="神殿"]{--icon-normal:#ffffff;--icon-selected:#f6df6a}
+.game-icon[data-icon="设计图石板"]{--icon-normal:#ffffff;--icon-selected:#f6df6a}
+.game-icon[data-icon="贤者的遗志"]{--icon-normal:#ffffff;--icon-selected:#f6df6a}
+.game-icon[data-icon="迷你挑战"]{--icon-normal:#ffffff;--icon-selected:#f6df6a}
+.game-icon[data-icon="主线剧情"]{--icon-normal:#f6df6a;--icon-selected:#f6df6a}
+.game-icon[data-icon="通用地点"]{--icon-normal:#f6df6a;--icon-selected:#f6df6a}
+.game-icon[data-icon="防具"]{--icon-normal:#ffffff;--icon-selected:#f6df6a}
+.game-icon[data-icon="防具店"]{--icon-normal:#ffffff;--icon-selected:#c6b46c}
+.game-icon[data-icon="集市"]{--icon-normal:#ffffff;--icon-selected:#c6b46c}
+.game-icon[data-icon="驿站"]{--icon-normal:#ffffff;--icon-selected:#c6b46c}
+.game-icon[data-icon="魔犹伊遗失物"]{--icon-normal:#ffffff;--icon-selected:#f6df6a}
+.game-icon[data-icon="鸟望台"]{--icon-normal:#ffffff;--icon-selected:#4dbaf2}
+.game-icon[data-icon="龙之泪"]{--icon-normal:#ffffff;--icon-selected:#f2e3a2}
+/* Brighter blue and soft glow, requested after matching PNG colors. */
+.game-icon[data-icon="鸟望台"],.game-icon[data-icon="神庙"],.game-icon[data-icon="破魔之根"],.game-icon[data-icon="古代研究所"]{--icon-selected:#70d7ff}
+.pin .game-icon[data-icon="鸟望台"],.pin .game-icon[data-icon="神庙"],.pin .game-icon[data-icon="破魔之根"],.pin .game-icon[data-icon="古代研究所"],.category.active .game-icon[data-icon="鸟望台"],.category.active .game-icon[data-icon="神庙"],.category.active .game-icon[data-icon="破魔之根"],.category.active .game-icon[data-icon="古代研究所"]{--icon-glow:3px}
+.pin.selected .game-icon,.pin:hover .game-icon{--icon-glow:6px}
+.game-icon[data-category="发光青蛙"]{--icon-selected:#ee4444}
+.pin.yiga-schematic .game-icon{--icon-selected:#ee4444}
+@media(max-width:700px){.category .game-icon{width:24px;height:24px}.pin .game-icon{width:26px;height:26px}}

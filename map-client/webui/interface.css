@@ -1,0 +1,125 @@
+/* Shared interface rules derived from Figma 21:241; extends unpictured screens. */
+:root{--ui-ink:#06121e;--ui-surface:#132333;--ui-raised:#29445e;--ui-cream:#fff9eb;--ui-gold:#b9a165;--ui-mint:#4cfeaa;--ui-border:#b9a16540;--ui-muted:#a7b7c5;--ui-radius:20px;--ui-row:10px;--ui-shadow:0 16px 48px #0005}
+button,a,input,select,textarea,summary{-webkit-tap-highlight-color:transparent}button:disabled{cursor:default;opacity:.45}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:2px solid var(--ui-mint);outline-offset:3px}
+#right:not(:has(.guide-home)){padding:0;display:flex;flex-direction:column;overflow:hidden;background:var(--ui-ink) url('branding/guide-sidebar/background.png') center top/300px auto;border:1px solid #132333;box-shadow:var(--ui-shadow)}
+#right:not(:has(.guide-home)) .desktop-panel-head{height:64px;padding:18px 20px;background:transparent!important;border:0;align-items:center}
+#right:not(:has(.guide-home)) .desktop-panel-head>span{color:var(--ui-gold);font-size:12px;letter-spacing:.12em}
+#right #hideRight{flex:none;width:32px;height:32px;min-height:32px;border:2px solid var(--ui-cream);border-radius:50%;padding:0;background:transparent;color:var(--ui-cream);display:grid;place-items:center}
+#right:not(:has(.guide-home)) #rightContent{padding:0 24px 28px;min-height:0;flex:1;overflow-y:auto;overflow-x:hidden;scrollbar-width:thin;scrollbar-color:#b9a16550 transparent;overscroll-behavior:contain}
+#right .point-head{align-items:center;gap:12px;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid var(--ui-gold)}
+#right .point-head h2{font-weight:600;font-size:20px;line-height:1.5;margin:0;padding:0;border:0;color:var(--ui-cream);min-width:0}
+#right .coords,#pointState,#right .muted{font-size:12px;line-height:1.8;color:var(--ui-muted);overflow-wrap:anywhere}
+#right .coords{padding:10px 12px;border:1px solid var(--ui-border);border-radius:10px;background:#132333b3}
+#right .actions{display:grid;grid-template-columns:repeat(auto-fit,minmax(90px,1fr));gap:8px;margin:20px 0 24px}
+#right .actions button{min-height:44px;padding:10px 8px;border:1px solid var(--ui-border);border-radius:10px;background:var(--ui-surface);color:var(--ui-cream);font-size:12px;justify-content:center;line-height:1.4}
+#right .actions #markDone:not(:disabled),#right .actions #storyFavorite,#right .actions #favorite[data-saved=true]{background:var(--ui-mint);border-color:var(--ui-mint);color:var(--ui-ink)}
+#right .actions #addRoute{background:#efdb9e;color:var(--ui-ink)}
+#right .description{font-size:14px;line-height:1.9;white-space:normal}
+#right .structured-summary{gap:18px}#right .structured-summary dt{font-size:12px;color:var(--ui-gold)}#right .structured-summary dd{font-weight:400;font-size:14px;line-height:1.9;color:var(--ui-cream)}
+#right .structured-summary .guide-field{padding-bottom:18px;border-bottom:1px solid var(--ui-border)}
+#right h3{margin:28px 0 12px;padding-top:20px;border-top:1px solid var(--ui-gold);font-size:15px;color:var(--ui-cream);font-weight:600}
+#right .note{min-height:128px;resize:vertical;border:1px solid transparent;border-radius:14px;background:var(--ui-raised);padding:14px;color:var(--ui-cream);line-height:1.8}
+#right details{margin:24px 0;border-block:1px solid var(--ui-border);padding:0 0 16px}#right summary{padding:16px 0;font-size:13px;color:var(--ui-gold)}#right details img{border-radius:12px;display:block;margin:16px 0;width:100%;height:auto}#right .guide-article-paragraph{font-size:14px;color:var(--ui-cream);line-height:1.9}
+#right .guide-entry{width:100%;text-align:left;min-height:48px;padding:12px 16px;margin:16px 0 24px;font-size:13px;border:1px solid var(--ui-gold);border-radius:10px;color:var(--ui-cream);background:linear-gradient(90deg,#b9a16533,transparent)}
+#right .quest-list{display:grid;gap:10px}#right .quest-row{padding:12px 14px;border:1px solid var(--ui-border);border-radius:10px;background:linear-gradient(90deg,#b9a16515,transparent);gap:10px;align-items:center;flex-wrap:nowrap}
+#right .quest-row strong{min-width:0}#right .quest-guide-link{font-size:13px;line-height:1.6;font-weight:500;padding:2px 0;min-height:36px;color:var(--ui-cream)}#right .quest-status{font-size:11px;flex:none}
+#right .result{display:block;width:100%;min-height:60px;padding:14px;margin:0 0 10px;border:1px solid var(--ui-border);border-radius:10px;background:linear-gradient(90deg,#b9a16520,transparent);font-size:14px;line-height:1.6;color:var(--ui-cream)}#right .result small{font-size:11px;margin-top:5px;color:var(--ui-muted)}
+.panel-meta{display:flex;justify-content:space-between;gap:10px;color:var(--ui-muted);font-size:12px;line-height:1.8;margin:0 0 20px}.panel-meta strong{color:var(--ui-gold);font-weight:500;font-variant-numeric:tabular-nums}
+.empty-state{border:1px dashed var(--ui-border);border-radius:14px;padding:32px 18px;text-align:center;background:#13233366;color:var(--ui-muted);line-height:1.8;font-size:13px}.empty-state strong{display:block;color:var(--ui-cream);font-size:16px;margin-bottom:10px}.empty-state p{margin:0}.empty-state::before{content:'';display:block;margin:0 auto 16px;width:26px;height:26px;background:var(--ui-gold);mask:url('icons/reicon/search.svg') center/contain no-repeat}
+#dialog{padding:28px;width:min(520px,calc(100vw - 32px));border:1px solid var(--ui-border);border-radius:20px;background:var(--ui-ink) url('branding/guide-sidebar/background.png') center/300px auto;color:var(--ui-cream);box-shadow:var(--ui-shadow)}#dialog h2{color:var(--ui-gold);font-size:20px;margin:0 40px 22px 0}#dialog p{font-size:13px;line-height:1.9;color:var(--ui-muted)}#closeDialog{width:32px;height:32px;min-height:32px;min-width:32px;border:1px solid var(--ui-cream);border-radius:50%;padding:0;background:transparent}#dialog form{clear:both}#dialog form label{display:block;font-size:12px;color:var(--ui-muted);margin-top:16px}#dialog input{padding:12px;border:1px solid var(--ui-border);border-radius:10px;background:var(--ui-surface);color:var(--ui-cream);min-height:44px}#dialog form button{min-height:44px;padding:12px 16px;border-radius:10px;background:var(--ui-gold);color:var(--ui-ink);font-size:13px}#dialog pre{padding:14px;border:1px solid var(--ui-border);border-radius:10px;background:var(--ui-surface);line-height:1.8}
+/* Compendium uses the same surfaces, rows and typography as the map panels. */
+body.compendium{background:var(--ui-ink);color:var(--ui-cream)}.compendium header{position:sticky;top:0;z-index:5;height:68px;background:#06121ef5;backdrop-filter:blur(12px);border-bottom:1px solid var(--ui-border)}.compendium main{max-width:1200px;padding:40px 32px 60px}.compendium .intro{padding:28px 32px;margin-bottom:24px;border:1px solid #132333;border-radius:20px;background:var(--ui-ink) url('branding/guide-sidebar/background.png') center/300px auto}.compendium h1{color:var(--ui-cream);font-size:28px}.compendium #saveSummary{font-size:12px;line-height:1.8;padding:12px 16px;border:1px solid var(--ui-border);border-radius:10px;background:var(--ui-surface);color:var(--ui-mint)}.compendium .tools{border:1px solid var(--ui-border);background:var(--ui-surface);padding:20px;border-radius:20px}.compendium .tools>input{border:1px solid var(--ui-border);background:var(--ui-ink);border-radius:10px;padding:14px 16px}.compendium #categories{gap:8px}.compendium #categories button{border-radius:40px;font-size:12px;min-height:40px;padding:10px 16px}.compendium #categories button[aria-pressed=true]{background:var(--ui-gold);border-color:var(--ui-gold);color:var(--ui-ink)}.compendium #completion{border-radius:10px;padding:10px;background:var(--ui-ink);border-color:var(--ui-border)}.compendium #grid{gap:16px}.compendium .entry{border:1px solid var(--ui-border);border-radius:16px;background:var(--ui-surface)}.compendium .entry img,.compendium .empty-art{background:radial-gradient(ellipse at center,#29445e80,#06121e);height:164px;padding:16px}.compendium .entry .caption{padding:16px}.compendium .entry strong{font-size:14px}.compendium .entry .save-badge{border-top:1px solid var(--ui-border);padding-top:10px;margin-top:12px;font-size:11px;color:var(--ui-mint);line-height:1.6}.compendium .pages button{border-radius:40px;min-height:44px}.compendium #detail{border:1px solid var(--ui-border);border-radius:20px;background:var(--ui-ink) url('branding/guide-sidebar/background.png') center/300px auto;box-shadow:var(--ui-shadow)}.compendium .detail-head{padding:20px 24px;color:var(--ui-gold);font-size:12px;border-color:var(--ui-border)}.compendium #close{width:32px;height:32px;padding:0;border:2px solid var(--ui-cream);border-radius:50%;font-size:0;background:transparent;color:var(--ui-cream)}.compendium #close::before{content:'';display:block;margin:auto;width:18px;height:18px;background:currentColor;mask:url('icons/reicon/x.svg') center/contain no-repeat}.compendium .detail-body{padding:28px;gap:28px}.compendium .detail-body>img{background:radial-gradient(ellipse at center,#29445e99,transparent);border-radius:16px}.compendium #stats span{background:var(--ui-surface);border:1px solid var(--ui-border);border-radius:8px;padding:6px 10px;font-size:12px}.compendium #saveDetail{font-size:12px;line-height:1.8}.compendium .map-link{background:#efdb9e;color:var(--ui-ink);border:0;border-radius:10px;font-size:13px;min-height:44px}.compendium #locationHint{font-size:11px}
+@media(hover:hover){#right .result:hover,#right .quest-row:hover,#right .guide-entry:hover{border-color:var(--ui-gold);background:linear-gradient(90deg,#b9a16555,transparent)}#right #hideRight:hover,#closeDialog:hover,.compendium #close:hover{color:var(--ui-ink);background:var(--ui-cream)}#right .actions button:hover{filter:brightness(1.1)}.compendium .entry:hover{border-color:var(--ui-gold);background:#1c3042}}
+@media(min-width:701px){#right:has(#description),#right:has(#storyBody){width:380px}#app:has(#right:not(.hidden) #description) #mapControls,#app:has(#right:not(.hidden) #storyBody) #mapControls{right:415px}}
+@media(max-width:700px){#right:not(:has(.guide-home)){width:100%;max-width:100%;border-radius:20px 20px 0 0}#right:not(:has(.guide-home)) #rightContent{padding:0 24px 28px}#right .actions{grid-template-columns:repeat(3,minmax(0,1fr))}#right .actions:has(#storyFavorite){grid-template-columns:1fr}#right .description{font-size:15px}#right .structured-summary dd{font-size:15px}#right .note{font-size:16px}#dialog{padding:22px}#dialog input{font-size:16px}.compendium header{padding:14px 20px;height:60px}.compendium main{padding:20px 16px 40px}.compendium .intro{padding:24px 20px}.compendium h1{font-size:24px}.compendium .tools{padding:16px;border-radius:16px}.compendium #completion{margin:12px 0 0;max-width:100%}.compendium #grid{gap:12px}.compendium .entry img,.compendium .empty-art{height:130px;padding:10px}.compendium .entry .caption{padding:12px}.compendium .entry strong{font-size:13px}.compendium #categories{flex-wrap:nowrap;overflow:auto;padding:3px 2px 8px}.compendium #categories button{white-space:nowrap;flex:none}.compendium .detail-body{padding:20px;gap:20px;grid-template-columns:1fr}.compendium .detail-body>img{height:180px}.compendium #detail{max-height:90dvh}.compendium .detail-head{padding:16px 20px}}
+#right:not(:has(.guide-home)) h2::after{content:none}#right #storyBody>h2{font-size:20px;line-height:1.6;border:0;padding:0;margin:0 0 12px;display:block}#right .actions #storyFavorite{background:var(--ui-surface);border-color:var(--ui-gold);color:var(--ui-cream)}#right .actions #storyFavorite[data-saved=true]{background:var(--ui-mint);border-color:var(--ui-mint);color:var(--ui-ink)}
+@media(max-width:700px){#right:not(:has(.guide-home)) .desktop-panel-head{width:100%;margin:0}}
+/* Figma 50:733. Native SVG geometry is preserved, scaled as one unit. */
+.title-art{position:relative;display:block;flex:none;height:32px;overflow:visible}
+.title-art img{position:absolute;left:0;top:0;max-width:none;transform:scale(.0901408451);transform-origin:top left;display:block}
+.title-guide{width:156.304px}.title-route{width:116.101px}.title-compendium{width:117.003px}
+#right:not(:has(.guide-home)) .desktop-panel-head{position:static;flex:none;width:100%;max-width:100%;height:88px;min-height:88px;margin:0;padding:28px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+#right:not(:has(.guide-home)) .desktop-panel-head>.title-art{height:32px;letter-spacing:normal}
+#right .guide-brand .title-art{height:32px}
+.compendium header>.title-art{margin-right:auto}
+@media(max-width:700px){#right:not(:has(.guide-home)) .desktop-panel-head{height:80px;min-height:80px;padding:24px}}
+
+/* One reading grid: title, text, rules and controls share the same 24px gutter. */
+#right .structured-summary .guide-field:last-child{padding-bottom:0;border-bottom:0}
+#right .actions #markDone:disabled{opacity:1;color:var(--ui-muted);background:var(--ui-surface);border-color:var(--ui-border)}
+#right .actions #markDone:disabled[data-complete=true]{background:#4cfeaa14;color:var(--ui-mint);border-color:#4cfeaa55}
+#right.hidden{display:none!important}
+/* Detail audit: coherent state semantics, legible controls and touch targets. */
+#left{overscroll-behavior:contain;scrollbar-gutter:stable}
+#left .segments button.active{color:var(--ui-ink)}
+#left .category{border:1px solid transparent;transition:background-color .12s,border-color .12s}
+#left .category.active{border-color:#29445e;background:#132333}
+#left .category>span{line-height:1.5}#left .category small{font-size:11px;color:var(--ui-muted)}#left .category.active small{color:var(--ui-cream)}
+#left .personal-actions button{border:1px solid var(--ui-border);border-radius:10px;justify-content:flex-start;padding:10px 12px;gap:8px;line-height:1.4}
+#left .personal-actions button::before{width:16px;height:16px;color:var(--ui-gold)}
+#left .app-tools{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding-top:20px}
+#left .app-tools a,#left .app-tools button,#left .app-tools select{display:flex;align-items:center;justify-content:center;min-height:40px;border:1px solid var(--ui-border);border-radius:10px;padding:8px 10px;font-size:12px;color:var(--ui-cream);width:100%;min-width:0}
+#left .app-tools #hideLeft{grid-column:1/-1;background:transparent;color:var(--ui-muted)}
+#left #searchPanel{border:1px solid transparent;align-items:center}
+#left #searchPanel:focus-within{border-color:var(--ui-gold);box-shadow:0 0 0 2px #b9a16515}
+#left #search{outline:none!important;box-shadow:none;font-weight:400}
+#left #clearSearch{display:grid;place-items:center;flex:none;width:32px;height:40px;min-height:40px;padding:0;background:transparent;color:var(--ui-muted);border:0}
+#left #clearSearch::before{width:16px;height:16px}
+#left #search::-webkit-search-cancel-button,.compendium #query::-webkit-search-cancel-button{appearance:none}
+#showFilters{display:none;position:absolute;left:15px;top:15px;z-index:15;width:48px;height:48px;padding:12px;background:#132333e6;border:1px solid var(--ui-border);border-radius:16px;color:var(--ui-cream);box-shadow:var(--ui-shadow)}
+#showFilters::before{content:'';display:block;width:24px;height:24px;background:currentColor;mask:url('icons/reicon/filter.svg') center/contain no-repeat}
+@media(min-width:701px){#app:has(#left.hidden) #showFilters{display:block}}
+#right .actions button:disabled:hover{filter:none}#right .actions #markDone[data-complete=false]:not(:disabled){background:var(--ui-surface);border-color:var(--ui-gold);color:var(--ui-cream)}
+#right .actions #addRoute:disabled{opacity:1;background:#efdb9e18;color:#efdb9e;border-color:#efdb9e55}
+#right .quest-status{padding:4px 7px;border-radius:6px;background:#a7b7c510;font-variant-numeric:tabular-nums;font-size:11px;line-height:1.5}
+#right .quest-status[data-status=completed]{background:#4cfeaa12;color:var(--ui-mint)}#right .quest-status[data-status=in_progress]{background:#b9a16520;color:#efdb9e}
+#right .quest-guide-link{min-height:44px;font-weight:500;font-size:13px;line-height:1.7;text-align:left;width:100%}
+#right .quest-row{padding:6px 12px}.quest-row:has(.quest-guide-link){cursor:pointer}
+#right .panel-meta{align-items:flex-start;line-height:1.7;gap:12px}#right .panel-meta span{min-width:0}#right .panel-meta strong{white-space:nowrap;flex:none}
+#right .guide-entry:disabled{opacity:.45;background:var(--ui-surface);border-color:var(--ui-border);cursor:default}
+#dialog{max-height:calc(100dvh - 48px);overflow:auto;overscroll-behavior:contain;scrollbar-width:thin}
+#dialog #closeDialog{position:absolute;top:24px;right:24px;float:none;display:grid;place-items:center}
+#dialogContent h2{min-height:32px;line-height:1.6;margin-bottom:20px;display:flex;align-items:center}
+#dialog input:focus-visible,#right .note:focus-visible{border-color:var(--ui-gold);outline:2px solid var(--ui-mint);outline-offset:2px}
+#dialog p{overflow-wrap:anywhere}#dialog pre{font-family:ui-monospace,SFMono-Regular,monospace;font-size:12px;white-space:pre-wrap;overflow-wrap:anywhere;color:var(--ui-cream)}
+#markerForm>button{width:100%;margin-top:12px}
+#dialog::backdrop,.compendium #detail::backdrop{background:#02080ed9;backdrop-filter:blur(3px)}
+body:has(dialog[open]){overflow:hidden}
+.compendium #status{scroll-margin-top:88px}.compendium #grid{align-items:stretch}.compendium .entry{display:flex;flex-direction:column;min-width:0}
+.compendium .entry .caption{display:flex;flex-direction:column;flex:1}.compendium .entry strong{line-height:1.65}.compendium .entry .save-badge{margin-top:auto;padding-top:12px;min-height:36px}
+.compendium .entry small:not(.save-badge){margin-bottom:12px}
+.compendium .save-badge[data-state=unknown],.compendium .save-badge[data-state=not_owned],.compendium .save-badge[data-state=unregistered],.compendium #saveDetail[data-state=unknown],.compendium #saveDetail[data-state=not_owned],.compendium #saveDetail[data-state=unregistered]{color:var(--ui-muted)}
+.compendium .detail-head{position:sticky;top:0;z-index:2;background:#06121ef5;backdrop-filter:blur(8px);min-height:72px}
+.compendium #detail{padding:0;scrollbar-width:thin;scrollbar-color:#b9a16550 transparent;overscroll-behavior:contain}
+.compendium .detail-body h2{font-size:22px;color:var(--ui-cream);font-weight:600;line-height:1.5}
+.compendium #description{line-height:1.9;color:var(--ui-cream);font-weight:400}
+.compendium-empty{grid-column:1/-1;padding:48px 24px}.compendium-empty button{margin-top:20px;border-color:var(--ui-gold);color:var(--ui-cream);border-radius:10px;min-height:44px}
+.compendium .pages button:not(:disabled):hover{border-color:var(--ui-gold);background:var(--ui-surface)}
+@media(hover:hover){#left .personal-actions button:hover,#left .app-tools a:hover,#left .app-tools button:hover{border-color:var(--ui-gold);background:var(--ui-raised)}#left #submitSearch:hover{background:#b9a16533}#left #clearSearch:hover{color:var(--ui-cream)}#right .guide-entry:not(:disabled):hover{border-color:var(--ui-gold)}#right .actions button:not(:disabled):hover{filter:brightness(1.12)}}
+@media(max-width:700px){
+ #left{padding:20px 24px;scrollbar-gutter:auto}#left .filter-brand{margin-bottom:24px}.map-brand{width:150px;height:124px}.brand-logo{transform:scale(.099338);top:31px}.brand-badge{transform:scale(.84);transform-origin:top left;left:13px}.save-info{height:124px}
+ #left #search{font-size:16px;height:44px;padding-inline:12px}#left #searchPanel{margin-bottom:24px}#left #submitSearch,#left #clearSearch{height:44px;min-height:44px}
+ #left .category{height:44px;font-size:12px;gap:4px}#left .category small{font-size:11px}#left .grid{gap:8px}#left .personal-actions button,#left .app-tools a,#left .app-tools button,#left .app-tools select{min-height:44px;font-size:13px}
+ #right .guide-category{padding-block:6px}#right .guide-category-main,#right .guide-progress{min-height:44px}
+ #right #hideRight,#dialog #closeDialog,.compendium #close{width:44px;height:44px;min-width:44px;min-height:44px;border:0;position:relative;background:transparent}
+ #right #hideRight::after,#dialog #closeDialog::after,.compendium #close::after{content:'';position:absolute;inset:6px;border:2px solid var(--ui-cream);border-radius:50%;pointer-events:none}
+ #right:not(:has(.guide-home)) .desktop-panel-head{padding-block:18px}#right:has(.guide-home) #hideRight{position:absolute;top:24px;right:18px;border:0;width:44px;height:44px;min-height:44px}
+ #dialog #closeDialog{position:absolute;top:16px;right:16px}#dialog h2{margin-right:40px}
+ .compendium #categories button{min-height:44px}.compendium .detail-head{min-height:72px;padding:12px 18px}.compendium #query{font-size:16px}.compendium .entry img{height:140px}.compendium #completion{font-size:16px;max-width:100%}
+ .compendium .entry .save-badge{font-size:11px;line-height:1.7}.compendium .detail-body h2{font-size:22px}
+}
+@media(prefers-reduced-motion:reduce){#left .category{transition:none}}
+
+#results[data-kind=route] .empty-state::before{mask-image:url('icons/reicon/route.svg')}
+#results[data-kind=favorites] .empty-state::before{mask-image:url('icons/reicon/star.svg')}
+@media(max-width:700px){#left .app-tools #hideLeft{display:none}}
+/* Keep the map usable on tablets: one side panel at a time. */
+@media(min-width:701px) and (max-width:1050px){
+ #left{width:310px}#right,#right:has(.guide-home),#right:has(#description),#right:has(#storyBody){width:340px}
+ #mapControls,#app:has(#right:not(.hidden) #description) #mapControls,#app:has(#right:not(.hidden) #storyBody) #mapControls{right:375px}
+ #app:has(#right.hidden) #mapControls{right:15px}
+ #connectionBanner{top:auto;bottom:40px;max-width:calc(100% - 30px)}#visible{left:15px;bottom:10px}
+}
+.game-control .control-field{margin:18px 0}.game-control label{display:flex!important;justify-content:space-between;gap:12px;align-items:center}.game-control output{color:var(--ui-mint);font-variant-numeric:tabular-nums}.game-control .control-field>div{display:grid;grid-template-columns:1fr auto;gap:10px;margin-top:8px}.game-control input[type=number]{width:100%;min-width:0}.game-control h3{font-size:15px;color:var(--ui-gold);border-top:1px solid var(--ui-border);padding-top:22px}.game-control .control-equipment{display:grid;grid-template-columns:1fr auto;gap:8px;margin:14px 0}.game-control .control-equipment label{grid-column:1/-1;font-size:13px}.game-control select{background:var(--ui-surface);color:var(--ui-cream);border:1px solid var(--ui-border);border-radius:10px;padding:10px;min-height:44px;min-width:0}.game-control button{border-radius:10px;min-height:44px;padding:10px 14px;background:var(--ui-gold);color:var(--ui-ink)}.game-control #controlMessage{padding:12px;background:var(--ui-surface);border:1px solid var(--ui-border);border-radius:10px;color:var(--ui-cream)}.game-control .control-items{margin-top:22px;font-size:13px}.game-control .control-items input{min-height:0!important;width:auto}.game-control .control-items span{color:var(--ui-muted);font-size:12px}
+
+.game-control .control-reset{grid-column:1/-1;background:var(--ui-surface);color:var(--ui-gold);border:1px solid var(--ui-border)}

@@ -1,0 +1,25 @@
+/* Reicon SVG subset, MIT; fully local, no CDN. */
+#sync{--ui-icon:url("icons/reicon/refresh.svg")}
+#hideLeft,#closeDetails,#closeSearch{--ui-icon:url("icons/reicon/chevron-left.svg")}
+#hideRight{--ui-icon:url("icons/reicon/x.svg")}
+#export{--ui-icon:url("icons/reicon/download.svg")}
+#import{--ui-icon:url("icons/reicon/upload.svg")}
+#favorites,#favorite{--ui-icon:url("icons/reicon/star.svg")}
+#path,#addRoute{--ui-icon:url("icons/reicon/route.svg")}
+#guideMenu,header>a{--ui-icon:url("icons/reicon/book-open.svg")}
+#searchMenu{--ui-icon:url("icons/reicon/search.svg")}
+#filterMenu{--ui-icon:url("icons/reicon/filter.svg")}
+#fit,#calibratePosition{--ui-icon:url("icons/reicon/target.svg")}
+#closeFilters,#markDone{--ui-icon:url("icons/reicon/check.svg")}
+#minus{--ui-icon:url("icons/reicon/minus.svg")}
+#plus,#add{--ui-icon:url("icons/reicon/plus.svg")}
+#clearSearch,#closeDialog,#home{--ui-icon:url("icons/reicon/x.svg")}
+#sync,#hideLeft,#closeDetails,#closeSearch,#hideRight,#export,#import,#favorites,#favorite,#path,#addRoute,#guideMenu,header>a,#searchMenu,#filterMenu,#fit,#calibratePosition,#closeFilters,#markDone,#minus,#plus,#add,#clearSearch,#closeDialog,#home{display:inline-flex;align-items:center;justify-content:center;gap:6px}
+:is(#sync,#hideLeft,#closeDetails,#closeSearch,#hideRight,#export,#import,#favorites,#favorite,#path,#addRoute,#guideMenu,header>a,#searchMenu,#filterMenu,#fit,#calibratePosition,#closeFilters,#markDone,#minus,#plus,#add,#clearSearch,#closeDialog,#home)::before{content:"";display:inline-block;flex-shrink:0;width:20px;height:20px;background:currentColor;mask:var(--ui-icon) center/contain no-repeat;-webkit-mask:var(--ui-icon) center/contain no-repeat;pointer-events:none}
+#zoom button::before{width:24px;height:24px}#favorite[data-saved="true"]{--ui-icon:url("icons/reicon/star-filled.svg")}
+@media(max-width:700px){#toolbar button{flex-direction:column;gap:2px;font-size:12px}#toolbar button::before{width:20px;height:20px}}
+
+.pin.done:after{content:"";width:12px;height:12px;padding:0;border-radius:0;background:#fff;mask:url("icons/reicon/check.svg") center/contain no-repeat;-webkit-mask:url("icons/reicon/check.svg") center/contain no-repeat;filter:drop-shadow(0 1px 1px #000)}
+body.guidebook header>a{--ui-icon:url("icons/reicon/chevron-left.svg")}
+
+#custom{--ui-icon:url("icons/reicon/target.svg");display:inline-flex;align-items:center;gap:6px}#custom::before{content:"";display:block;flex:none;width:20px;height:20px;background:currentColor;mask:var(--ui-icon) center/contain no-repeat;-webkit-mask:var(--ui-icon) center/contain no-repeat}

@@ -1,0 +1,3 @@
+# Hash-locked inputs must not change line endings during checkout.
+patches/*.patch -text -whitespace
+upstream.lock.json text eol=lf

@@ -1,0 +1,439 @@
+{
+  "source": "Current outer project map-client implementation, 2026-10-26",
+  "files": [
+    {
+      "source": "backend/amiibo.py",
+      "target": "backend/amiibo.py",
+      "sha256": "9dc751d061a30039eb7b5896d4633170780b40fac8b721832f09fb90274bbd6f"
+    },
+    {
+      "source": "backend/amiibo_catalog.py",
+      "target": "backend/amiibo_catalog.py",
+      "sha256": "d30c6157c977b19c2b7f879c16d4e1a836f8bc8823c47c789d111705e42cee19"
+    },
+    {
+      "source": "backend/clearance_geometry.py",
+      "target": "backend/clearance_geometry.py",
+      "sha256": "9d6e3283fed2d6eccdc8a93712cf78bb6e05b14eb3a5bd9e6f07f8744b984a7f"
+    },
+    {
+      "source": "backend/collision_geometry.py",
+      "target": "backend/collision_geometry.py",
+      "sha256": "65af368032db783092ee66f7d9f8a2d98158720081678d45e092bf3c2220abeb"
+    },
+    {
+      "source": "backend/compendium_progress.py",
+      "target": "backend/compendium_progress.py",
+      "sha256": "b5cab5ffd0c8ebd42cc9cd605d91d004d48e06e5989c9590288e71bc470eca23"
+    },
+    {
+      "source": "backend/data_packs.py",
+      "target": "backend/data_packs.py",
+      "sha256": "0fbdf0ec0ed3def6166f096354c689bc567b723cae7465fe3c5b3a8128696b02"
+    },
+    {
+      "source": "backend/game_capture.py",
+      "target": "backend/game_capture.py",
+      "sha256": "b5217bd443bb4190394b96491bf6010376884d99f0616c1d4c26948356aa314a"
+    },
+    {
+      "source": "backend/game_console.py",
+      "target": "backend/game_console.py",
+      "sha256": "465b1ad1f2cc9d28d9db42d3baf56d1c9765e6915eb74f80f43dfea89b8ab0dc"
+    },
+    {
+      "source": "backend/game_control.py",
+      "target": "backend/game_control.py",
+      "sha256": "2f484fa13a6c9888eb371b9a0e2aa3350080667cb47d9901535ca37f6814eb26"
+    },
+    {
+      "source": "backend/game_control_preferences.py",
+      "target": "backend/game_control_preferences.py",
+      "sha256": "ec7c8edc5089d33ca26b2c94de67d5fd4b42e4115ce5d1104ed60dd1b8775410"
+    },
+    {
+      "source": "backend/guide_media.py",
+      "target": "backend/guide_media.py",
+      "sha256": "f15201a4e9500660e4985c37c9ea5df0408f7de92540dae4355736febd99ed15"
+    },
+    {
+      "source": "backend/guide_schema.py",
+      "target": "backend/guide_schema.py",
+      "sha256": "6ca8a00b4f58bcd8df0d6424e67439f81b2273807038f12d1c0b61b8dedc4d3f"
+    },
+    {
+      "source": "backend/input_observation.py",
+      "target": "backend/input_observation.py",
+      "sha256": "9d9a37580a49ec7a275660e297eb4d967d7d2f601fd2762db776e8969982c4f7"
+    },
+    {
+      "source": "backend/input_trace.py",
+      "target": "backend/input_trace.py",
+      "sha256": "e3497b04d0818d470ebb3504d741e3c4541870b9e2877806b242b2d43eebf93e"
+    },
+    {
+      "source": "backend/link_control.py",
+      "target": "backend/link_control.py",
+      "sha256": "86d5df1c6d2a936f0da4abf1f4be630f5f66487606237980b1589f3092feba51"
+    },
+    {
+      "source": "backend/macos_camera.py",
+      "target": "backend/macos_camera.py",
+      "sha256": "85303266af42c2b43571867db0b9625f4cadf257fd324a5cdda3af53abbda874"
+    },
+    {
+      "source": "backend/macos_position.py",
+      "target": "backend/macos_position.py",
+      "sha256": "5829b3cd69ab3ed249a9fc070e745051daa8acef660044bd4521ed74d2a4ffd5"
+    },
+    {
+      "source": "backend/map_service.py",
+      "target": "backend/map_service.py",
+      "sha256": "7214de3827f36daa4604d4348c27c131fb147b67e4a08eaf04eda6d62f9c280d"
+    },
+    {
+      "source": "backend/mcp_protocol.py",
+      "target": "backend/mcp_protocol.py",
+      "sha256": "dd839b14d4b7dc8a1079c7153a200d690ee7d34505ae3db7422d9d30a964119e"
+    },
+    {
+      "source": "backend/mcp_server.py",
+      "target": "backend/mcp_server.py",
+      "sha256": "d6a0281aed3340dacbc51640323e1966ccd2df4a560035ce2d1d6d8c19759918"
+    },
+    {
+      "source": "backend/mcp_tunnel.py",
+      "target": "backend/mcp_tunnel.py",
+      "sha256": "2665e648d6d59c67cea0a7ff9d4848a89473e44ca3412ec195b3f4e5ae06e7bb"
+    },
+    {
+      "source": "backend/mod_telemetry.py",
+      "target": "backend/mod_telemetry.py",
+      "sha256": "1828b75cc7c5ed0ad40a93bcc0c8eb1f1d9445e4659b69a449050105781e2720"
+    },
+    {
+      "source": "backend/offline_map.py",
+      "target": "backend/offline_map.py",
+      "sha256": "c761852cd0bcf0dad76814001c9570d0956e898e21c50c2ad1d20c0d73294980"
+    },
+    {
+      "source": "backend/paths.py",
+      "target": "backend/paths.py",
+      "sha256": "d8faf8f2835ac2c2b1b6bcad791ea9a7f7fc66a1277c54ec7d10c3dba691e7ac"
+    },
+    {
+      "source": "backend/player_stats.py",
+      "target": "backend/player_stats.py",
+      "sha256": "29a4f5cbf98224778bc8b95938abb763d0436832308936f4eaba912afcb1d170"
+    },
+    {
+      "source": "backend/position_calibration.py",
+      "target": "backend/position_calibration.py",
+      "sha256": "4c7b59f5b09a2c26479fd332da3cf82bc4ca3fe66e73cb1832215e1201e664f4"
+    },
+    {
+      "source": "backend/quest_progress.py",
+      "target": "backend/quest_progress.py",
+      "sha256": "acc3911e9117733b31349b73ee78e6129fca2b29f59209a168ad29f147e8f933"
+    },
+    {
+      "source": "backend/requirements.txt",
+      "target": "backend/requirements.txt",
+      "sha256": "0f69f4b8eb2084fe94f717140e1802cbf60a5aaf300469ab36bf0a040be003b7"
+    },
+    {
+      "source": "backend/server.py",
+      "target": "backend/server.py",
+      "sha256": "a02af46621bb8efe0e5d0d6b62fc96973df853211b876d6861727e504e7b75ed"
+    },
+    {
+      "source": "backend/spawn_catalog.py",
+      "target": "backend/spawn_catalog.py",
+      "sha256": "4e3c91918a120b21485fa7715374bb73978f9b91a21cb0e0b55bac82d6702f34"
+    },
+    {
+      "source": "backend/surface_geometry.py",
+      "target": "backend/surface_geometry.py",
+      "sha256": "4c2eb5e940f6e28310c67a1be9be857efa6812a74d0167c15c1735faa27fa2d6"
+    },
+    {
+      "source": "backend/tile_cache.py",
+      "target": "backend/tile_cache.py",
+      "sha256": "770217bf027383b949365ce318a10e3162879ca1938a1707f5a055f94dd8082d"
+    },
+    {
+      "source": "desktop/Client.swift",
+      "target": "desktop/Client.swift",
+      "sha256": "64a736158095bb9d8f65d5063da67d0388a63fe07b68bcff5cf8894b9d9dd5ce"
+    },
+    {
+      "source": "desktop/ConsoleStyle.swift",
+      "target": "desktop/ConsoleStyle.swift",
+      "sha256": "95c8530830c3259ad36a1ebd09d46a7465f220d0fcdb01d2ea1dcb2a73e3aee9"
+    },
+    {
+      "source": "desktop/DataPacks.swift",
+      "target": "desktop/DataPacks.swift",
+      "sha256": "dd012c0027162a4a4f29639521c6dddf738946baf55de93ca03611bcd8416928"
+    },
+    {
+      "source": "desktop/NativeGame.swift",
+      "target": "desktop/NativeGame.swift",
+      "sha256": "b195055014f29f33b3590abc7daf738993d9c96ee14d3e6c84aad5307baf7686"
+    },
+    {
+      "source": "desktop/TunnelUI.swift",
+      "target": "desktop/TunnelUI.swift",
+      "sha256": "4c65d22863e93f865a57029209d6593fb84c5f4b5c9f3bc1cd384accb8f903b9"
+    },
+    {
+      "source": "desktop/backend_entry.py",
+      "target": "desktop/backend_entry.py",
+      "sha256": "ef01e5fd71f28994122d70fee5e9606c1c7ff62eeb5bb3a0c12779ee945c857a"
+    },
+    {
+      "source": "desktop/main.swift",
+      "target": "desktop/main.swift",
+      "sha256": "20520f873a4e34fdf2862f761798347c1ac5a956928929170808b0e2aa388a71"
+    },
+    {
+      "source": "webui/amiibo.css",
+      "target": "webui/amiibo.css",
+      "sha256": "739664227faca4d342b0e9f9c3c37cbe7a5516a5f9e09a3e5d0587d757ddfafb"
+    },
+    {
+      "source": "webui/amiibo.js",
+      "target": "webui/amiibo.js",
+      "sha256": "71b94be5b68f59b7324e4fe9fbde7fa1289ebe8ca539f356fe61a362961dbbb8"
+    },
+    {
+      "source": "webui/compendium.css",
+      "target": "webui/compendium.css",
+      "sha256": "3122fd4290b7e28d382ea2be4b00a1c799857a02f5c5805e5d674992266d1d9c"
+    },
+    {
+      "source": "webui/compendium.html",
+      "target": "webui/compendium.html",
+      "sha256": "2da10191c9142cea93862aa7bf30abe71c07e4ab4dbb3669235177fecfc328b4"
+    },
+    {
+      "source": "webui/compendium.js",
+      "target": "webui/compendium.js",
+      "sha256": "350758736664e7c1cbb6a6049ae5ef8e70665f5fac2f897a6f829081b0544af1"
+    },
+    {
+      "source": "webui/filter-sidebar.css",
+      "target": "webui/filter-sidebar.css",
+      "sha256": "7b5a515d98937e9fd0590ef047c85b43f42b6aa6cf84e21bdedefd53d2ce43cc"
+    },
+    {
+      "source": "webui/game-control.css",
+      "target": "webui/game-control.css",
+      "sha256": "972653af7523d0b0cec2cd150a11cce8b09301ee679778b2c8bcd46ba9da80cb"
+    },
+    {
+      "source": "webui/game-control.js",
+      "target": "webui/game-control.js",
+      "sha256": "13ca1f125f66b3636a595c6fc7cf576bb83a646e1ca5b61166afd3b7c516a245"
+    },
+    {
+      "source": "webui/game-icons.css",
+      "target": "webui/game-icons.css",
+      "sha256": "8d3e3c84ab250c53b63e82ab7e9523c3a35e526ac5a47d9e31c42ac4a76af4f7"
+    },
+    {
+      "source": "webui/guide-content.css",
+      "target": "webui/guide-content.css",
+      "sha256": "867c55f1802182c1313e2567e9ca68375da4cae4df629bcabb9de30cc06c1f16"
+    },
+    {
+      "source": "webui/guide-sidebar.css",
+      "target": "webui/guide-sidebar.css",
+      "sha256": "40dc517d6adf27763327d8c5d4ef1042c9c43e580d57f811b97c28fb2e5ac787"
+    },
+    {
+      "source": "webui/guidebook.html",
+      "target": "webui/guidebook.html",
+      "sha256": "6e8bace2151bf8b398cb586a118d642c4743d963f9833b727045d1d30289bf7b"
+    },
+    {
+      "source": "webui/index.html",
+      "target": "webui/index.html",
+      "sha256": "f1b918f347060bba2afba413b84525608c53361cf4d234dac05190ac207c1a4e"
+    },
+    {
+      "source": "webui/interface.css",
+      "target": "webui/interface.css",
+      "sha256": "c54d13a4da5c3eb86d33dffab8d7bbd484191ea2724ccdbbe21cdcdf624930c6"
+    },
+    {
+      "source": "webui/map-layout.css",
+      "target": "webui/map-layout.css",
+      "sha256": "c98c119f0e2409c8eb75049bf0789903128739a61452efedc9d92d6ec13f8db5"
+    },
+    {
+      "source": "webui/map.css",
+      "target": "webui/map.css",
+      "sha256": "7b179a1cadcb71976df3068768e5c376323d0980a8f9a30f51226d63d96d8671"
+    },
+    {
+      "source": "webui/map.js",
+      "target": "webui/map.js",
+      "sha256": "2946c6ea00f89b8e9dc918df4a38bfe129ab137985c77c59d062200353035a52"
+    },
+    {
+      "source": "webui/offline-media.js",
+      "target": "webui/offline-media.js",
+      "sha256": "5daaebbcc190560a5796d4875d83fe87d1e28bdd81e5636cb291f65facd04afc"
+    },
+    {
+      "source": "webui/theme.css",
+      "target": "webui/theme.css",
+      "sha256": "7ff6256351a528aaf8c68a5f53f7382b1f115acf4842195cf7642f48f296aaec"
+    },
+    {
+      "source": "webui/ui-icons.css",
+      "target": "webui/ui-icons.css",
+      "sha256": "ccb70548588b4a366d93c91aa28740297d935f5cbea4f1abaf32a38b73f77da6"
+    },
+    {
+      "source": "webui/icons/reicon/search.svg",
+      "target": "webui/icons/reicon/search.svg",
+      "sha256": "031f296d22e529456f764165752be0cbc5434c5d80d7aea0dd41a916406077eb"
+    },
+    {
+      "source": "webui/icons/reicon/target.svg",
+      "target": "webui/icons/reicon/target.svg",
+      "sha256": "e58106f29e4ac2d876aeadee692cdb34e1f6a68a2ab68ba733bc0fa33ae33d87"
+    },
+    {
+      "source": "webui/icons/reicon/chevron-down.svg",
+      "target": "webui/icons/reicon/chevron-down.svg",
+      "sha256": "a647343d163817dae3cfafdb8bb715caa55164ac62a6a4d9f149427581e3f617"
+    },
+    {
+      "source": "webui/icons/reicon/export.svg",
+      "target": "webui/icons/reicon/export.svg",
+      "sha256": "045ebf8294f5e72041e5c8eb734936f7378c8933880159e949fdcc303c8e244a"
+    },
+    {
+      "source": "webui/icons/reicon/LICENSE",
+      "target": "webui/icons/reicon/LICENSE",
+      "sha256": "c3fb62a9a75902941407987c98982b7793c707729fd7763a7044b7eb02cbfee1"
+    },
+    {
+      "source": "webui/icons/reicon/x.svg",
+      "target": "webui/icons/reicon/x.svg",
+      "sha256": "abda8a066dc69b6bdb493c51913c34c22cc4dd2e8498863e085459de238965b5"
+    },
+    {
+      "source": "webui/icons/reicon/chevron-right.svg",
+      "target": "webui/icons/reicon/chevron-right.svg",
+      "sha256": "63476f84431212d2658b76a9dce591374176ff9fd76dc19579def23f051afec1"
+    },
+    {
+      "source": "webui/icons/reicon/SOURCE.md",
+      "target": "webui/icons/reicon/SOURCE.md",
+      "sha256": "fdfdec7f8deef996e228b46b7999169e001eb84bc18fd7a9b6041944166c706a"
+    },
+    {
+      "source": "webui/icons/reicon/settings.svg",
+      "target": "webui/icons/reicon/settings.svg",
+      "sha256": "3d1375be5d01c2b76dfea4da41a0b95834a09a3e6259a58cbcebe486691f8217"
+    },
+    {
+      "source": "webui/icons/reicon/download.svg",
+      "target": "webui/icons/reicon/download.svg",
+      "sha256": "90d3bd0dad7b885bb566af9b9164c427081393cb913c5674757760778603649b"
+    },
+    {
+      "source": "webui/icons/reicon/book-open.svg",
+      "target": "webui/icons/reicon/book-open.svg",
+      "sha256": "3757dd9b01eaea1aeedcf8418da177d47a2f05326a73483c6d4d30950dfd7acb"
+    },
+    {
+      "source": "webui/icons/reicon/star-filled.svg",
+      "target": "webui/icons/reicon/star-filled.svg",
+      "sha256": "6198dfbe7c03200e47997c1b7aed8dabb03d51437815fc0bd84045c00ab5c33e"
+    },
+    {
+      "source": "webui/icons/reicon/stop.svg",
+      "target": "webui/icons/reicon/stop.svg",
+      "sha256": "531a1df0c7d7bd2491f2213e056b2fe3c3c377c26af5dabb4b3c87b0d5050d92"
+    },
+    {
+      "source": "webui/icons/reicon/plus.svg",
+      "target": "webui/icons/reicon/plus.svg",
+      "sha256": "b618caa3fcbc065dd9270403831e6a6bf47ccf6666c8b0bcdda00f21273a0fcf"
+    },
+    {
+      "source": "webui/icons/reicon/document.svg",
+      "target": "webui/icons/reicon/document.svg",
+      "sha256": "fc797d116ee074e2d00a9e02af20e975c32030da5319c06445255e3594192d55"
+    },
+    {
+      "source": "webui/icons/reicon/check.svg",
+      "target": "webui/icons/reicon/check.svg",
+      "sha256": "65e7b01d04a0addbb450f1bcc668885abc9b915d11ff0e33c97748bcd6a166b8"
+    },
+    {
+      "source": "webui/icons/reicon/copy.svg",
+      "target": "webui/icons/reicon/copy.svg",
+      "sha256": "9a44d24147e9d01f1389512bddeb6314ba827a98698cea06e966cc5bd8b00bdc"
+    },
+    {
+      "source": "webui/icons/reicon/refresh.svg",
+      "target": "webui/icons/reicon/refresh.svg",
+      "sha256": "16d02f88840e50d5be6abc6f0187c6fd3a530f91ad157b63303db5ea73dacb94"
+    },
+    {
+      "source": "webui/icons/reicon/star.svg",
+      "target": "webui/icons/reicon/star.svg",
+      "sha256": "95cf6f6a49a79d37b5c72c700149296b7149df5c3526596beea46eda7d916e2f"
+    },
+    {
+      "source": "webui/icons/reicon/filter.svg",
+      "target": "webui/icons/reicon/filter.svg",
+      "sha256": "8ea8be8c9ab3e038ac3375ae2a17bbcc559bb4a597d6864490e22f3d47bb0661"
+    },
+    {
+      "source": "webui/icons/reicon/route.svg",
+      "target": "webui/icons/reicon/route.svg",
+      "sha256": "dabc7d627febb4faf130e49f388152e3fb29f4f8d74e2ad1adf888b83b69a4c7"
+    },
+    {
+      "source": "webui/icons/reicon/upload.svg",
+      "target": "webui/icons/reicon/upload.svg",
+      "sha256": "0f7a42e8778aeabd6b3cd722711fccf3faf70513bff184e916d4d4fab0df6a0e"
+    },
+    {
+      "source": "webui/icons/reicon/folder.svg",
+      "target": "webui/icons/reicon/folder.svg",
+      "sha256": "c42afe97bf24fcf6653fb30d69ce23974ae4999c54b5e6be2a2c279a55b8767b"
+    },
+    {
+      "source": "webui/icons/reicon/minus.svg",
+      "target": "webui/icons/reicon/minus.svg",
+      "sha256": "3a91d4c566ff96c984726f25eee6d4350ce27bc94a24104c989586beb728b10d"
+    },
+    {
+      "source": "webui/icons/reicon/chevron-left.svg",
+      "target": "webui/icons/reicon/chevron-left.svg",
+      "sha256": "088145afe0304e30c486e39fecf0685d6bfe3c6520c783c4cb9eb49d08e2d47d"
+    },
+    {
+      "source": "desktop/tunnel-agent.json",
+      "target": "desktop/tunnel-agent.json",
+      "sha256": "cc4c1ff680a9b9b75e6a343b62ee4e82091672efb6ebd820372b061f1319859b"
+    }
+  ],
+  "excluded": [
+    "DataPacks",
+    "original game and Figma artwork",
+    "content/reference JSON tables",
+    "map tiles and caches",
+    "private runtime configuration",
+    "ngrok binary",
+    "emulator scanner binary"
+  ]
+}

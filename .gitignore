@@ -1,0 +1,31 @@
+# Never commit local inputs, credentials, data packs or outputs
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.env.*
+*.keys
+*.key
+*.pem
+*.xci
+*.xcz
+*.nsp
+*.nsz
+*.nca
+*.bfttf
+*.sav
+*.totkpack
+DataPacks/
+*.app/
+*.zip
+*.zip.sha256
+build/
+dist/
+TOTK_build/
+.venv/
+venv/
+
+# Upstream material belongs in external workspaces, never this kit.
+/MacNativeGames/
+/workspace/
+/artifacts/

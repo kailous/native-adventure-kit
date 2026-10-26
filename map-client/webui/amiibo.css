@@ -1,0 +1,29 @@
+/* Independent map drawer; keep the map's cream, mint and navy palette. */
+#right[data-nav-mode=amiibo]{padding:28px 24px;height:auto;min-height:0;background-image:linear-gradient(#06121e99,#06121e99),url('branding/guide-sidebar/background.png')}
+#right[data-nav-mode=amiibo]>.desktop-panel-head,#right[data-nav-mode=amiibo]>.sheet-head{display:none}
+#right[data-nav-mode=amiibo] #rightContent{padding:0}
+.amiibo-drawer{color:#fff9eb;font-size:13px;line-height:1.6}
+.amiibo-drawer .am-header{display:flex;align-items:center;justify-content:space-between;gap:16px;height:auto;min-height:36px;padding:0;margin:0 0 24px;background:transparent;border:0}
+#right .amiibo-drawer .am-header h2{margin:0;padding:0;border:0;color:#f4dda5;font-size:22px;font-weight:600;line-height:1.4;min-width:0}
+.amiibo-drawer .am-close{display:flex;align-items:center;justify-content:center;flex:none;border:1px solid #fff9eb;border-radius:50%;width:36px;height:36px;min-height:36px;padding:0;background:transparent;color:#fff9eb;font-size:24px;line-height:1;cursor:pointer}
+.am-intro{color:#c4cdd3;margin:0 0 24px;line-height:1.8}
+.am-field{display:flex;flex-direction:column;gap:8px;margin:20px 0}
+.am-field label{font-size:12px;font-weight:600;color:#fff9eb}
+.amiibo-drawer input,.amiibo-drawer select{box-sizing:border-box;width:100%;min-width:0;min-height:44px;border:1px solid #40586b;border-radius:10px;background:#29445e;color:#fff9eb;padding:10px 12px;font:inherit;box-shadow:none}
+.amiibo-drawer input::placeholder{color:#b1bec9}
+.amiibo-drawer select{appearance:none;background:#29445e url('branding/game-control/select-arrow.svg') right 8px center/24px no-repeat;padding-right:36px}
+.am-count{font-size:11px;color:#a9bbc7;line-height:1.4}
+.am-status{display:flex;align-items:center;gap:8px;margin:24px 0 12px;color:#cbd6db;font-size:12px}
+.am-dot{width:7px;height:7px;border-radius:50%;background:#8494a0;flex:none}
+.am-status[data-ready=true] .am-dot{background:#4cfeaa}
+.amiibo-drawer .am-scan{width:100%;min-height:44px;background:#4cfeaa;color:#06121e;border:0;border-radius:10px;font-family:inherit;font-size:14px;font-weight:600;cursor:pointer;padding:12px}
+.am-scan:disabled{opacity:.45;cursor:not-allowed}
+.am-note{font-size:12px;color:#a9bbc7;margin:24px 0 0;border-top:1px solid #29445e;padding-top:18px;line-height:1.8}
+.am-message{color:#f4dda5;overflow-wrap:anywhere;margin:12px 0 0;font-size:12px}
+.am-message:empty{display:none}
+.amiibo-drawer :focus-visible{outline:2px solid #f4dda5;outline-offset:3px}
+@media(hover:hover){.amiibo-drawer .am-close:hover{background:#29445e}.amiibo-drawer .am-scan:not(:disabled):hover{background:#88ffc3;color:#06121e}}
+@media(max-width:700px){#right[data-nav-mode=amiibo]{padding:24px 20px;bottom:calc(66px + env(safe-area-inset-bottom));max-height:calc(100dvh - 140px)}.amiibo-drawer .am-header{margin-bottom:20px}.amiibo-drawer input,.amiibo-drawer select{font-size:16px}.amiibo-drawer .am-close{width:44px;height:44px}.am-field{margin:16px 0}}
+
+.am-preview{margin:18px 0 0;padding:12px;border:1px solid #29445e;border-radius:10px;background:#fff;text-align:center}.am-preview img{display:block;object-fit:contain;width:auto;max-width:100%;height:160px;margin:auto}.am-preview figcaption{color:#29445e;font-size:12px;font-weight:600;margin-top:8px}
+.am-preview{display:flex;align-items:center;gap:12px;padding:8px 12px}.am-preview img{width:112px;height:104px;flex:none;margin:0}.am-preview figcaption{text-align:left;margin:0;overflow-wrap:anywhere}

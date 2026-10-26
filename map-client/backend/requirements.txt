@@ -1,0 +1,2 @@
+# Image validation for the MCP media service. Bundled in the desktop app.
+Pillow==11.3.0
