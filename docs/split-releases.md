@@ -1,0 +1,31 @@
+# 地图 App 与构建源码独立发布
+
+维护者已明确要求分别发布两项 Release。它们可指向同一源码提交，但附件独立，不混入原生游戏 App。
+
+| Release 标签 | 手动附件范围 | 不包含 |
+| --- | --- | --- |
+| map-v2.0.6 | Native Adventure Map.app、客户端使用说明、SHA-256、实际运行时通知、可选官方 Agent 安装脚本 | 原生游戏、更新、密钥、固件、存档、用户凭据、DataPacks、内置 ngrok Agent |
+| source-v2026.10.26 | 当前源码、Mod 文本补丁、Skill、地图源码、版本锁、许可和来源台账、SHA-256 | App、原生游戏输出、预编译工具、原图数据包、私有输入和配置 |
+
+源码包的地图默认资源仍为空表/中性占位；地图 App 成品使用维护者现有界面图标、图片及参考表。它们不在源码包中镜像，不把素材视作原创 MIT。原始素材来源或授权无法确认的继续列为待核验；风险接受不替代第三方许可。完整地图瓦片、攻略和图鉴内容仍需用户另行取得合法 DataPacks。
+
+## 客户端来源与依赖
+
+本次客户端从本仓库 `map-client/` 与 `scripts/build_map_client.py` 构建。外部资源仅通过构建器既有允许列表导入，另补客户端图标及桌面装饰；不读取私人支持目录或存档。原生源码只用于读取匹配锁文件的 input-actions.json，不编译、链接或打包游戏运行时。
+
+App 内与同级说明附项目许可范围、Reicon、Python 运行时、Pillow 和 PyInstaller 的原始通知。PyInstaller 的原 GPL 与 Bootloader Exception 一并保留；该例外不能用于重授其他 GPL 组件。打包工具通知不代表它们全部作为模块进入 App。实际依赖版本、文件摘要及构建验证写入成品记录，不称为完整法律审计。
+
+## ngrok 的取得
+
+公开 App 不内置 ngrok Agent。用户需要远程隧道时，可先阅读 [ngrok 条款](https://ngrok.com/tos)，再运行同级 `install_map_tunnel.command`。条款对将 Agent 分发给使用自己账号的客户另有书面同意要求，不能以开源依赖的 credits 代替。
+
+脚本验证 App 标识，下载官方 arm64 ZIP，验证固定二进制 SHA-256，拒绝覆盖未知 Agent；安装后对 App 作本地 ad hoc 重签。不保存账号或 token，不自动连接。需先关闭 App；若 App 无写权限，先移入自己可写的应用目录。下载版本变化时停止并请求维护者核验更新，不自动放宽哈希。脚本和 App 都未提供 Developer ID 或公证保证。
+
+## 验证与发布
+
+- 源码附件运行 `scripts/check_release.py --archive`；不将地图 App 塞入源码白名单。
+- 地图 App 完成 arm64 构建、签名验证、隔离后端检查；实际测试结果随 Release 记录。未进行游戏内验收或真实远程账号连接时明确说明。
+- 图标/图片与 JSON 的来源权限仍需人工核验；检查不证明所有第三方权利已取得。
+- 两项 Release 先以草稿上传，核对附件名、摘要和对应提交后公开。GitHub 自动生成的 Source code ZIP/TAR 是平台附件，手动下载请按各 Release 的用途选择。
+
+源码树不保存 App 或发布 ZIP。构建及发布中间文件在仓库外的任务工作区保留，旧 Release 不恢复，不重写已有公开历史。

@@ -30,6 +30,8 @@ Reicon 通用图标保留原 [MIT](webui/icons/reicon/LICENSE)与 [来源记录]
 
 ## 可选远程隧道
 
+公开地图 App Release 不附带 ngrok Agent。随包 `install_map_tunnel.command` 在用户机器上从官方取得固定哈希版本并对所选 App 作本地 ad hoc 重签，不采集 token、不启动隧道；需先关闭 App，并使用自己的 ngrok 账号。官方稳定下载若已变化，脚本会停止，不能跳过哈希检查。脚本也可从源码调用：`zsh scripts/install_map_tunnel.command "/absolute/Native Adventure Map.app"`。
+
 默认不下载或附带 ngrok，缺少它时本机 MCP 仍可使用。确需构建内置隧道版本，可显式提供 `--ngrok-binary /authorized/ngrok`；须匹配 `desktop/tunnel-agent.json` 的既有哈希，构建时附其 credits。固定下载 URL 可能已更新，哈希失败必须人工核对，不能静默更新清单或跳过校验。账户与 token 不进入 App。
 
 ## 维护与验证

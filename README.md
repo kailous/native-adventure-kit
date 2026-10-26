@@ -2,6 +2,13 @@
 
 基于上游原生运行实现的深度 Mod 装配工具：本仓库维护**脚本、Skill、文本补丁、版本锁、地图工具源码和说明**，不再携带完整 MacNativeGames 源码树、上游预编译工具或地图 App。
 
+## 独立下载
+
+- [地图 App v2.0.6](https://github.com/kailous/native-adventure-kit/releases/tag/map-v2.0.6)：macOS arm64 客户端成品、使用说明及运行时通知，不含 DataPacks、游戏或密钥。远程 ngrok Agent 由用户通过随包脚本直接从官方取得，不在公开附件中内置。
+- [构建源码 2026.10.26](https://github.com/kailous/native-adventure-kit/releases/tag/source-v2026.10.26)：脚本、Skill、补丁、地图源码、版本锁及许可材料，不含 App 或预编译工具。
+
+两者独立标记和打包，详见[发布范围与验证](docs/split-releases.md)。这不改变原生游戏 App 不对外发行的边界。
+
 ## 技术来源与贡献
 
 原生运行、移植和构建基础来自 [MacNativeGames](https://github.com/ly05010419/MacNativeGames)、[d2r-mobile](https://github.com/jhaizhou-ops/d2r-mobile)、Ryujinx 等上游项目。本项目维护游戏控制、输入/菜单/显示扩展及 AI/MCP 工具的二次开发与集成，不将完整移植方案或所有补丁行宣称为本项目原创。继承和选择性合入的上游修改仍归功于其原作者；具体归属和未核实事项见 [第三方声明](docs/third-party-notices.md)。

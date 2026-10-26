@@ -22,6 +22,7 @@ jobs:
           python-version: '3.14'
       - run: python -B -m unittest discover -s tests -p test_prepare_native.py -v
       - run: python -B -m unittest discover -s tests -p test_release_helpers.py -v
+      - run: zsh -n scripts/install_map_tunnel.command
       - name: Assemble pinned upstream without game inputs
         run: python -B scripts/prepare_native.py --work "$RUNNER_TEMP/native-adventure"
       - name: Verify reconstructed source

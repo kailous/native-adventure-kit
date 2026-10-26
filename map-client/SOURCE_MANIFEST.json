@@ -424,7 +424,9 @@
     {
       "source": "desktop/tunnel-agent.json",
       "target": "desktop/tunnel-agent.json",
-      "sha256": "cc4c1ff680a9b9b75e6a343b62ee4e82091672efb6ebd820372b061f1319859b"
+      "sha256": "cc4c1ff680a9b9b75e6a343b62ee4e82091672efb6ebd820372b061f1319859b",
+      "localModification": "Optional agent metadata updated after reviewing the official stable download (3.39.13); no agent is redistributed.",
+      "currentSha256": "2ee3677ec6644e0a01f543cde784b5b729fb5a7bdedf59457da20bea2a93199e"
     }
   ],
   "excluded": [

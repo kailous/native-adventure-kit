@@ -21,6 +21,7 @@ NOTICE_FILES = (
     'docs/third-party-notices.md', 'docs/gpl-components.md',
     'docs/gpl-components.json', 'docs/generated-data-provenance.md',
     'docs/release-governance.md', 'docs/historical-release-review.md',
+    'docs/split-releases.md',
     'licenses/README.md', 'licenses/MacNativeGames-LICENSE',
     'licenses/GPL-2.0-only.txt', 'licenses/Lotuskit-LICENSE',
     'licenses/Marc-Robledo-equipment-MIT.txt',

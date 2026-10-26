@@ -1,4 +1,6 @@
 {
   "downloadURL": "https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-darwin-arm64.zip",
-  "sha256": "ea3a570604bd161d00ba7358af4ad2d6b0ac4c8421c17fc0106b527deffbc88f"
+  "sha256": "686c32f1d6aff864eb2f221dedc97302d7b1cf863c6b71e57eb8010d65284321",
+  "version": "3.39.13",
+  "reviewedAt": "2026-10-26"
 }
