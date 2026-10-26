@@ -22,6 +22,8 @@ Li Peng 有权许可的原创代码适用根 [MIT License](LICENSE)，版权声�
 
 地图 App、DataPacks、源码中的加载画面及其他游戏素材需按各自来源与许可核查。当前工作树不携带完整上游、成品、DataPacks 或原加载图片；用户下载的上游、实际装配与历史版本可能仍含相关内容，不能据此认定它们已获授权。通过网盘、其他仓库或外部站点提供文件，同样需要核对实际分发权限。
 
+DataPacks 的百度网盘入口由 README 维护，分类来源和逐包摘要见[内容来源说明](https://github.com/kailous/native-adventure-kit/blob/main/docs/data-pack-sources.md)。现有包除游民地图与攻略外，还含社区数据和游戏派生地形；地图标记 SVG 的手工临摹制作说明不覆盖其他图片或底层设计权利。
+
 ## D. 二进制发行文件
 
 地图客户端成品以独立 Release 发布，与源码构建包分开；原生游戏 App 不随两者分发。地图 App 可包含单独列出的界面图标/图片、Python、Pillow 及其他运行时，适用实际组件许可；ngrok Agent 不随公开成品附带，由用户直接从官方取得。范围和验证见[独立发布说明](docs/split-releases.md)。素材来源未核实的部分继续待核验，不因维护者接受风险而获得再分发许可。

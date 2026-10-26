@@ -8,7 +8,7 @@
       "folder": "assets/game-icons",
       "files": 53,
       "bytes": 115154,
-      "sourceRecord": "assets/game-icons/README.md",
+      "sourceRecord": "Maintainer statement (2026-10-26): current map marker SVGs were manually traced by the maintainer; original reference design rights remain pending. Runtime copies are generated.",
       "kind": "asset",
       "runtimeCopyOf": null
     },
@@ -188,7 +188,7 @@
       "folder": "webui/icons/game",
       "files": 53,
       "bytes": 115154,
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
+      "sourceRecord": "Maintainer statement (2026-10-26): current map marker SVGs were manually traced by the maintainer; original reference design rights remain pending. Runtime copies are generated.",
       "kind": "generated-copy",
       "runtimeCopyOf": "assets/game-icons"
     },
@@ -228,531 +228,584 @@
       "path": "assets/game-icons/个人标点 131.svg",
       "bytes": 1659,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "3c28db2e54d7a4cf38be966bce84015e928b8722fbb57440b877966a5058f88d",
-      "displayName": "个人标点 131"
+      "displayName": "个人标点 131",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/个人标点 132.svg",
       "bytes": 1674,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "7a3243ad046f2de5bdc490eba64edc4c113be71580a3675d1adb677129b329e8",
-      "displayName": "个人标点 132"
+      "displayName": "个人标点 132",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/个人标点 133.svg",
       "bytes": 1545,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "585cc9e5fae65e545416d69fbdb47d02d9e142fdd55e1d6b3b5d5883b2680323",
-      "displayName": "个人标点 133"
+      "displayName": "个人标点 133",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/个人标点 134.svg",
       "bytes": 2024,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "4429a5936b2a75ee35fd023d94d793feee0d4261d396a0eb85f68630ed67bf89",
-      "displayName": "个人标点 134"
+      "displayName": "个人标点 134",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/个人标点 135.svg",
       "bytes": 1550,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "2f117352fa9f0c8733bdefcc16b58f7083dd104606837a9ea2deee21fe5db71b",
-      "displayName": "个人标点 135"
+      "displayName": "个人标点 135",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/个人标点 136.svg",
       "bytes": 1673,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "ee31bfc06b8f6051c2667cc37ffeef98ae2a3af130970b2334eb4d9dfa6bf5a5",
-      "displayName": "个人标点 136"
+      "displayName": "个人标点 136",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/主线剧情.svg",
       "bytes": 5487,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "49187377cdd63018370c7d16d640c6d444df9ee1186a85330b326d022212b6a1",
-      "displayName": "主线剧情"
+      "displayName": "主线剧情",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/井.svg",
       "bytes": 594,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "a7b6984bc3decbece6e0acfaa93c95306cbc5f08f58024e303d743a4b978bf3b",
-      "displayName": "井"
+      "displayName": "井",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/人马（莱尼尔）.svg",
       "bytes": 10350,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "72fbdae357d7457a6d0ef524732654d11f9539130b6523619342cbdb907312d6",
-      "displayName": "人马（莱尼尔）"
+      "displayName": "人马（莱尼尔）",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/克洛洛果实 x2.svg",
       "bytes": 5239,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "dcc66340a4ecfa6a4d0e07cd8a789b3c6ef5ca6e9b4cd704c473c72de763bbe2",
-      "displayName": "克洛洛果实 x2"
+      "displayName": "克洛洛果实 x2",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/克洛洛果实.svg",
       "bytes": 1202,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "eb27f091435104dee64e452420924b32f9518c38b50cce31cfb60df0e93d977a",
-      "displayName": "克洛洛果实"
+      "displayName": "克洛洛果实",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/升级素材.svg",
       "bytes": 489,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "881ae1303063153b509589a9521aa507b5f63d927e91ecaa1fb58413c132b229",
-      "displayName": "升级素材"
+      "displayName": "升级素材",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/卡邦达立牌.svg",
       "bytes": 396,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "dd444576b69f9a74d12e7035e5b2c2daf4e614c52d9786ddbbd5789bf3c5339d",
-      "displayName": "卡邦达立牌"
+      "displayName": "卡邦达立牌",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/古代研究所.svg",
       "bytes": 402,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "55716fb1944c2135e85082e4db4b7eb6aa1167b381ab8d9a1660927fdd6edb52",
-      "displayName": "古代研究所"
+      "displayName": "古代研究所",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/地下.svg",
       "bytes": 322,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "ebc6d7cb624704c0b860443c52d8f0179b80fbdd6477c8fcd23890d2b63adcae",
-      "displayName": "地下"
+      "displayName": "地下",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/地洞入口.svg",
       "bytes": 816,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "35e51168d4245f1960777ddbd80dc280496413239b046728db0f08071b441b96",
-      "displayName": "地洞入口"
+      "displayName": "地洞入口",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/地面.svg",
       "bytes": 356,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "afe3e0f4ef7c7b236656cb5c2e26d329b44b5ba72485a4ed1799929a7500bb4e",
-      "displayName": "地面"
+      "displayName": "地面",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/大妖精之泉.svg",
       "bytes": 4008,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "d1b1839f04e3ff526e3b95286a8d81d7c35b7ea9fa4777ec78468cabe0482f47",
-      "displayName": "大妖精之泉"
+      "displayName": "大妖精之泉",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/天空.svg",
       "bytes": 1002,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "62456cce158403e77080f674eaddf4a6861984d2f2458e25ebddb8010cf4622d",
-      "displayName": "天空"
+      "displayName": "天空",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/女神雕像.svg",
       "bytes": 4537,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "88f62238887f03152d4a758991ded6847f745841dd1f9baa509fa56d5b7decd1",
-      "displayName": "女神雕像"
+      "displayName": "女神雕像",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/宝箱.svg",
       "bytes": 1338,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "23bbff158d992e92fc4770014e83dd26c70af99cbb7e7c6a6e03c8fd4214b8dc",
-      "displayName": "宝箱"
+      "displayName": "宝箱",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/岩石巨人.svg",
       "bytes": 4843,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "5c35962304dab719a8794b997af9b2a016b86fdc5e969935e4b4c268f893ddfc",
-      "displayName": "岩石巨人"
+      "displayName": "岩石巨人",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/左纳乌制造机.svg",
       "bytes": 1784,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "9d0731a87497af9bcd438cb6934d106d09e6aa9293e16bbf85418c9e8e41e58f",
-      "displayName": "左纳乌制造机"
+      "displayName": "左纳乌制造机",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/弓与箭.svg",
       "bytes": 1250,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "9e27e986441b89f30b1eff3740309d663b4d363be5b4376fe830495d76694802",
-      "displayName": "弓与箭"
+      "displayName": "弓与箭",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/怪物营地.svg",
       "bytes": 2940,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "792493d5587eb2f4ea854407ee14ba65db8d3a00cff27aa9a053e273a0b1ec07",
-      "displayName": "怪物营地"
+      "displayName": "怪物营地",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/情节挑战.svg",
       "bytes": 2088,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "5b3ad473e8044a7498dd61dd56e4153f668d7a7a91e67b0d438b74f462a729d2",
-      "displayName": "情节挑战"
+      "displayName": "情节挑战",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/旅馆.svg",
       "bytes": 412,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "09aa8f3855918fe4b1f527a5c484e64b81c025be6c0e1d5578b2ac906c57915d",
-      "displayName": "旅馆"
+      "displayName": "旅馆",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/杂货店.svg",
       "bytes": 558,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "3276347f1af8f06a92da9f218734bbf62a1ea7b60bd25f804f06d7839b418de7",
-      "displayName": "杂货店"
+      "displayName": "杂货店",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/村庄.svg",
       "bytes": 1040,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "78ab9c88068a8bd335a0628bb88f16f15285e87482668a502da364073564a3ee",
-      "displayName": "村庄"
+      "displayName": "村庄",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/武器.svg",
       "bytes": 670,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "66fa4f467eae4ce65a8167bc3b242494cd8402750d3c4745f6e5e8bfa0d0793e",
-      "displayName": "武器"
+      "displayName": "武器",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/残旧的地图.svg",
       "bytes": 1446,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "6b5aca810e555970e44b974cf6a900d8eef32ecaed2b200aea5db6ccdabb3227",
-      "displayName": "残旧的地图"
+      "displayName": "残旧的地图",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/洞穴入口.svg",
       "bytes": 351,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "36bad939ffb811ad1b054d79e1316861aa0d35ce935f37b92ec16858d3b509a7",
-      "displayName": "洞穴入口"
+      "displayName": "洞穴入口",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/滑翔伞布料.svg",
       "bytes": 2216,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "0154635be5b26a9bb64857eddc984050b6b54c327cd2de13f7a7056b8d5de98d",
-      "displayName": "滑翔伞布料"
+      "displayName": "滑翔伞布料",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/烹饪点.svg",
       "bytes": 594,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "bc0ba394a7f20fe69bfa8c69ba9f32dfa13b4eeef0bf5012588f4769fedf1efe",
-      "displayName": "烹饪点"
+      "displayName": "烹饪点",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/特殊NPC.svg",
       "bytes": 1331,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "9cc2b0166532149820101c0a275cbcbbaa3e78deb4c136e9d01aed2a8e4f202d",
-      "displayName": "特殊NPC"
+      "displayName": "特殊NPC",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/独眼巨人.svg",
       "bytes": 12510,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "07105ab71194cdde0635699ec9152e7f5b76f88aefa73b8b897eb9a11f625c89",
-      "displayName": "独眼巨人"
+      "displayName": "独眼巨人",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/珠宝店.svg",
       "bytes": 669,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "4dee36ae013de52f1342d82d401141fa97c52e1ed940010a799133714b52bb2d",
-      "displayName": "珠宝店"
+      "displayName": "珠宝店",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/盾牌.svg",
       "bytes": 1696,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "ce0c6f45596f45b1e57724418b38ec188f75165465a4272fd99fdf829e32296f",
-      "displayName": "盾牌"
+      "displayName": "盾牌",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/矿场.svg",
       "bytes": 1941,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "d21b799ed498228d5ee692894df7967bd40e4408062ffb1469aef8b8636e114f",
-      "displayName": "矿场"
+      "displayName": "矿场",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/破魔之根.svg",
       "bytes": 1710,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "e9f0214d29b248b70932e9ebfe9fd1925688922ccabf171c03231dab3bb4878a",
-      "displayName": "破魔之根"
+      "displayName": "破魔之根",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/神庙.svg",
       "bytes": 2366,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "3ef81fdf43bf1060368716cdc04e58949bf0d76712c0a0d91e986ad99a8cfdac",
-      "displayName": "神庙"
+      "displayName": "神庙",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/神殿.svg",
       "bytes": 513,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "dcc2c8da65d8fae647dc417e5aedcc9cc255e856169f1d030692ab25d926d6cc",
-      "displayName": "神殿"
+      "displayName": "神殿",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/设计图石板.svg",
       "bytes": 5439,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "6264db167c68ed134fb721b998e85a328649cc938431ab6519575842d75df085",
-      "displayName": "设计图石板"
+      "displayName": "设计图石板",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/贤者的遗志.svg",
       "bytes": 3653,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "5ab326e1f79d0d3551e568dc535bed42433846c8770ee375d1cf54ca5f9e0e13",
-      "displayName": "贤者的遗志"
+      "displayName": "贤者的遗志",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/迷你挑战.svg",
       "bytes": 899,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "62d64bde61249bc4a8f3d75412dfa7cd342839e3dfbeace7b620584783d75515",
-      "displayName": "迷你挑战"
+      "displayName": "迷你挑战",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/通用地点.svg",
       "bytes": 1836,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "0bb87379f0a30b00da78cb292743e0ad70edf77f8180c491b09b756b57bc8b5f",
-      "displayName": "通用地点"
+      "displayName": "通用地点",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/防具.svg",
       "bytes": 217,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "03fe93c918d08bbd888d235acb417d1a12e2fd39e5fdc28b74bfbfe272d8e5b5",
-      "displayName": "防具"
+      "displayName": "防具",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/防具店.svg",
       "bytes": 3030,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "12bcbc6cfdc4caffadd075c1c7d4ca167b366dec0f738dcaa3309df151c7348a",
-      "displayName": "防具店"
+      "displayName": "防具店",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/集市.svg",
       "bytes": 779,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "6293a5446e550c6a4bcfe08dd67ad49dfdadb966cd515140cbb370ceaf9e645c",
-      "displayName": "集市"
+      "displayName": "集市",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/驿站.svg",
       "bytes": 2221,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "c4c53385d2e16d37bb3d2199252f2fc183fa503de7b226a50b330b4a98bfc5c6",
-      "displayName": "驿站"
+      "displayName": "驿站",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/魔犹伊遗失物.svg",
       "bytes": 5147,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "5105f1748f4a7e9a79d561ce88da10700097aa9c94a34510b0f867f4ca5a4a69",
-      "displayName": "魔犹伊遗失物"
+      "displayName": "魔犹伊遗失物",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/鸟望台.svg",
       "bytes": 997,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "ffb0ca2f8655fd966c865fece24410f0be1ee582d939bdd6128d3ff5c601c27c",
-      "displayName": "鸟望台"
+      "displayName": "鸟望台",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/game-icons/龙之泪.svg",
       "bytes": 1345,
       "category": "game-point-icons",
-      "sourceRecord": "assets/game-icons/README.md",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": null,
       "sha256": "121601d46819ca816ba73a3b41b221ee6213c6e5b10bb3c4580287d91300ee07",
-      "displayName": "龙之泪"
+      "displayName": "龙之泪",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "assets/item-icons/Item_Enemy_01.png",
@@ -35260,478 +35313,531 @@
       "path": "webui/icons/game/个人标点 131.svg",
       "bytes": 1659,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "3c28db2e54d7a4cf38be966bce84015e928b8722fbb57440b877966a5058f88d"
+      "sha256": "3c28db2e54d7a4cf38be966bce84015e928b8722fbb57440b877966a5058f88d",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/个人标点 132.svg",
       "bytes": 1674,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "7a3243ad046f2de5bdc490eba64edc4c113be71580a3675d1adb677129b329e8"
+      "sha256": "7a3243ad046f2de5bdc490eba64edc4c113be71580a3675d1adb677129b329e8",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/个人标点 133.svg",
       "bytes": 1545,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "585cc9e5fae65e545416d69fbdb47d02d9e142fdd55e1d6b3b5d5883b2680323"
+      "sha256": "585cc9e5fae65e545416d69fbdb47d02d9e142fdd55e1d6b3b5d5883b2680323",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/个人标点 134.svg",
       "bytes": 2024,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "4429a5936b2a75ee35fd023d94d793feee0d4261d396a0eb85f68630ed67bf89"
+      "sha256": "4429a5936b2a75ee35fd023d94d793feee0d4261d396a0eb85f68630ed67bf89",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/个人标点 135.svg",
       "bytes": 1550,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "2f117352fa9f0c8733bdefcc16b58f7083dd104606837a9ea2deee21fe5db71b"
+      "sha256": "2f117352fa9f0c8733bdefcc16b58f7083dd104606837a9ea2deee21fe5db71b",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/个人标点 136.svg",
       "bytes": 1673,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "ee31bfc06b8f6051c2667cc37ffeef98ae2a3af130970b2334eb4d9dfa6bf5a5"
+      "sha256": "ee31bfc06b8f6051c2667cc37ffeef98ae2a3af130970b2334eb4d9dfa6bf5a5",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/主线剧情.svg",
       "bytes": 5487,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "49187377cdd63018370c7d16d640c6d444df9ee1186a85330b326d022212b6a1"
+      "sha256": "49187377cdd63018370c7d16d640c6d444df9ee1186a85330b326d022212b6a1",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/井.svg",
       "bytes": 594,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "a7b6984bc3decbece6e0acfaa93c95306cbc5f08f58024e303d743a4b978bf3b"
+      "sha256": "a7b6984bc3decbece6e0acfaa93c95306cbc5f08f58024e303d743a4b978bf3b",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/人马（莱尼尔）.svg",
       "bytes": 10350,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "72fbdae357d7457a6d0ef524732654d11f9539130b6523619342cbdb907312d6"
+      "sha256": "72fbdae357d7457a6d0ef524732654d11f9539130b6523619342cbdb907312d6",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/克洛洛果实 x2.svg",
       "bytes": 5239,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "dcc66340a4ecfa6a4d0e07cd8a789b3c6ef5ca6e9b4cd704c473c72de763bbe2"
+      "sha256": "dcc66340a4ecfa6a4d0e07cd8a789b3c6ef5ca6e9b4cd704c473c72de763bbe2",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/克洛洛果实.svg",
       "bytes": 1202,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "eb27f091435104dee64e452420924b32f9518c38b50cce31cfb60df0e93d977a"
+      "sha256": "eb27f091435104dee64e452420924b32f9518c38b50cce31cfb60df0e93d977a",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/升级素材.svg",
       "bytes": 489,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "881ae1303063153b509589a9521aa507b5f63d927e91ecaa1fb58413c132b229"
+      "sha256": "881ae1303063153b509589a9521aa507b5f63d927e91ecaa1fb58413c132b229",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/卡邦达立牌.svg",
       "bytes": 396,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "dd444576b69f9a74d12e7035e5b2c2daf4e614c52d9786ddbbd5789bf3c5339d"
+      "sha256": "dd444576b69f9a74d12e7035e5b2c2daf4e614c52d9786ddbbd5789bf3c5339d",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/古代研究所.svg",
       "bytes": 402,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "55716fb1944c2135e85082e4db4b7eb6aa1167b381ab8d9a1660927fdd6edb52"
+      "sha256": "55716fb1944c2135e85082e4db4b7eb6aa1167b381ab8d9a1660927fdd6edb52",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/地下.svg",
       "bytes": 322,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "ebc6d7cb624704c0b860443c52d8f0179b80fbdd6477c8fcd23890d2b63adcae"
+      "sha256": "ebc6d7cb624704c0b860443c52d8f0179b80fbdd6477c8fcd23890d2b63adcae",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/地洞入口.svg",
       "bytes": 816,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "35e51168d4245f1960777ddbd80dc280496413239b046728db0f08071b441b96"
+      "sha256": "35e51168d4245f1960777ddbd80dc280496413239b046728db0f08071b441b96",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/地面.svg",
       "bytes": 356,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "afe3e0f4ef7c7b236656cb5c2e26d329b44b5ba72485a4ed1799929a7500bb4e"
+      "sha256": "afe3e0f4ef7c7b236656cb5c2e26d329b44b5ba72485a4ed1799929a7500bb4e",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/大妖精之泉.svg",
       "bytes": 4008,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "d1b1839f04e3ff526e3b95286a8d81d7c35b7ea9fa4777ec78468cabe0482f47"
+      "sha256": "d1b1839f04e3ff526e3b95286a8d81d7c35b7ea9fa4777ec78468cabe0482f47",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/天空.svg",
       "bytes": 1002,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "62456cce158403e77080f674eaddf4a6861984d2f2458e25ebddb8010cf4622d"
+      "sha256": "62456cce158403e77080f674eaddf4a6861984d2f2458e25ebddb8010cf4622d",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/女神雕像.svg",
       "bytes": 4537,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "88f62238887f03152d4a758991ded6847f745841dd1f9baa509fa56d5b7decd1"
+      "sha256": "88f62238887f03152d4a758991ded6847f745841dd1f9baa509fa56d5b7decd1",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/宝箱.svg",
       "bytes": 1338,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "23bbff158d992e92fc4770014e83dd26c70af99cbb7e7c6a6e03c8fd4214b8dc"
+      "sha256": "23bbff158d992e92fc4770014e83dd26c70af99cbb7e7c6a6e03c8fd4214b8dc",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/岩石巨人.svg",
       "bytes": 4843,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "5c35962304dab719a8794b997af9b2a016b86fdc5e969935e4b4c268f893ddfc"
+      "sha256": "5c35962304dab719a8794b997af9b2a016b86fdc5e969935e4b4c268f893ddfc",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/左纳乌制造机.svg",
       "bytes": 1784,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "9d0731a87497af9bcd438cb6934d106d09e6aa9293e16bbf85418c9e8e41e58f"
+      "sha256": "9d0731a87497af9bcd438cb6934d106d09e6aa9293e16bbf85418c9e8e41e58f",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/弓与箭.svg",
       "bytes": 1250,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "9e27e986441b89f30b1eff3740309d663b4d363be5b4376fe830495d76694802"
+      "sha256": "9e27e986441b89f30b1eff3740309d663b4d363be5b4376fe830495d76694802",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/怪物营地.svg",
       "bytes": 2940,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "792493d5587eb2f4ea854407ee14ba65db8d3a00cff27aa9a053e273a0b1ec07"
+      "sha256": "792493d5587eb2f4ea854407ee14ba65db8d3a00cff27aa9a053e273a0b1ec07",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/情节挑战.svg",
       "bytes": 2088,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "5b3ad473e8044a7498dd61dd56e4153f668d7a7a91e67b0d438b74f462a729d2"
+      "sha256": "5b3ad473e8044a7498dd61dd56e4153f668d7a7a91e67b0d438b74f462a729d2",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/旅馆.svg",
       "bytes": 412,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "09aa8f3855918fe4b1f527a5c484e64b81c025be6c0e1d5578b2ac906c57915d"
+      "sha256": "09aa8f3855918fe4b1f527a5c484e64b81c025be6c0e1d5578b2ac906c57915d",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/杂货店.svg",
       "bytes": 558,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "3276347f1af8f06a92da9f218734bbf62a1ea7b60bd25f804f06d7839b418de7"
+      "sha256": "3276347f1af8f06a92da9f218734bbf62a1ea7b60bd25f804f06d7839b418de7",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/村庄.svg",
       "bytes": 1040,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "78ab9c88068a8bd335a0628bb88f16f15285e87482668a502da364073564a3ee"
+      "sha256": "78ab9c88068a8bd335a0628bb88f16f15285e87482668a502da364073564a3ee",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/武器.svg",
       "bytes": 670,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "66fa4f467eae4ce65a8167bc3b242494cd8402750d3c4745f6e5e8bfa0d0793e"
+      "sha256": "66fa4f467eae4ce65a8167bc3b242494cd8402750d3c4745f6e5e8bfa0d0793e",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/残旧的地图.svg",
       "bytes": 1446,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "6b5aca810e555970e44b974cf6a900d8eef32ecaed2b200aea5db6ccdabb3227"
+      "sha256": "6b5aca810e555970e44b974cf6a900d8eef32ecaed2b200aea5db6ccdabb3227",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/洞穴入口.svg",
       "bytes": 351,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "36bad939ffb811ad1b054d79e1316861aa0d35ce935f37b92ec16858d3b509a7"
+      "sha256": "36bad939ffb811ad1b054d79e1316861aa0d35ce935f37b92ec16858d3b509a7",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/滑翔伞布料.svg",
       "bytes": 2216,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "0154635be5b26a9bb64857eddc984050b6b54c327cd2de13f7a7056b8d5de98d"
+      "sha256": "0154635be5b26a9bb64857eddc984050b6b54c327cd2de13f7a7056b8d5de98d",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/烹饪点.svg",
       "bytes": 594,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "bc0ba394a7f20fe69bfa8c69ba9f32dfa13b4eeef0bf5012588f4769fedf1efe"
+      "sha256": "bc0ba394a7f20fe69bfa8c69ba9f32dfa13b4eeef0bf5012588f4769fedf1efe",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/特殊NPC.svg",
       "bytes": 1331,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "9cc2b0166532149820101c0a275cbcbbaa3e78deb4c136e9d01aed2a8e4f202d"
+      "sha256": "9cc2b0166532149820101c0a275cbcbbaa3e78deb4c136e9d01aed2a8e4f202d",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/独眼巨人.svg",
       "bytes": 12510,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "07105ab71194cdde0635699ec9152e7f5b76f88aefa73b8b897eb9a11f625c89"
+      "sha256": "07105ab71194cdde0635699ec9152e7f5b76f88aefa73b8b897eb9a11f625c89",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/珠宝店.svg",
       "bytes": 669,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "4dee36ae013de52f1342d82d401141fa97c52e1ed940010a799133714b52bb2d"
+      "sha256": "4dee36ae013de52f1342d82d401141fa97c52e1ed940010a799133714b52bb2d",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/盾牌.svg",
       "bytes": 1696,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "ce0c6f45596f45b1e57724418b38ec188f75165465a4272fd99fdf829e32296f"
+      "sha256": "ce0c6f45596f45b1e57724418b38ec188f75165465a4272fd99fdf829e32296f",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/矿场.svg",
       "bytes": 1941,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "d21b799ed498228d5ee692894df7967bd40e4408062ffb1469aef8b8636e114f"
+      "sha256": "d21b799ed498228d5ee692894df7967bd40e4408062ffb1469aef8b8636e114f",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/破魔之根.svg",
       "bytes": 1710,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "e9f0214d29b248b70932e9ebfe9fd1925688922ccabf171c03231dab3bb4878a"
+      "sha256": "e9f0214d29b248b70932e9ebfe9fd1925688922ccabf171c03231dab3bb4878a",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/神庙.svg",
       "bytes": 2366,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "3ef81fdf43bf1060368716cdc04e58949bf0d76712c0a0d91e986ad99a8cfdac"
+      "sha256": "3ef81fdf43bf1060368716cdc04e58949bf0d76712c0a0d91e986ad99a8cfdac",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/神殿.svg",
       "bytes": 513,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "dcc2c8da65d8fae647dc417e5aedcc9cc255e856169f1d030692ab25d926d6cc"
+      "sha256": "dcc2c8da65d8fae647dc417e5aedcc9cc255e856169f1d030692ab25d926d6cc",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/设计图石板.svg",
       "bytes": 5439,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "6264db167c68ed134fb721b998e85a328649cc938431ab6519575842d75df085"
+      "sha256": "6264db167c68ed134fb721b998e85a328649cc938431ab6519575842d75df085",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/贤者的遗志.svg",
       "bytes": 3653,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "5ab326e1f79d0d3551e568dc535bed42433846c8770ee375d1cf54ca5f9e0e13"
+      "sha256": "5ab326e1f79d0d3551e568dc535bed42433846c8770ee375d1cf54ca5f9e0e13",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/迷你挑战.svg",
       "bytes": 899,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "62d64bde61249bc4a8f3d75412dfa7cd342839e3dfbeace7b620584783d75515"
+      "sha256": "62d64bde61249bc4a8f3d75412dfa7cd342839e3dfbeace7b620584783d75515",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/通用地点.svg",
       "bytes": 1836,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "0bb87379f0a30b00da78cb292743e0ad70edf77f8180c491b09b756b57bc8b5f"
+      "sha256": "0bb87379f0a30b00da78cb292743e0ad70edf77f8180c491b09b756b57bc8b5f",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/防具.svg",
       "bytes": 217,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "03fe93c918d08bbd888d235acb417d1a12e2fd39e5fdc28b74bfbfe272d8e5b5"
+      "sha256": "03fe93c918d08bbd888d235acb417d1a12e2fd39e5fdc28b74bfbfe272d8e5b5",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/防具店.svg",
       "bytes": 3030,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "12bcbc6cfdc4caffadd075c1c7d4ca167b366dec0f738dcaa3309df151c7348a"
+      "sha256": "12bcbc6cfdc4caffadd075c1c7d4ca167b366dec0f738dcaa3309df151c7348a",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/集市.svg",
       "bytes": 779,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "6293a5446e550c6a4bcfe08dd67ad49dfdadb966cd515140cbb370ceaf9e645c"
+      "sha256": "6293a5446e550c6a4bcfe08dd67ad49dfdadb966cd515140cbb370ceaf9e645c",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/驿站.svg",
       "bytes": 2221,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "c4c53385d2e16d37bb3d2199252f2fc183fa503de7b226a50b330b4a98bfc5c6"
+      "sha256": "c4c53385d2e16d37bb3d2199252f2fc183fa503de7b226a50b330b4a98bfc5c6",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/魔犹伊遗失物.svg",
       "bytes": 5147,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "5105f1748f4a7e9a79d561ce88da10700097aa9c94a34510b0f867f4ca5a4a69"
+      "sha256": "5105f1748f4a7e9a79d561ce88da10700097aa9c94a34510b0f867f4ca5a4a69",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/鸟望台.svg",
       "bytes": 997,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "ffb0ca2f8655fd966c865fece24410f0be1ee582d939bdd6128d3ff5c601c27c"
+      "sha256": "ffb0ca2f8655fd966c865fece24410f0be1ee582d939bdd6128d3ff5c601c27c",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/icons/game/龙之泪.svg",
       "bytes": 1345,
       "category": "runtime-webui-icons-game",
-      "sourceRecord": "tools/assets/install_branding.py 或 install_vector_icons.py",
-      "licenseStatus": "待人工核验",
+      "sourceRecord": "Maintainer statement; docs/data-pack-sources.md; original reference designs and permissions not individually verified",
+      "licenseStatus": "Production method stated; reference design and redistribution rights pending review",
       "runtimeCopyOf": "assets/game-icons",
-      "sha256": "121601d46819ca816ba73a3b41b221ee6213c6e5b10bb3c4580287d91300ee07"
+      "sha256": "121601d46819ca816ba73a3b41b221ee6213c6e5b10bb3c4580287d91300ee07",
+      "creationMethod": "Hand-traced SVG by the maintainer, per maintainer statement dated 2026-10-26"
     },
     {
       "path": "webui/item-icons/Item_Enemy_01.png",

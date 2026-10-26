@@ -1,0 +1,135 @@
+{
+  "checkedAt": "2026-10-26",
+  "scope": "Local dist/data-packs artifacts; cloud payload not downloaded or independently authenticated",
+  "cloudShare": {
+    "provider": "Baidu Netdisk",
+    "url": "https://pan.baidu.com/s/1iEN5GpfuFdfOlFbewLQHDQ?pwd=totk",
+    "extractionCode": "totk",
+    "provenance": "Provided by maintainer for public distribution"
+  },
+  "packs": [
+    {
+      "file": "guides-zh-CN-1.0.0.totkpack",
+      "bytes": 181284864,
+      "sha256": "0e9b995e748756fbca9700419efc5177169476a58f146d2c8ac7ba6881dc48e6",
+      "manifest": {
+        "format": "totkpack/1",
+        "contentSchema": 1,
+        "kind": "guide",
+        "id": "zh-CN",
+        "version": "1.0.0",
+        "name": "中文攻略与图鉴",
+        "gameVersion": "1.0.0",
+        "pointSchema": 1,
+        "resources": 3107
+      },
+      "resourceCounts": {
+        "compendium.json": 1,
+        "compendium": 644,
+        "main-story.json": 1,
+        "offline": 2459,
+        "quest-guide-links.json": 1,
+        "structured-guides.json": 1
+      },
+      "extensions": {
+        ".json": 170,
+        ".png": 138,
+        ".jpg": 2799
+      }
+    },
+    {
+      "file": "hyrule-1.0.0.totkpack",
+      "bytes": 3529551872,
+      "sha256": "058032c9c9a22dac991bacacbf1408c9d1f651c89ec9b20b329c36b4f4f6b16c",
+      "manifest": {
+        "format": "totkpack/1",
+        "contentSchema": 1,
+        "kind": "map",
+        "id": "hyrule",
+        "version": "1.0.0",
+        "name": "海拉鲁地图与地形",
+        "gameVersion": "1.0.0",
+        "pointSchema": 1,
+        "terrain": {
+          "fullMapComplete": false,
+          "gameVersion": "1.0.0",
+          "coordinateSystem": "game world XYZ; metres; Y up",
+          "regions": {
+            "failed": 118,
+            "parsed": 13807,
+            "missing": 534
+          },
+          "kinds": {
+            "heightfield": 11425,
+            "static_collision": 3034
+          },
+          "limitations": [
+            "Embedded world collision meshes are decoded; actor compound children, scene placement and material hazards remain incomplete.",
+            "Sky/cave surfaces may exist in MainField baked meshes but membership is unclassified.",
+            "Supplemental terrain/shape geometry remains local until scene transforms are decoded.",
+            "World transforms are reference-derived until checked against Mod samples."
+          ],
+          "validatedInGame": false,
+          "routingIncluded": false
+        },
+        "tiles": 95821,
+        "resources": 13818
+      },
+      "resourceCounts": {
+        "catalog.json": 1,
+        "catalogs.json": 1,
+        "depths.png": 1,
+        "extra-data.json": 1,
+        "gamersky-archive.json": 1,
+        "quest-points.json": 1,
+        "regions.json": 1,
+        "sky.png": 1,
+        "surface.png": 1,
+        "terrain": 13809
+      },
+      "extensions": {
+        ".json": 8,
+        ".png": 3,
+        ".mesh": 2560,
+        ".u16": 11247
+      }
+    }
+  ],
+  "markerSVG": {
+    "count": 53,
+    "maintainedSource": "assets/game-icons/",
+    "runtimeCopy": "webui/icons/game/",
+    "creationStatement": "All current map marker SVGs manually traced by the maintainer",
+    "evidenceType": "maintainer statement",
+    "referenceDesignRights": "pending review",
+    "includedAsSVGFilesInThesePacks": false
+  },
+  "sourceCategories": [
+    {
+      "category": "Map tiles, points and metadata",
+      "source": "Gamersky interactive map, mapapi.gamersky.com and image.gamersky.com",
+      "status": "Download records, embedded metadata and build tools checked; redistribution permission pending"
+    },
+    {
+      "category": "Extra treasure and quests",
+      "source": "paiyge/TOTK-compendium backup.sql",
+      "status": "Archived MIT notice read; underlying game content rights not inferred"
+    },
+    {
+      "category": "Heightfields and collision meshes",
+      "source": "Decoded local game resource archive including TerrainArc",
+      "status": "Game-derived terrain data, not Gamersky tiles; original resource permissions pending"
+    },
+    {
+      "category": "Guide articles, media and main story",
+      "source": "Gamersky original pages and media, locally structured",
+      "status": "Source URL traces retained; redistribution permission pending"
+    },
+    {
+      "category": "Compendium records and images",
+      "source": "Hyrule-Compendium-API, paiyge/TOTK-compendium, sagunkayastha/TOTK-helper, Marc Robledo savegame-editors, local Chinese game message CSVs",
+      "status": "Mixed sources; images and underlying game text require separate review"
+    }
+  ],
+  "codeInspection": "No C/C++ source, SDK headers or game executable containers found by resource-name/schema inspection; not a provenance audit of every BLOB and not a guarantee of absence of protected content"
+}

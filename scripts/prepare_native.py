@@ -25,6 +25,7 @@ NOTICE_FILES = (
     'licenses/README.md', 'licenses/MacNativeGames-LICENSE',
     'licenses/GPL-2.0-only.txt', 'licenses/Lotuskit-LICENSE',
     'licenses/Marc-Robledo-equipment-MIT.txt',
+    'licenses/DataPack-paiyge-MIT.txt',
 )
 
 

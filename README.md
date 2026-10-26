@@ -9,6 +9,12 @@
 
 两者独立标记和打包，详见[发布范围与验证](docs/split-releases.md)。这不改变原生游戏 App 不对外发行的边界。
 
+## DataPacks 数据包
+
+地图与攻略 DataPacks 单独通过[百度网盘下载](https://pan.baidu.com/s/1iEN5GpfuFdfOlFbewLQHDQ?pwd=totk)，提取码：`totk`。数据包不放入 Git 或上述 Release 附件；下载后在地图 App 中导入 `.totkpack`。
+
+下载前请查看[内容来源说明与清单](docs/data-pack-sources.md)，按文件名、大小及 SHA-256 核对版本。现有地图包除游民星空底图、瓦片和点位外，还含社区宝箱/任务数据及游戏资源派生地形；攻略与图鉴也有混合来源，不能一概视为游民或项目原创内容。当前地图标记 SVG 由维护者手工临摹，参考设计与图片的权利另行判断。
+
 ## 技术来源与贡献
 
 原生运行、移植和构建基础来自 [MacNativeGames](https://github.com/ly05010419/MacNativeGames)、[d2r-mobile](https://github.com/jhaizhou-ops/d2r-mobile)、Ryujinx 等上游项目。本项目维护游戏控制、输入/菜单/显示扩展及 AI/MCP 工具的二次开发与集成，不将完整移植方案或所有补丁行宣称为本项目原创。继承和选择性合入的上游修改仍归功于其原作者；具体归属和未核实事项见 [第三方声明](docs/third-party-notices.md)。

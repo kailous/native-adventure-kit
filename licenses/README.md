@@ -8,6 +8,7 @@
 | [GPL-2.0-only.txt](GPL-2.0-only.txt) | [GNU 官方 GPL v2 正文](https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt)，2026-10-26 读取的原始字节；供补丁中 GPL-2.0-only 声明对应使用 |
 | [Lotuskit-LICENSE](Lotuskit-LICENSE) | [Lotuskit 固定提交的 LICENSE](https://github.com/aquacluck/totk-lotuskit/blob/59dcfccd77b6d4bcfa718bff806bc55be640edb7/LICENSE)，全文原样保留，包括其自列其他组件通知；不表示这些组件全被引入 |
 | [Marc-Robledo-equipment-MIT.txt](Marc-Robledo-equipment-MIT.txt) | 装备维护输入旁的原始通知，版权 2017–2023 Marc Robledo，包含原文件所列 Octicons / GitHub Inc. 通知；与归档 save editor 根 MIT 相符 |
+| [DataPack-paiyge-MIT.txt](DataPack-paiyge-MIT.txt) | 数据包中社区宝箱/任务等记录的归档来源 paiyge/TOTK-compendium 原始 MIT 通知，完整保留 Tianyao He、Paige Norris、Mian Wang 的版权行；不替代其他来源及游戏图像/地形的权利核验 |
 
 校验记录：GPL 文本 SHA-256 `edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6`；Lotuskit 原通知 `7579d5d7cf96b431b94c38d344ee75f132fe45ef3a702c5efe6bbe7785d48a24`；装备原通知 `5b8b301dedc4e0f4b550956e6ac968f0922cb9c0b07fbe54f133d9087ee51dc5`。这些哈希识别文件，不证明权利完整或授权有效。
 

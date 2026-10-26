@@ -36,6 +36,8 @@ Lotuskit 固定版本的[原始 LICENSE](../licenses/Lotuskit-LICENSE)完整保�
 
 ## 其他不能遗漏的依赖与素材
 
+外链 DataPacks 的范围与来源已单独列为[内容来源说明](https://github.com/kailous/native-adventure-kit/blob/main/docs/data-pack-sources.md)：游民地图/攻略、社区宝箱/图鉴、中文文本和游戏派生地形分别处理，不统称游民或项目原创。当前地图标记 SVG 的维护源由维护者说明为手工临摹；该制作说明不替代原参考设计权利核验。社区 paiyge/TOTK-compendium 的原 MIT 通知另附于 [DataPack-paiyge-MIT.txt](../licenses/DataPack-paiyge-MIT.txt)，不覆盖其他数据来源。
+
 - `vendor/ryujinx/src/Ryujinx.Common/Ryujinx.Common.csproj` 实际引用 Microsoft.IO.RecyclableMemoryStream、MsgPack.Cli、Humanizer、Gommon。版本声明在 `Directory.Packages.props`，但没有本次预编译产物的完整 restore/嵌入清单。各包及传递依赖的许可、裁剪结果和二进制通知均**待人工核验**，不能把 props 中所有包视为都已链接。
 - `games/totk/requirements.txt` 列出 cryptography、lz4、capstone、nsz。它们不是这份源码快照中的 vendor 源码；实际安装版本的许可、传递/原生依赖和是否随其他成品分发**待人工核验**。
 - 配套地图 App（Release 成品）与原生游戏 App 不是同一产物。已定位地图成品中的 Python 运行时、图像库、ngrok 及 `webui/icons/reicon/LICENSE`；完整版本、各组件分发条件、应附通知及图片/字体权限均**待人工核验**。此表不是地图二进制的完整 SBOM，也不将 ngrok 默认认定为 MIT。

@@ -6,7 +6,7 @@
 
 | 类别 | 源位置 | 文件数 | 大小 MiB | 来源与处理建议 |
 | --- | --- | ---: | ---: | --- |
-| 游戏点位 SVG | `assets/game-icons` | 53 | 0.11 | 来源/授权待人工核验；暂不随源码导出 |
+| 游戏点位 SVG | `assets/game-icons` | 53 | 0.11 | 维护者说明为本人手工临摹 SVG；参考设计权利待核验；暂不随源码导出 |
 | 许愿物品原始图标 | `assets/item-icons` | 378 | 13.10 | 来源明确为 ROM 提取，应外置/替换或核实授权 |
 | amiibo 官方商品图 | `assets/amiibo` | 32 | 0.39 | 官方图片，需独立核实再分发许可 |
 | 品牌/界面素材：logos | `assets/branding/logos` | 6 | 1.10 | 来源/授权待人工核验；暂不随源码导出 |
@@ -33,7 +33,7 @@
 
 - **378 张物品图标来自游戏 RomFS 提取**，项目记录指向 `RomFS/UI/Tex/Icon/`；不能统一说成 Wiki 获取。
 - **32 张 amiibo 商品图来自 Nintendo 官方页面**，来源/URL/哈希记录在 `data/amiibo-images.json`；官方公开展示不等于允许再分发。
-- **53 个游戏点位 SVG** 是维护源，包含克洛洛果实、破魔之根、神庙、鸟望台、怪物和个人标点等。制作/还原过程及各项权利仍需核验。
+- **53 个游戏点位 SVG** 是维护源，包含克洛洛果实、破魔之根、神庙、鸟望台、怪物和个人标点等。维护者于 2026-10-26 说明这些当前地图标记均由本人手工临摹制作；运行副本由维护源同步。该说明不把原参考设计改记为原创，不等于相关图形全部获得 MIT 授权；参考稿及其权利仍待核验，详见[内容来源说明](../data-pack-sources.md)。
 - Figma 快照、用户提供 Logo 和装饰有来源记录，但“用户提供”不能自动证明全部底层游戏图像已授权。
 - Reicon 通用 UI 图标目录含 MIT 许可，版权声明为 `2025 REICON`；与游戏图片分开处理。
 
@@ -115,7 +115,7 @@
 - `webui/map-tiles.sqlite`：约 1.75 GiB 的地图瓦片数据库。
 - `webui/surface.png`、`sky.png`、`depths.png`：地图底图。
 - `webui/offline/`：缓存攻略文章及图片；`webui/compendium/`：图鉴图片。
-- `dist/data-packs/hyrule-1.0.0.totkpack` 与 `guides-zh-CN-1.0.0.totkpack`：集合文件，内容与上述源及地形资源有重叠，当前 kit 不提供。
+- `dist/data-packs/hyrule-1.0.0.totkpack` 与 `guides-zh-CN-1.0.0.totkpack`：集合文件，内容与上述源及地形资源有重叠；Git 与 Release 不携带，百度网盘分享信息由 README 单独维护。逐包摘要、来源及已知边界见[内容数据说明](../data-pack-sources.md)。
 - 点位/任务/图鉴/存档匹配 JSON 也已列入完整清单，需区分程序匹配规则、事实数据、游戏派生数据和第三方文字内容，不能一律认定为原创代码。
 
 ## 程序内游戏名称与 ID 表
