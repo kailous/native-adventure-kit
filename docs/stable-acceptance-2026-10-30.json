@@ -1,0 +1,372 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-30",
+  "candidateCommit": "0ba13b9733bec5c6abc968de25ce1ab64014b953",
+  "maintainerAcceptance": {
+    "statement": "没有 但是 本机本地项目已经测试过了 直接通过",
+    "scope": "maintainer confirms existing local-project tests and accepts them for stable promotion; not new physical-device automation",
+    "authority": "explicit user confirmation in this release task"
+  },
+  "sourceParity": {
+    "nativeImplementationFiles": 259,
+    "mapFiles": 99,
+    "mismatches": 0
+  },
+  "automation": {
+    "candidateGitHubCI": "success",
+    "ciURL": "https://github.com/kailous/native-adventure-kit/actions/runs/41022462997",
+    "nativeHostTests": 203,
+    "kitTests": 83,
+    "publicMapStrictSignature": true,
+    "publicMapSignatureEngine": true,
+    "publicMapDataPacksTilesGuidesCompendium": true,
+    "publicMapMcpTools": 31,
+    "gameBuild": "pass",
+    "gameBinarySHA256": "ae2cc3169a214404ee07aa6ce30876e2890f39067e0694966a9140a9599840b0",
+    "gameVersion": "1.4.3",
+    "buildTreeLockedCodeFilesVerified": 294
+  },
+  "declaredDistributionDifferences": [
+    "neutral art and empty default reference tables; external data/artwork inputs required",
+    "separately pinned compatible shader identifier list; no local cache accumulation",
+    "no game app/data packs/keys/private state redistributed"
+  ],
+  "features": [
+    {
+      "id": "MAP-01",
+      "feature": "三层离线地图、分类、搜索、筛选、定位",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "MAP-02",
+      "feature": "存档自动发现、指定目录与只读进度刷新",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "MAP-03",
+      "feature": "神庙、克洛洛果实、破魔之根、鸟望台与防具点位进度",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "MAP-04",
+      "feature": "222 项任务阶段及点位关联",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "MAP-05",
+      "feature": "离线攻略、图文、攻略回到地图",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "MAP-06",
+      "feature": "图鉴、防具资料、中文搜索、属性及位置",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "MAP-07",
+      "feature": "收藏、备注、自定义标点、手工路书及导入导出",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "MAP-08",
+      "feature": "中英文与主题、图标、品牌资源",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "TEL-01",
+      "feature": "位置、角色朝向、镜头扇形与跟随",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "TEL-02",
+      "feature": "游戏地图准星、切层与关闭恢复",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "APP-01",
+      "feature": "独立原生1.4.3构建、启动、版本校验、账号与读档",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "APP-02",
+      "feature": "地图客户端启动器、连接状态、独立配置与服务",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "IN-01",
+      "feature": "键盘/鼠标/手柄可视化改键、Switch/Xbox/自定义布局",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "IN-02",
+      "feature": "数字7鼠标视角、瞄准及鼠标按键",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "IN-03",
+      "feature": "手机六轴、HTTPS授权校准与过期释放",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "IN-04",
+      "feature": "有界人物输入、组合按键、双摇杆与短序列",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "IN-05",
+      "feature": "真实输入接管与只读操作观察",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "IN-06",
+      "feature": "输入长历史、缺口记录、冻结轨迹与分页读取",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "UI-01",
+      "feature": "实际阶段启动加载界面与资源",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "UI-02",
+      "feature": "全屏和720p/1080p/1440p/4K独立设置与保存",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "UI-03",
+      "feature": "MetalFX/原生画质、补帧、FPS/着色器/系统负载HUD",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "GPU-01",
+      "feature": "着色器种子、预热、缓存、回写、时序及GPU预算",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "CTL-01",
+      "feature": "心心/体力/卢比/箭修改与锁定",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "CTL-02",
+      "feature": "独立心心上限设置与锁定",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "CTL-03",
+      "feature": "武器/弓/盾普通、濒坏、重置、无限耐久",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "CTL-04",
+      "feature": "素材/料理/胶囊固定99",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "CTL-05",
+      "feature": "七种天气一次切换与锁定",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "CTL-06",
+      "feature": "许愿搜索、378项目录、图标与单件生成",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "CTL-07",
+      "feature": "虚拟amiibo目录、图片、搜索、扫描和状态",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "NET-01",
+      "feature": "LAN地址、二维码、直接访问及旧join兼容",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "NET-02",
+      "feature": "手机横屏布局、竖屏/桌面/平板不退化",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "MCP-01",
+      "feature": "点位/附近/攻略/存档/位置只读工具",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "MCP-02",
+      "feature": "控制台、许愿、amiibo及人物输入工具",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "MCP-03",
+      "feature": "游戏渲染帧截图",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "MCP-04",
+      "feature": "HTTP令牌、固定隧道及ChatGPT私有中转",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "LIVE-01",
+      "feature": "抖音分享解析、连接/停止、接收及打包签名引擎",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "LIVE-02",
+      "feature": "规则编辑、试匹配、记录、冷却/去重/串行与Markdown导出",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "LIVE-03",
+      "feature": "弹幕物品/天气/数值/锁定及人物动作",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "LIVE-04",
+      "feature": "原生弹幕叠加及显示/执行独立开关",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "PACK-01",
+      "feature": "地图/攻略数据包导入校验、版本、旧包切回与外置引用",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    },
+    {
+      "id": "TOOLS-01",
+      "feature": "图标提取、任务/图鉴/攻略生成及资源唯一源同步",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "existing external tool; not vendored in kit"
+    },
+    {
+      "id": "MAINT-01",
+      "feature": "独立打包、签名、规则检查、GameSlot与证据边界",
+      "decision": "accepted",
+      "sceneEvidence": "maintainer-confirmed existing local regression",
+      "freshPhysicalSceneTest": false,
+      "distributionScope": "as documented; data/artwork/reference inputs remain external"
+    }
+  ]
+}

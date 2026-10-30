@@ -41,7 +41,7 @@ jobs:
       - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
         with:
           python-version: '3.13'
-      - run: python -m pip install -r map-client/backend/requirements.txt
-      - run: python -B -m unittest discover -s tests -p test_map_client_shell.py -v
+      - run: python -m pip install -r map-client/backend/requirements.txt requests==2.31.0
+      - run: python -B -m unittest discover -s tests -v
       - name: Check frontend JavaScript
-        run: find map-client/webui -name '*.js' -exec node --check {} \;
+        run: find map-client/webui \( -name '*.js' -o -name '*.mjs' \) -exec node --check {} \;

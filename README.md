@@ -2,12 +2,12 @@
 
 基于上游原生运行实现的深度 Mod 装配工具：本仓库维护**脚本、Skill、文本补丁、版本锁、地图工具源码和说明**，不再携带完整 MacNativeGames 源码树、上游预编译工具或地图 App。
 
-当前源码候选已同步原生控制/手机输入与地图 2.0.24；包含 `Offline/State` 与 `Offline/DataPacks` 目录迁移。已有 Release 附件仍为下列历史版本，本次未替换附件。功能与验证范围见[本次更新](docs/source-update-2026-10-30.md)。
+当前main为原生1.4.3与地图2.0.24稳定源码，包含手机输入、直播/弹幕及 `Offline/State` 与 `Offline/DataPacks` 目录迁移。验收采用维护者对本机既有实测的明确确认及公开交付复验，详见[稳定验收记录](docs/stable-acceptance-2026-10-30.md)。既有RC及更早Release保留历史附件，不覆盖。
 
 ## 独立下载
 
-- [地图 App v2.0.6](https://github.com/kailous/native-adventure-kit/releases/tag/map-v2.0.6)：macOS arm64 客户端成品、使用说明及运行时通知，不含 DataPacks、游戏或密钥。远程 ngrok Agent 由用户通过随包脚本直接从官方取得，不在公开附件中内置。
-- [构建源码 2026.10.26](https://github.com/kailous/native-adventure-kit/releases/tag/source-v2026.10.26)：脚本、Skill、补丁、地图源码、版本锁及许可材料，不含 App 或预编译工具。
+- [地图 App v2.0.24](https://github.com/kailous/native-adventure-kit/releases/tag/map-v2.0.24)：macOS arm64 客户端成品、使用说明及运行时通知，不含 DataPacks、游戏或密钥。远程 ngrok Agent 由用户通过随包脚本直接从官方取得，不在公开附件中内置。
+- [构建源码 2026.10.30](https://github.com/kailous/native-adventure-kit/releases/tag/source-v2026.10.30)：脚本、Skill、补丁、地图源码、版本锁及许可材料，不含 App 或预编译工具。
 
 两者独立标记和打包，详见[发布范围与验证](docs/split-releases.md)。这不改变原生游戏 App 不对外发行的边界。
 

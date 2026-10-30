@@ -23,6 +23,7 @@ NOTICE_FILES = (
     'docs/release-governance.md', 'docs/historical-release-review.md',
     'docs/split-releases.md', 'docs/upstream-merge-policy.md',
     'docs/source-update-2026-10-30.md',
+    'docs/stable-acceptance-2026-10-30.md', 'docs/stable-acceptance-2026-10-30.json',
     'licenses/README.md', 'licenses/MacNativeGames-LICENSE',
     'licenses/GPL-2.0-only.txt', 'licenses/Lotuskit-LICENSE',
     'licenses/Marc-Robledo-equipment-MIT.txt',

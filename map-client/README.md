@@ -45,7 +45,7 @@ Reicon 通用图标保留原 [MIT](webui/icons/reicon/LICENSE)与 [来源记录]
 
 ## 当前版本与运行数据
 
-源码候选为2.0.24（124）。用户数据根为 `~/Library/Application Support/MacNativeGames/TOTK/Offline/`：`State/`保存修改器、直播规则、弹幕设置、连接状态、日志、手机HTTPS证书和轨迹；`DataPacks/`保存地图/攻略与注册表。首次启动在旧服务退出后迁移旧TOTK Native Map状态及TOTK Offline/DataPacks，校验摘要、保留证书权限并更新受控包路径；冲突或活服务时停止，不覆盖。日志改为追加。macOS Preferences和浏览器存储继续由系统管理。旧版App可能重建旧目录，请使用新版。
+当前稳定源码为2.0.24（124），验收方式见[稳定验收](../docs/stable-acceptance-2026-10-30.md)。用户数据根为 `~/Library/Application Support/MacNativeGames/TOTK/Offline/`：`State/`保存修改器、直播规则、弹幕设置、连接状态、日志、手机HTTPS证书和轨迹；`DataPacks/`保存地图/攻略与注册表。首次启动在旧服务退出后迁移旧TOTK Native Map状态及TOTK Offline/DataPacks，校验摘要、保留证书权限并更新受控包路径；冲突或活服务时停止，不覆盖。日志改为追加。macOS Preferences和浏览器存储继续由系统管理。旧版App可能重建旧目录，请使用新版。
 
 直播默认关闭，由用户显式连接。接收器源码不vendor：prepare_live_receiver.py从记录的固定官方提交下载并核对douyin-source.json，输出在用户指定外部目录；失败即停止。构建须提供--douyin-source，不能为凑齐构建而静默移除直播能力。仅复制十个源码/许可文件，不包含用户规则、账号、虚拟环境或protoc。接收器遵守原AGPL-3.0许可，非根MIT；构建产物保留其源文件和LICENSE。mini_racer等依赖遵守各自许可。打包包含签名引擎自检，不连接真实直播间。
 
