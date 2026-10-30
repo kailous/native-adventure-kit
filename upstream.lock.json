@@ -7,7 +7,7 @@
   "patches": [
     {
       "path": "patches/native-mod.patch",
-      "sha256": "b09b80c1b52ab529e5f3c94365a2b080d88d9353b269b1e9119f6b89a0ba4721"
+      "sha256": "d140711ebe7ecbb12623fa9cb9f69ddac0c0ce3f2754342d3bbbb2f6808d1d57"
     }
   ],
   "files": [
@@ -32,7 +32,7 @@
     {
       "path": "AGENTS.md",
       "baseSha256": null,
-      "sha256": "6424ff5253119ae2280ecf2cc2e951191ab8279a2db57ff02f3dac0e1e5bc816",
+      "sha256": "20af2baddea843f6ed6d9e2f0c4d2d7b4baa4ccb79a9d93b1c5aba1b606f25ab",
       "executable": false
     },
     {

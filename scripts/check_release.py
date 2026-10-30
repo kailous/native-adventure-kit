@@ -14,7 +14,7 @@ REQUIRED = (
     'docs/third-party-notices.md', 'docs/gpl-components.md',
     'docs/gpl-components.json', 'docs/generated-data-provenance.md',
     'docs/release-governance.md', 'docs/historical-release-review.md',
-    'docs/split-releases.md', 'scripts/install_map_tunnel.command',
+    'docs/split-releases.md', 'docs/upstream-merge-policy.md', 'scripts/install_map_tunnel.command',
     'licenses/README.md', 'licenses/MacNativeGames-LICENSE',
     'licenses/GPL-2.0-only.txt', 'licenses/Lotuskit-LICENSE',
     'licenses/Marc-Robledo-equipment-MIT.txt',

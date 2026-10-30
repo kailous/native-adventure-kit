@@ -78,6 +78,10 @@ python3 scripts/prepare_native.py --work /absolute/work/native-adventure --verif
 
 [v0.1.0 历史复核](docs/historical-release-review.md)保留旧包核验事实及处理记录。删除引用和附件不能保证清除 GitHub 缓存、他人克隆或已下载副本，也不追溯消除历史分发义务。
 
+## 上游合并约束
+
+每次同步必须检查全部在维护功能，门禁未闭合时只保留候选分支与私有草稿，不公开Release或替换交付。完整规则见[上游合并与已有功能完整性门禁](docs/upstream-merge-policy.md)，根AGENTS、Skill和装配后源码均携带该约束。
+
 ## 发布前检查
 
 运行 `python3 -B scripts/check_release.py` 检查当前源码；实际候选 ZIP 使用 `--archive /absolute/candidate.zip`。检查只读，不上传、打包或启动游戏。范围、人工核验项与对外介绍模板见[发布检查说明](docs/release-governance.md)。通过检查不表示法律合规，当前仍保留来源与权利待核验警告。

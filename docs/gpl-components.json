@@ -5,7 +5,7 @@
   "components": [
     {
       "path": "games/totk/runtime/camera_math.h",
-      "patchLine": 8456,
+      "patchLine": 8463,
       "license": "GPL-2.0-only",
       "sha256": "087105770bcf56906f01baa9801b6bd55c43a3e78f73d21f14dc0a2fd2ef7c32",
       "provenance": "gpl-components.md",
@@ -13,7 +13,7 @@
     },
     {
       "path": "games/totk/runtime/camera_probe.h",
-      "patchLine": 8491,
+      "patchLine": 8498,
       "license": "GPL-2.0-only",
       "sha256": "f2685431c9e8f69f61dc7a496b7ab3beb9f1433cff6dd499045df3fa591ead88",
       "provenance": "gpl-components.md",
@@ -21,7 +21,7 @@
     },
     {
       "path": "games/totk/runtime/equipment_defaults.h",
-      "patchLine": 9088,
+      "patchLine": 9095,
       "license": "GPL-2.0-only",
       "sha256": "1e11884ee6c4f1c228a0fe633a6bec52bec91a87b07f0ace348b45b2e53bbeda",
       "provenance": "gpl-components.md",
@@ -29,7 +29,7 @@
     },
     {
       "path": "games/totk/runtime/pouch_control.h",
-      "patchLine": 14743,
+      "patchLine": 14750,
       "license": "GPL-2.0-only",
       "sha256": "56ba0320b04cfedc2f6f51b084d352c50c98fc10269a02c154fbdd530e08a8ca",
       "provenance": "gpl-components.md",
@@ -37,7 +37,7 @@
     },
     {
       "path": "games/totk/runtime/quantity_control.h",
-      "patchLine": 14835,
+      "patchLine": 14842,
       "license": "GPL-2.0-only",
       "sha256": "2d7d464f91e680c2e7b975f4b825495d2c1fb5dd3491f33ea3ebd40028eb6981",
       "provenance": "gpl-components.md",
@@ -45,7 +45,7 @@
     },
     {
       "path": "games/totk/runtime/spawn_catalog.h",
-      "patchLine": 15384,
+      "patchLine": 15391,
       "license": "GPL-2.0-only",
       "sha256": "b8412049f5bbc4386f6ed0e18e84da209e5b1f8be1202ce857f6edd703ee3e1d",
       "provenance": "gpl-components.md",
@@ -53,7 +53,7 @@
     },
     {
       "path": "games/totk/runtime/spawn_control.h",
-      "patchLine": 15775,
+      "patchLine": 15782,
       "license": "GPL-2.0-only",
       "sha256": "08db9ace87e32136bf6f2b8157905030917b4800400595f771fc4944d080f4e0",
       "provenance": "gpl-components.md",
@@ -61,7 +61,7 @@
     },
     {
       "path": "games/totk/runtime/weather_control.h",
-      "patchLine": 16826,
+      "patchLine": 16833,
       "license": "GPL-2.0-only",
       "sha256": "30f1d5d62913679d2fef0e3ea555d92b75cfc96eddb1d2e70654db69ef8bfc95",
       "provenance": "gpl-components.md",
