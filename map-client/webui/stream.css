@@ -1,0 +1,74 @@
+@font-face{font-family:"Noto Sans SC";src:url("branding/fonts/NotoSansSC.ttf") format("truetype");font-style:normal;font-weight:100 900;font-display:swap}
+/* Figma 97:851 / 97:893 / 97:970 / 99:893. Shared console controls, separate views. */
+#right[data-nav-mode=stream]{width:420px;padding:0;border-radius:16px;height:calc(100dvh - 40px);max-height:calc(100dvh - 40px);background:#132333}
+#right[data-nav-mode=stream][data-stream-view=main]{width:360px;background:transparent}
+#right[data-nav-mode=stream]>.desktop-panel-head,#right[data-nav-mode=stream]>.sheet-head{display:none}
+#right[data-nav-mode=stream] #rightContent{padding:0}
+#app:has(#right[data-nav-mode=stream]:not(.hidden)) #mapControls{right:460px}
+#app:has(#right[data-nav-mode=stream][data-stream-view=main]:not(.hidden)) #mapControls{right:400px}
+#right .stream-drawer{padding:0;margin:0;background:transparent;border:0;box-shadow:none;font-family:'Noto Sans SC',-apple-system,'PingFang SC',sans-serif;font-size:12px;color:#fff}
+.sd-card{padding:20px;border-radius:16px;background:#132333}
+.sd-title{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 20px}
+#right .sd-title h2{display:flex;align-items:center;gap:12px;margin:0;padding:0;border:0;font-size:20px;line-height:32px;font-weight:700;color:#fff;min-width:0}
+.sd-title img{display:block;flex:none}
+.game-control-drawer .sd-title button{width:30px;padding:6px;background:transparent;flex:none}
+.sd-body{display:flex;flex-direction:column;gap:20px}
+.sd-label{font-size:14px;line-height:22px}
+.sd-note{margin:0;color:#a6b8c7;font-size:11px;line-height:18px;font-weight:400;overflow-wrap:anywhere}
+.sd-field{display:flex;flex-direction:column;gap:8px;margin:0;font-size:12px;font-weight:700;line-height:19px;min-width:0}
+.sd-field>input,.sd-field>select{box-sizing:border-box;min-width:0}
+.stream-drawer select{appearance:none;-webkit-appearance:none;background:#29445e url('branding/game-control/select-arrow.svg') right 6px center/24px no-repeat;padding-right:34px}
+.sd-actions{display:flex;gap:12px;min-width:0}
+.sd-actions>button{flex:1;min-width:0}
+.sd-switch{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:30px;font-weight:700}
+.sd-switch>label:first-child{flex:1;line-height:19px;min-width:0}
+.sd-message{margin:0;color:#f4dda5;font-size:11px;line-height:18px;overflow-wrap:anywhere}
+.sd-message:empty{display:none}
+.sd-record-card{margin-top:20px}
+.sd-record-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:16px}
+#right .sd-record-head h3{padding:0;border:0;margin:0;font-size:16px;color:#fff}
+.game-control-drawer .sd-record-head button{background:transparent;font-size:10px;color:#a6b8c7;padding:0}
+.sd-records{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:18px}
+.sd-records li{display:flex;flex-direction:column;gap:4px;overflow-wrap:anywhere;font-size:12px;line-height:19px}
+.sd-records span{color:#a6b8c7;font-weight:400;font-size:11px;line-height:18px}
+.game-control-drawer .sd-back{justify-content:flex-start;margin:12px 20px 0;padding:0;background:transparent;color:#a6b8c7;font-size:11px}
+.sd-rule-list{display:flex;flex-direction:column;gap:18px}
+.sd-rule-row{display:flex;flex-direction:column;gap:6px;min-width:0}
+.sd-rule-top{display:flex;align-items:center;gap:12px;min-width:0}
+.sd-rule-top>strong{flex:1;min-width:0;font-size:13px;line-height:21px;overflow-wrap:anywhere}
+.game-control-drawer .sd-rule-top>button{width:68px;flex:none}
+.sd-rule-caption{margin:0;font-size:10px;line-height:16px;font-weight:400;color:#a6b8c7;overflow-wrap:anywhere}
+.stream-drawer textarea{width:100%;box-sizing:border-box;resize:vertical;min-height:60px;border:1px solid transparent;border-radius:10px;background:#29445e;color:#fff;font-family:inherit;font-size:12px;padding:8px 10px;line-height:19px;outline-offset:2px}
+.stream-drawer textarea:focus{border-color:#fff}
+.stream-drawer textarea::placeholder{color:#ffffff80;font-weight:300}
+.sd-match{display:flex;flex-direction:column;gap:6px}
+.sd-match>strong{font-size:16px;line-height:26px;color:#4cfeaa}
+.sd-match:empty{display:none}
+.sd-segments{display:flex;gap:12px}
+.sd-segments>button{flex:1;min-width:0}
+.game-control-drawer .sd-segments>button[aria-pressed=true]{color:#06121e;background:#4cfeaa}
+.sd-display-preview{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:12px;background:#06121e}
+.sd-display-preview span{position:absolute;white-space:nowrap;color:#fff;text-shadow:1px 1px 3px #000;left:12px;top:12px}
+.sd-display-preview[data-position=middle] span{top:45%}
+.sd-display-preview[data-position=bottom] span{top:auto;bottom:12px}
+.sd-display-preview[data-mode=scroll] span{animation:stream-preview-scroll linear infinite}
+.sd-display-preview[data-mode=fade] span{animation:stream-preview-fade linear infinite}
+@keyframes stream-preview-scroll{from{left:100%;transform:translateX(0)}to{left:0;transform:translateX(-100%)}}
+@keyframes stream-preview-fade{0%,70%{opacity:1}100%{opacity:0}}
+.sd-advanced{font-size:10px;color:#a6b8c7;margin-top:-12px}
+.sd-advanced summary{cursor:pointer}
+.sd-advanced .sd-field{margin-top:12px}
+.stream-drawer [hidden]{display:none!important}
+@media(max-width:700px){#right[data-nav-mode=stream],#right[data-nav-mode=stream][data-stream-view=main]{width:min(420px,calc(100% - 24px));height:calc(100dvh - 90px);max-height:calc(100dvh - 90px)}#app:has(#right[data-nav-mode=stream]:not(.hidden)) #mapControls,#app:has(#right[data-nav-mode=stream][data-stream-view=main]:not(.hidden)) #mapControls{right:12px}}
+@media(prefers-reduced-motion:reduce){.sd-display-preview span{animation:none!important}.stream-drawer .gc-switch span{transition:none}}
+/* Reset the shared map's generic section/header decoration in these Figma cards. */
+.sd-card,.sd-rule-row{border:0}
+.sd-rule-row{padding:0}
+.sd-title{height:auto;min-height:32px;padding:0;background:transparent;border:0}
+#right .sd-title h2::after{display:none}
+.stream-drawer .sd-actions>button{flex:1}
+#resolveStream{width:120px}
+
+#right[data-nav-mode=stream]{overflow-anchor:none;scroll-behavior:auto}
+
+#right[data-nav-mode=stream] #rightContent{overflow-anchor:none;scroll-behavior:auto}

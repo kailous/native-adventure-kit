@@ -142,6 +142,23 @@ new file mode 100755
         with self.assertRaises(ValueError):
             prepare.load_lock()
 
+    def test_compatibility_file_uses_its_own_pinned_commit(self):
+        git = lambda *args: subprocess.check_output(['git', '-C', str(self.cache), *args])
+        path = self.cache / 'runtime.txt'
+        path.write_text('compat base\n')
+        git('add', '.')
+        git('-c', 'user.name=Test', '-c', 'user.email=test@example.invalid', 'commit', '-qm', 'compatibility input')
+        commit = git('rev-parse', 'HEAD').decode().strip()
+        self.lock['files'][0]['baseCommit'] = commit
+        self.lock['files'][0]['baseSha256'] = hashlib.sha256(b'compat base\n').hexdigest()
+        self.patch_path.write_text(self.patch_path.read_text().replace('-base\n', '-compat base\n'))
+        self.lock['patches'][0]['sha256'] = prepare.sha(self.patch_path)
+        self.write_lock()
+        path.write_text('caller work preserved\n')
+        self.build()
+        self.assertEqual((self.work / 'MacNativeGames/runtime.txt').read_text(), 'modded\n')
+        self.assertEqual(path.read_text(), 'caller work preserved\n')
+
     def test_generated_png_is_valid_and_contains_no_original_art(self):
         data = prepare.png(4, 3, (15, 23, 27))
         self.assertTrue(data.startswith(b'\x89PNG\r\n\x1a\n'))

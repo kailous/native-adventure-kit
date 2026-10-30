@@ -1,9 +1,9 @@
 """Local TOTK map, read-only saves, experimental game control and HTTP MCP."""
 import argparse,json,struct,threading,os,sys,secrets,hmac,time,ipaddress,hashlib,copy,io,mimetypes
 from pathlib import Path
-from http.server import ThreadingHTTPServer,SimpleHTTPRequestHandler
-from urllib.parse import urlsplit,parse_qs,unquote
-from http.cookies import SimpleCookie,CookieError
+from http.server import SimpleHTTPRequestHandler
+from http_server import ThreadingHTTPServer
+from urllib.parse import urlsplit,unquote
 from paths import ROOT, WEBUI
 from data_packs import read_resource, resource_kind, pack_status, install_pack
 def default_save_roots():
@@ -58,6 +58,14 @@ class SaveSource:
    return data,copy.deepcopy(status)
 class Handler(SimpleHTTPRequestHandler):
  protocol_version="HTTP/1.1"
+ def setup(self):
+  super().setup();self.connection.settimeout(10)
+  if getattr(self.server,'is_local_https',False):
+   import socket
+   self.connection.setsockopt(socket.IPPROTO_TCP,socket.TCP_NODELAY,1)
+ def end_headers(self):
+  self.send_header("Permissions-Policy","accelerometer=(self), gyroscope=(self)")
+  super().end_headers()
  def __init__(self,*args,**kwargs):super().__init__(*args,directory=str(WEBUI),**kwargs)
  def send_head(self):
   name=unquote(urlsplit(self.path).path).lstrip('/')
@@ -82,7 +90,8 @@ class Handler(SimpleHTTPRequestHandler):
  def local_request(self):
   port=self.server.server_port;host=self.headers.get('Host','');origin=self.headers.get('Origin');hosts=['127.0.0.1','localhost']+getattr(self.server,'lan_hosts',[])
   if host not in [f'{h}:{port}' for h in hosts]:self.json_reply(403,{'error':'Invalid host'});return False
-  if origin and origin!=f'http://{host}':self.json_reply(403,{'error':'Invalid origin'});return False
+  scheme='https' if getattr(self.server,'is_local_https',False) else 'http'
+  if origin and origin!=f'{scheme}://{host}':self.json_reply(403,{'error':'Invalid origin'});return False
   return True
  def mcp_authorized(self):
   if not ipaddress.ip_address(self.client_address[0]).is_loopback:self.json_reply(403,{'error':'MCP is available only on this computer'});return False
@@ -93,6 +102,42 @@ class Handler(SimpleHTTPRequestHandler):
   if not self.local_request():return False
   return True
  def do_POST(self):
+  if urlsplit(self.path).path=='/api/phone-motion':
+   if not self.local_request() or not self.web_authorized():return
+   from phone_motion import MotionError
+   try:
+    size=int(self.headers.get('Content-Length','0'))
+    if not 0<size<=2048 or 'application/json' not in self.headers.get('Content-Type',''):raise ValueError('请求必须是 JSON')
+    data=json.loads(self.rfile.read(size));motion=self.server.phone_motion
+    if not isinstance(data,dict):raise ValueError('无效陀螺仪请求')
+    if not getattr(self.server,'is_local_https',False):raise MotionError('请先安装证书并打开局域网 HTTPS 地图',426)
+    result=motion.execute(data,'lan:'+self.client_address[0])
+    self.json_reply(200,result)
+   except MotionError as exc:self.json_reply(exc.status,{'error':str(exc)})
+   except (ValueError,TypeError,UnicodeError) as exc:self.json_reply(400,{'error':str(exc)})
+   return
+  if urlsplit(self.path).path=='/api/douyin':
+   if not self.control_request():return
+   if not ipaddress.ip_address(self.client_address[0]).is_loopback:self.json_reply(403,{'error':'请在电脑本机管理直播互动'});return
+   from douyin_live import live
+   try:
+    size=int(self.headers.get('Content-Length','0'))
+    if not 0<size<=65536 or 'application/json' not in self.headers.get('Content-Type',''):raise ValueError('请求必须是 JSON')
+    data=json.loads(self.rfile.read(size))
+    if not isinstance(data,dict):raise ValueError('无效的请求')
+    if data.get('action')=='start':result=live.start(data)
+    elif data.get('action')=='stop':result=live.stop()
+    elif data.get('action')=='save':result=live.save_rules(data)
+    elif data.get('action')=='display':result=live.display.save(data.get('settings'))
+    elif data.get('action')=='commands':result=live.save_rules({'rules':live.rules,'cooldown':live.cooldown,'commandsEnabled':data.get('commandsEnabled')})
+    elif data.get('action')=='preview':result=live.preview(data)
+    elif data.get('action')=='resolve':
+     from douyin_live import resolve_room
+     result=resolve_room(data.get('room',''),data.get('kind','live'))
+    else:raise ValueError('无效的直播操作')
+    self.json_reply(200,result)
+   except (ValueError,TypeError,UnicodeError,OSError) as exc:self.json_reply(400,{'error':str(exc)})
+   return
   if urlsplit(self.path).path=='/api/amiibo':
    if not self.control_request():return
    from amiibo import execute
@@ -167,12 +212,6 @@ class Handler(SimpleHTTPRequestHandler):
   address=ipaddress.ip_address(self.client_address[0])
   if address.is_loopback:return True
   if not address.is_private:self.json_reply(403,{'error':'WebUI is available on the local network only'});return False
-  cookie=SimpleCookie()
-  try:cookie.load(self.headers.get('Cookie',''))
-  except CookieError:cookie=SimpleCookie()
-  supplied=cookie.get('totk_web');expected=getattr(self.server,'web_token','')
-  if not expected or not supplied or not hmac.compare_digest(supplied.value,expected):
-   self.json_reply(401,{'error':'请扫描客户端二维码访问'});return False
   return True
  def serve_media(self,head=False):
   from guide_media import MediaError
@@ -197,6 +236,20 @@ class Handler(SimpleHTTPRequestHandler):
  def do_GET(self):
   if urlsplit(self.path).path.startswith('/api/media/'):return self.serve_media()
   path=urlsplit(self.path).path
+  if path in ('/api/phone-motion','/phone-certificate.cer','/phone-certificate.mobileconfig'):
+   if not self.local_request() or not self.web_authorized():return
+   tls=getattr(self.server,'local_https',None)
+   if path!='/api/phone-motion':
+    if not tls or not tls.status()['available']:self.json_reply(503,{'error':'本地 HTTPS 未就绪'});return
+    profile=path.endswith('.mobileconfig');payload=tls.profile() if profile else tls.certificate()
+    self.send_response(200);self.send_header('Content-Type','application/x-apple-aspen-config' if profile else 'application/pkix-cert');self.send_header('Content-Disposition','attachment; filename="totk-phone-ca.'+('mobileconfig' if profile else 'cer')+'"');self.send_header('Content-Length',str(len(payload)));self.send_header('Cache-Control','no-store');self.end_headers();self.wfile.write(payload);return
+   motion=getattr(self.server,'phone_motion',None)
+   self.json_reply(200,{'native':motion.status() if motion else {'available':False},'https':tls.status() if tls else {'available':False,'error':'请使用新版原生地图客户端并开启局域网访问'},'secure':bool(getattr(self.server,'is_local_https',False)),'expiresMs':200});return
+  if path=='/api/douyin':
+   if not self.control_request():return
+   if not ipaddress.ip_address(self.client_address[0]).is_loopback:self.json_reply(403,{'error':'请在电脑本机管理直播互动'});return
+   from douyin_live import live
+   self.json_reply(200,live.status());return
   if path in ('/api/amiibo','/api/amiibo/catalog'):
    if not self.control_request():return
    from amiibo import execute,ITEMS
@@ -224,9 +277,9 @@ class Handler(SimpleHTTPRequestHandler):
    return
   if not self.local_request():return
   if path=='/join':
-   key=parse_qs(urlsplit(self.path).query).get('key',[''])[0]
-   if not key or not hmac.compare_digest(key,getattr(self.server,'web_token','')):self.json_reply(401,{'error':'二维码链接已失效，请重新扫描'});return
-   self.send_response(303);self.send_header('Location','/');self.send_header('Set-Cookie','totk_web='+key+'; HttpOnly; SameSite=Lax; Path=/');self.send_header('Referrer-Policy','no-referrer');self.send_header('Cache-Control','no-store');self.send_header('Content-Length','0');self.end_headers();return
+   if not self.web_authorized():return
+   # Older QR codes remain usable after the cookie gate was retired.
+   self.send_response(303);self.send_header('Location','/');self.send_header('Referrer-Policy','no-referrer');self.send_header('Cache-Control','no-store');self.send_header('Content-Length','0');self.end_headers();return
   if path=='/mcp':
    if self.mcp_authorized():self.send_response(405);self.send_header('Allow','POST');self.send_header('Content-Length','0');self.end_headers()
    return
@@ -266,6 +319,9 @@ class Handler(SimpleHTTPRequestHandler):
   elif urlsplit(self.path).path!='/mcp':self.json_reply(404,{'error':'Not found'})
 def main():
  parser=argparse.ArgumentParser();parser.add_argument('--import-pack',type=Path);parser.add_argument('--reference-pack',action='store_true');parser.add_argument('--save-dir',action='append',type=Path);parser.add_argument('--port',type=int,default=8765);parser.add_argument('--fallback-port',action='store_true');parser.add_argument('--runtime-file',type=Path);parser.add_argument('--parent-pid',type=int);parser.add_argument('--lan',action='store_true');args=parser.parse_args();bind='0.0.0.0' if args.lan else '127.0.0.1'
+ if not any(os.environ.get(k) for k in ('TOTK_SUPPORT_ROOT','TOTK_DATA_SUPPORT_ROOT')):
+  from offline_layout import migrate
+  migrate()
  if args.import_pack:
   try:print(json.dumps(install_pack(args.import_pack,args.reference_pack),ensure_ascii=False));return
   except Exception as error:print(str(error),file=sys.stderr);raise SystemExit(1)
@@ -274,20 +330,26 @@ def main():
   if not args.fallback_port:raise
   server=ThreadingHTTPServer((bind,0),Handler)
  server.source=SaveSource(args.save_dir or default_save_roots());server.source.start();server.mcp_token=os.environ.get('TOTK_MCP_TOKEN') or secrets.token_urlsafe(32)
+ from phone_motion import PhoneMotion
+ server.phone_motion=PhoneMotion()
  server.lan_hosts=[h for h in os.environ.get('TOTK_LAN_HOSTS','').split(',') if h and ipaddress.ip_address(h).is_private] if args.lan else []
- server.web_token=os.environ.get('TOTK_WEB_TOKEN') or secrets.token_urlsafe(32)
  from map_service import MapService
  server.map_service=MapService(server.source)
  server.map_service.guide_media.secret=hmac.new(server.mcp_token.encode(),b'totk-guide-media-v1',hashlib.sha256).digest()
  from mcp_tunnel import Tunnel
  server.tunnel=Tunnel(server,Handler,ROOT/'tunnel-agent/ngrok')
  server.map_service.public_base=lambda: (server.tunnel.status().get('url') or '').removesuffix('/mcp') or None
+ from local_https import LocalHTTPS
+ server.local_https=LocalHTTPS()
+ if args.lan and os.environ.get('TOTK_CLIENT_EDITION')=='native':server.local_https.start(server,Handler)
  from mod_telemetry import telemetry
  telemetry.start()
  from game_control_preferences import manager
  manager().start()
+ from douyin_live import display
+ display.start()
  from offline_map import archive_info
- info={'dataPacks':pack_status(),'offlineMap':archive_info(),'url':f'http://127.0.0.1:{server.server_port}/','mcpURL':f'http://127.0.0.1:{server.server_port}/mcp','token':server.mcp_token,'pid':os.getpid(),'lanURLs':[f'http://{host}:{server.server_port}/join?key={server.web_token}' for host in server.lan_hosts]}
+ info={'dataPacks':pack_status(),'offlineMap':archive_info(),'url':f'http://127.0.0.1:{server.server_port}/','mcpURL':f'http://127.0.0.1:{server.server_port}/mcp','token':server.mcp_token,'pid':os.getpid(),'lanURLs':[f'http://{host}:{server.server_port}/' for host in server.lan_hosts]}
  if args.runtime_file:
   args.runtime_file.parent.mkdir(parents=True,exist_ok=True);temp=args.runtime_file.with_suffix('.tmp');temp.write_text(json.dumps(info));temp.chmod(0o600);temp.replace(args.runtime_file)
  else:print(json.dumps(info),flush=True)
@@ -304,5 +366,6 @@ def main():
  signal.signal(signal.SIGINT,terminate)
  try:server.serve_forever()
  finally:
-  manager().stop();server.tunnel.stop();server.source.stop();server.server_close()
+  from douyin_live import live
+  live.stop();display.stop();manager().stop();server.phone_motion.stop();server.local_https.stop();server.tunnel.stop();server.source.stop();server.server_close()
 if __name__=='__main__':main()

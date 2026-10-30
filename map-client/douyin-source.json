@@ -1,0 +1,47 @@
+{
+  "source": "https://github.com/saermart/DouyinLiveWebFetcher",
+  "recordedUpstreamCommit": "40a904bdb0561a5a9c958a95634a29681cc4fbf4",
+  "scope": "External receiver input hashes verified by fetching these ten files from the pinned official commit on 2026-10-30. Not vendored in this kit.",
+  "files": [
+    {
+      "path": "liveMan.py",
+      "sha256": "2e1c81560aeaa346def8f8fec9fb65f20b954abb4566079c7071812b08849d9b"
+    },
+    {
+      "path": "ac_signature.py",
+      "sha256": "d4bb9e8d22312a6f8b2765133e45224e3bf28d73d4a4d459a1d907f74589abea"
+    },
+    {
+      "path": "sign.js",
+      "sha256": "81fb78a5e8728af99ffb9d20625b01bcedc43a82b05e3bef79e2bc0d29ccff5d"
+    },
+    {
+      "path": "a_bogus.js",
+      "sha256": "0c3d5ec7c2555d43d3138611761615e6d0559a8d65a20d0383072aac2beb1bf0"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "7f8f48e4266aa8fd3033dfaa4bb7f6e83a60c6e099f82d4959b81de90e67cd8f"
+    },
+    {
+      "path": "README.MD",
+      "sha256": "1c2aad5f900af0ed4b743b4825837f41a86a0b1ee475c794696ee1c88a9085a6"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "c2735028beb5f4c8d0bd0dd2337b2ae14f67aa8a52605d8e5347f2104166f13b"
+    },
+    {
+      "path": "protobuf/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "protobuf/douyin.py",
+      "sha256": "7d6fbfc424daad25a595c50fbc7d75cd7367eb2d52259ee7047433b2c6c2f756"
+    },
+    {
+      "path": "protobuf/douyin.proto",
+      "sha256": "e60858efa0e643834ed427f28c4317a0bf595b082c1a38a71978a446f2131309"
+    }
+  ]
+}

@@ -36,7 +36,7 @@ extension Client {
     }
 
     @objc func showDataPacks() {
-        let base = Self.nativeEdition ? support.deletingLastPathComponent().appendingPathComponent("TOTK Offline") : support
+        let base = contentSupport
         let folder = base.appendingPathComponent("DataPacks", isDirectory: true)
         do {
             try FileManager.default.createDirectory(at: folder, withIntermediateDirectories: true)
@@ -56,10 +56,13 @@ extension Client {
 
     func installDataPacks(_ urls: [URL]) {
         guard !importingDataPacks, !urls.isEmpty else { return }
+        do { try prepareStorage() } catch {
+            let alert = NSAlert(); alert.messageText = "无法准备数据目录"; alert.informativeText = error.localizedDescription; alert.runModal(); return
+        }
         importingDataPacks = true
         feedback.stringValue = "正在校验并导入数据包，完成后自动重启服务…"
         let supportPath = support.path
-        let contentPath = (Self.nativeEdition ? support.deletingLastPathComponent().appendingPathComponent("TOTK Offline") : support).path
+        let contentPath = contentSupport.path
         let executable = Bundle.main.resourceURL!.appendingPathComponent("backend/totk-service")
         DispatchQueue.global(qos: .userInitiated).async {
             var failure: String?

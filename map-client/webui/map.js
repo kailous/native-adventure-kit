@@ -5,7 +5,19 @@ let compendium,itemLocations=[],regions,archive,catalogs,assets,layer='s',select
 let questData={quests:[],questCategories:{},questPoints:{}};let questListCategory=null;
 let records;try{records=JSON.parse(localStorage.getItem('totk-records'))||{done:{},favorites:[],notes:{},custom:[],route:[]};}catch{records={done:{},favorites:[],notes:{},custom:[],route:[]};}
 try{const old=localStorage.getItem('totk-guide-bookmarks-migrated')?[]:JSON.parse(localStorage.getItem('totk-guide-bookmarks')||'[]');records.favorites=[...new Set([...records.favorites,...old])];localStorage.setItem('totk-records',JSON.stringify(records));localStorage.setItem('totk-guide-bookmarks-migrated','1');}catch{}
-const mobileView=()=>matchMedia('(max-width:700px)').matches;
+const phoneLandscapeMedia=matchMedia('(pointer:coarse) and (orientation:landscape) and (max-width:1100px) and (max-height:540px)');
+const phoneLandscapeView=()=>phoneLandscapeMedia.matches&&(screen.orientation?.type?screen.orientation.type.startsWith('landscape'):typeof window.orientation==='number'?Math.abs(window.orientation)===90:true);
+const mobileView=()=>matchMedia('(max-width:700px)').matches||phoneLandscapeView();
+function syncPhoneLandscape(){
+ const enabled=phoneLandscapeView();document.documentElement.classList.toggle('phone-landscape',enabled);
+ if(enabled){
+  if(!archive){$('left').classList.add('hidden');$('right').classList.add('hidden');}
+  else if(!$('left').classList.contains('hidden')&&!$('right').classList.contains('hidden'))$('left').classList.add('hidden');
+  $('sheetBackdrop').hidden=$('left').classList.contains('hidden')&&$('right').classList.contains('hidden');
+ }
+}
+syncPhoneLandscape();phoneLandscapeMedia.addEventListener('change',syncPhoneLandscape);
+screen.orientation?.addEventListener?.('change',syncPhoneLandscape);
 function closeMobilePanels(){if(!mobileView())return;for(const id of ['left','right'])$(id).classList.add('hidden');$('sheetBackdrop').hidden=true;}
 function openMobilePanel(id){if(!mobileView()){if(innerWidth<=1050)for(const name of ['left','right'])$(name).classList.toggle('hidden',name!==id);return;}for(const name of ['left','right'])$(name).classList.toggle('hidden',name!==id);$('sheetBackdrop').hidden=false;}
 function updateFollowButtons(){for(const id of ['fit']){$(id).classList.toggle('active',followingPlayer);$(id).setAttribute('aria-pressed',String(followingPlayer));}const label=language==='en'?'Follow Link':'跟随林克';$('fit').title=label;$('fit').setAttribute('aria-label',label);}
@@ -168,7 +180,7 @@ $('sync').onclick=sync;$('language').onchange=e=>{language=e.target.value;localS
 $('search').oninput=async e=>{search=e.target.value.trim().toLowerCase();$('clearSearch').hidden=!search;if(mobileView()&&e.type==='input'){renderPins();return;}if(search){const points=allPoints().filter(p=>[p.n,p.type,displayName(p.n),displayName(p.type),p.description].join(' ').toLowerCase().includes(search));showResults(points);const container=$('results'),query=search;let total=points.length;try{const story=await storyDataPromise;if(container.isConnected&&search===query)for(const p of story.chapters.filter(p=>[p.n,p.text].join(' ').toLowerCase().includes(query))){const b=document.createElement('button');b.className='result';b.textContent=p.n;b.onclick=()=>openStoryGuide(p.id);container.querySelector('.empty-state')?.remove();container.append(b);const count=container.parentElement.querySelector('.panel-meta strong');if(count)count.textContent=(++total)+' 项';}}catch{}}else showHome();renderPins();};$('clearSearch').onclick=()=>{$('search').value='';search='';$('clearSearch').hidden=true;showHome();renderPins();};$('favorites').onclick=async()=>{personal='favorites';render();showResults(allPoints().filter(p=>records.favorites.includes(p.id)),{title:'我的收藏',emptyTitle:'还没有收藏',emptyHint:'在点位或攻略中点击收藏，便可在这里快速找到。'});const container=$('results');let story;try{story=await storyDataPromise;}catch{return;}if(!container.isConnected)return;for(const p of story.chapters.filter(p=>records.favorites.includes(p.id))){const b=document.createElement('button');b.className='result';b.textContent=p.n;b.onclick=()=>openStoryGuide(p.id);container.querySelector('.empty-state')?.remove();container.append(b);const count=container.parentElement.querySelector('.panel-meta strong');if(count)count.textContent=container.querySelectorAll('.result').length+' 项';}};$('custom').onclick=()=>{personal='custom';render();showResults(records.custom,{title:'个人标点',emptyTitle:'还没有个人标点',emptyHint:'点击新增标点，再在地图上选择位置。'});};$('add').onclick=()=>{closeMobilePanels();adding=!adding;$('add').classList.toggle('active',adding);$('visible').textContent=adding?'请点击地图选择新标点位置':'';};$('path').onclick=()=>{showResults(records.route.map(id=>allPoints().find(p=>p.id===id)).filter(Boolean),{title:'我的路书',mode:'route',emptyTitle:'下一站，去哪里？',emptyHint:'在点位详情点击加入路书，按添加顺序规划探索路线。'});$('right').dataset.navMode='route';const b=document.createElement('button');b.textContent='清空路书';b.className='guide-entry';b.disabled=!records.route.length;b.onclick=()=>{records.route=[];saveRecords();renderPins();$('path').click();};$('rightContent').append(b);};
 $('export').onclick=()=>{const url=URL.createObjectURL(new Blob([JSON.stringify(records,null,2)],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download='totk-records.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};$('import').onclick=()=>$('importFile').click();$('importFile').onchange=async e=>{try{const value=JSON.parse(await e.target.files[0].text());if(!value||typeof value.done!=='object'||typeof value.notes!=='object'||!Array.isArray(value.favorites)||!Array.isArray(value.route)||!Array.isArray(value.custom)||value.custom.some(p=>!String(p.id).startsWith('local-')||typeof p.n!=='string'||!Number.isFinite(p.x)||!Number.isFinite(p.z)||!['s','k','d'].includes(p.L)))throw Error('记录文件格式不正确');records=value;saveRecords();render();showHome();}catch(err){modal('<p>'+esc(err.message)+'</p>');}e.target.value='';};
 $('mcp').onclick=()=>{if(window.webkit?.messageHandlers?.desktop){window.webkit.messageHandlers.desktop.postMessage({action:'mcp'});return;}modal('<h2>MCP · 离线地图工具</h2><p>提供点位搜索、离线攻略、最新存档进度、附近点位查询。</p><p>桌面客户端已提供 MCP 连接配置，请在服务控制台中复制。也可以在项目目录独立运行 stdio 服务：</p><pre>python3 backend/mcp_server.py</pre><p>工具：search_points / get_point_guide / get_save_progress / nearby_points</p>');};
-Promise.all(['gamersky-archive.json','catalogs.json','ui-assets.json','regions.json','compendium.json'].map(url=>fetch(url).then(r=>{if(!r.ok)throw Error(url+'读取失败');return r.json();}))).then(([a,c,u,r,book])=>{compendium=book;archive=a;catalogs=c;assets=u;regions=r;if(innerWidth<700){$('left').classList.add('hidden');$('right').classList.add('hidden');}translate();updateMap();render();showHome();if(innerWidth>700&&innerWidth<=1050)$('left').classList.add('hidden');initialView();const params=new URLSearchParams(location.search);if(params.has('point')){const p=allPoints().find(p=>String(p.id)===params.get('point'));if(p)openPoint(p,true);}if(params.has('guide'))openStoryGuide(params.get('guide'));if(params.has('category')&&!params.has('guide'))showQuestList(params.get('category'));if(params.has('item'))showItemLocations(params.get('item'));sync();setInterval(sync,1000);}).catch(e=>{$('status').textContent=e.message;});
+Promise.all(['gamersky-archive.json','catalogs.json','ui-assets.json','regions.json','compendium.json'].map(url=>fetch(url).then(r=>{if(!r.ok)throw Error(url+'读取失败');return r.json();}))).then(([a,c,u,r,book])=>{compendium=book;archive=a;catalogs=c;assets=u;regions=r;if(innerWidth<700||phoneLandscapeView()){$('left').classList.add('hidden');$('right').classList.add('hidden');$('sheetBackdrop').hidden=true;}translate();updateMap();render();showHome();if(innerWidth>700&&innerWidth<=1050)$('left').classList.add('hidden');initialView();const params=new URLSearchParams(location.search);if(params.has('point')){const p=allPoints().find(p=>String(p.id)===params.get('point'));if(p)openPoint(p,true);}if(params.has('guide'))openStoryGuide(params.get('guide'));if(params.has('category')&&!params.has('guide'))showQuestList(params.get('category'));if(params.has('item'))showItemLocations(params.get('item'));sync();setInterval(sync,1000);}).catch(e=>{$('status').textContent=e.message;});
 
 let playerPosition=null,followingPlayer=false,positionBusy=false,lastPositionAt=0;
 function trackingTarget(p){if(p?.ui?.available&&p.ui.mapOpen){const cursor=p.ui.mapCursor;return cursor&&p.ui.mapLayer?{x:cursor.x,z:cursor.z,layer:p.ui.mapLayer,mapCursor:true}:null;}return p;}
@@ -198,7 +210,7 @@ for(const [handle,panel] of [['expandFilters','left'],['expandDetails','right']]
  $(handle).onpointerdown=e=>{startY=e.clientY;$(handle).setPointerCapture(e.pointerId);};
  $(handle).onpointerup=e=>{const delta=e.clientY-startY;if(delta>65)closeMobilePanels();else if(delta < -40)$(panel).classList.add('expanded');};
 }
-window.addEventListener('resize',()=>{if(!mobileView()){$('sheetBackdrop').hidden=true;if(innerWidth<=1050&&!$('left').classList.contains('hidden')&&!$('right').classList.contains('hidden'))$('left').classList.add('hidden');}});
+window.addEventListener('resize',()=>{syncPhoneLandscape();if(!mobileView()){$('sheetBackdrop').hidden=true;if(innerWidth<=1050&&!$('left').classList.contains('hidden')&&!$('right').classList.contains('hidden'))$('left').classList.add('hidden');}});
 document.addEventListener('keydown',e=>{if(e.key!=='Escape'||$('dialog').open)return;if(mobileView())closeMobilePanels();else $('hideRight').click();});
 
 $('hideLeft').onclick=()=>{$('left').classList.add('hidden');transform();};
@@ -209,10 +221,10 @@ const sidebarObserver=new ResizeObserver(entries=>{for(const e of entries)$('rig
 // Navigation selected state describes the visible panel, independently of hover.
 function updateNavigation(){
  const visible=!$('right').classList.contains('hidden');
- const title=document.querySelector('#right .desktop-panel-head>span');const mode=['control','amiibo'].includes($('right').dataset.navMode)?$('right').dataset.navMode:$('right').dataset.navMode==='route'?'route':'guide';
- if(mode==='control'||mode==='amiibo'){title.dataset.title=mode;title.className='';title.replaceChildren();}
+ const title=document.querySelector('#right .desktop-panel-head>span');const mode=['control','amiibo','stream'].includes($('right').dataset.navMode)?$('right').dataset.navMode:$('right').dataset.navMode==='route'?'route':'guide';
+ if(['control','amiibo','stream'].includes(mode)){title.dataset.title=mode;title.className='';title.replaceChildren();}
  else if(title.dataset.title!==mode||!title.querySelector('img')){title.dataset.title=mode;title.className='title-art title-'+mode;title.innerHTML='<img src="branding/titles/'+mode+'.svg" alt="'+(mode==='route'?'塞尔达 路书':'塞尔达 图文攻略')+'" width="'+(mode==='route'?1288:1734)+'" height="355">';}
- for(const [id,mode] of [['navGuide','guide'],['navRoute','route'],['gameControl','control'],['amiiboMenu','amiibo']]){
+ for(const [id,mode] of [['navGuide','guide'],['navRoute','route'],['gameControl','control'],['amiiboMenu','amiibo'],['streamMenu','stream']]){
   const active=visible&&$('right').dataset.navMode===mode;
   $(id).classList.toggle('active',active);$(id).setAttribute('aria-pressed',String(active));
  }
@@ -229,7 +241,7 @@ updateNavigation();
 
 // Keyboard activation does not generate the pointer sequence used by map pins.
 $('pins').addEventListener('click',e=>{if(e.detail!==0)return;const pin=e.target.closest('.pin');const p=pin&&allPoints().find(p=>String(p.id)===pin.dataset.id);if(p)openPoint(p);});
-$('showFilters').onclick=()=>{openMobilePanel('left');$('left').classList.remove('hidden');transform();$('search').focus({preventScroll:true});};
+$('showFilters').onclick=()=>{openMobilePanel('left');$('left').classList.remove('hidden');transform();if(!phoneLandscapeView())$('search').focus({preventScroll:true});};
 
 // Offline preview has its own SVG group; saved itinerary lines remain independent.
 
@@ -237,3 +249,5 @@ $('showFilters').onclick=()=>{openMobilePanel('left');$('left').classList.remove
 window.openGameControlDrawer=()=>{questListCategory=null;current=null;$('right').dataset.navMode='control';$('right').classList.remove('hidden');openMobilePanel('right');$('right').scrollTop=0;updateNavigation();};
 
 window.openAmiiboDrawer=()=>{questListCategory=null;current=null;$('right').dataset.navMode='amiibo';$('right').classList.remove('hidden');openMobilePanel('right');$('right').scrollTop=0;updateNavigation();};
+
+window.openStreamDrawer=()=>{questListCategory=null;current=null;$('right').dataset.navMode='stream';$('right').classList.remove('hidden');openMobilePanel('right');$('right').scrollTop=0;updateNavigation();};

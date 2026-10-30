@@ -1,0 +1,134 @@
+/* Independent touch-phone landscape layout. map.js owns the matching class;
+   desktop, tablet and portrait rules remain in their existing stylesheets. */
+html.phone-landscape{
+ --phone-top:max(8px,env(safe-area-inset-top));
+ --phone-bottom:max(8px,env(safe-area-inset-bottom));
+ --phone-left:max(10px,env(safe-area-inset-left));
+ --phone-right:max(10px,env(safe-area-inset-right));
+}
+.phone-landscape #mapControls{
+ /* Older panel-specific selectors move this rail. In this mode each group
+    is anchored independently to the full map instead. */
+ inset:0!important;width:auto;display:block;pointer-events:none;z-index:15;
+}
+.phone-landscape #mapControls .nav-group{
+ position:absolute;width:44px;border-radius:16px;pointer-events:auto;
+}
+.phone-landscape #mapControls .nav-panels{
+ display:flex;left:var(--phone-left);top:calc(var(--phone-top) + 52px);
+}
+.phone-landscape #mapControls .nav-panels #navGuide,
+.phone-landscape #mapControls .nav-panels #navRoute{display:flex}
+.phone-landscape #mapControls .layers{right:var(--phone-right);top:var(--phone-top)}
+.phone-landscape #mapControls #zoom{top:auto;right:var(--phone-right);bottom:var(--phone-bottom)}
+.phone-landscape #mapControls button,
+.phone-landscape #mapControls .layers button,
+.phone-landscape #mapControls #zoom button{
+ width:44px;height:44px;min-height:44px;border-radius:14px;padding:10px;
+}
+.phone-landscape #app #showFilters{
+ display:block;top:var(--phone-top);left:var(--phone-left);
+ width:44px;height:44px;padding:10px;border-radius:16px;
+}
+.phone-landscape #app #toolbar{display:none}
+.phone-landscape #app #connectionBanner{
+ top:var(--phone-top);bottom:auto;left:50%;width:max-content;
+ max-width:calc(100% - 128px - var(--phone-left) - var(--phone-right));
+ min-height:34px;padding:7px 12px;border-radius:14px;gap:8px;
+}
+.phone-landscape #connectionBanner #positionStatus{display:none}
+.phone-landscape #app #visible{
+ left:calc(var(--phone-left) + 56px);bottom:var(--phone-bottom);
+ max-width:calc(100% - 150px);font-size:10px;
+}
+.phone-landscape #app #left,
+.phone-landscape #app #right{
+ position:fixed;top:var(--phone-top);bottom:var(--phone-bottom);
+ width:clamp(300px,42vw,380px);height:auto;max-height:none;
+ border-radius:16px;z-index:40;overscroll-behavior:contain;
+}
+.phone-landscape #app #left{
+ left:var(--phone-left);right:auto;padding:0 16px 16px;overflow:auto;
+}
+.phone-landscape #app #right{
+ left:auto;right:var(--phone-right);padding:0;overflow:hidden;
+ display:flex;flex-direction:column;
+}
+.phone-landscape #app #left.hidden{display:none}
+.phone-landscape #app #left>.sheet-head{
+ display:flex;position:sticky;top:0;z-index:3;align-items:center;
+ justify-content:space-between;min-height:52px;margin:0 0 8px;
+ padding:4px 0;background:#06121ef5!important;border-bottom:1px solid #b9a16540;
+}
+.phone-landscape #left .sheet-head button{min-height:44px;padding:8px 10px}
+.phone-landscape #left #expandFilters{pointer-events:none}
+.phone-landscape #left .filter-brand{margin-bottom:8px;gap:0}
+.phone-landscape #left .map-brand{display:none}
+.phone-landscape #left .save-info{
+ flex-direction:row;align-items:center;justify-content:space-between;
+ width:100%;height:44px;gap:6px;font-size:11px;
+}
+.phone-landscape #left #sync{min-height:44px}
+.phone-landscape #left #saveDate{margin:0;font-size:11px;white-space:nowrap}
+.phone-landscape #left #status{margin:0;padding:0;font-size:11px;white-space:nowrap}
+.phone-landscape #left #status::before{display:none}
+.phone-landscape #left #searchPanel{margin-bottom:12px;height:48px}
+.phone-landscape #left #search{font-size:16px;height:44px;line-height:44px}
+.phone-landscape #left #submitSearch,
+.phone-landscape #left #clearSearch{height:44px;min-height:44px}
+.phone-landscape #left>.filter-controls{padding-top:12px}
+.phone-landscape #left .switches{margin-bottom:10px}
+.phone-landscape #left .group{padding-top:12px}
+.phone-landscape #left .group h3{padding-bottom:8px;margin-bottom:8px}
+.phone-landscape #left .category{height:44px;font-size:12px}
+.phone-landscape #left .category small{font-size:11px}
+.phone-landscape #app #right>.sheet-head{display:none}
+.phone-landscape #app #right>.desktop-panel-head{
+ height:52px;min-height:52px;margin:0;padding:4px 12px;
+}
+.phone-landscape #app #right #rightContent{
+ flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;
+ padding:0 16px 16px;scroll-padding-top:8px;
+}
+.phone-landscape #app #right:has(.guide-home)> .desktop-panel-head{
+ position:absolute;top:0;right:0;width:60px;height:60px;padding:0;z-index:3;
+}
+.phone-landscape #app #right:has(.guide-home) #rightContent{padding-top:16px}
+.phone-landscape #app #right #hideRight{
+ width:44px;height:44px;min-width:44px;min-height:44px;
+}
+.phone-landscape #app #right:has(.guide-home) #hideRight{
+ position:absolute;top:4px;right:4px;width:44px;height:44px;min-height:44px;
+ background:#06121e;border:0;
+}
+.phone-landscape #app #right .guide-home{gap:20px;min-height:0}
+.phone-landscape #app #right .guide-brand{height:32px;margin:0 52px 0 0}
+.phone-landscape #app #right .guide-category-list{gap:8px}
+.phone-landscape #app #right .guide-category{
+ height:52px;min-height:52px;padding:4px 10px;gap:8px;
+}
+.phone-landscape #right .guide-category-main{gap:8px;min-height:44px}
+.phone-landscape #right .guide-progress{min-height:44px;padding:8px 10px}
+.phone-landscape #right .gc-header{margin-bottom:24px}
+.phone-landscape #right .gc-body{gap:20px}
+.phone-landscape #right .gc-heart{width:100%;height:15px}
+.phone-landscape #right .gc-divider img{width:100%;max-width:100%;height:auto}
+.phone-landscape #right .gc-header button,
+.phone-landscape #right .am-close{width:44px;height:44px;min-height:44px;flex:none}
+.phone-landscape #app #sheetBackdrop:not([hidden]){
+ display:block;position:fixed;inset:0;z-index:30;background:#0005;
+ backdrop-filter:none;
+}
+.phone-landscape #dialog{max-height:calc(100dvh - 16px);padding:20px}
+
+/* Browser chrome can leave older phones with less than 300px of height. */
+@media(max-height:300px){
+ .phone-landscape #mapControls .nav-panels{
+  top:auto;bottom:var(--phone-bottom);flex-direction:row;width:220px;
+ }
+ .phone-landscape #mapControls .layers,
+ .phone-landscape #mapControls #zoom{flex-direction:row;width:132px}
+ .phone-landscape #app #visible{
+  left:var(--phone-left);bottom:calc(var(--phone-bottom) + 52px);
+ }
+}

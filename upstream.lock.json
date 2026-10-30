@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "upstream": {
     "url": "https://github.com/ly05010419/MacNativeGames.git",
-    "commit": "f3e2f661dfc05d7f6708c903ea513c297db195f1"
+    "commit": "f1d00772df1ac3230268f3124bdeb6b7cc81a61c"
   },
   "patches": [
     {
       "path": "patches/native-mod.patch",
-      "sha256": "20c951ca438d9fee275fb0fc498f216db3bf79a720b0939d0364b8020aeed488"
+      "sha256": "b09b80c1b52ab529e5f3c94365a2b080d88d9353b269b1e9119f6b89a0ba4721"
     }
   ],
   "files": [
@@ -19,13 +19,13 @@
     },
     {
       "path": ".github/workflows/tests.yml",
-      "baseSha256": "8aac36b92b6e42f981049ceb444eadcfd768ba8ae46ebfaf886e20f34ca72979",
+      "baseSha256": "2942890f83eaf6be2f5a6e11ad1f2eabb92b4d6ba03072ed634f359ef6e328be",
       "sha256": "62a9f0fee08df8040b395cabdb7217ee07196f4bdb4525369b173a58bb902b5a",
       "executable": false
     },
     {
       "path": ".gitignore",
-      "baseSha256": "6185a44078c51d3c6cd45bab90e8c63fdb1dd9c8a07ee1f9276497fd0c0c18b6",
+      "baseSha256": "25f0f4b02d33037a2856f2cd750dc354e258853e2f570d359b2773cc45c54bc9",
       "sha256": "6185a44078c51d3c6cd45bab90e8c63fdb1dd9c8a07ee1f9276497fd0c0c18b6",
       "executable": false
     },
@@ -37,7 +37,7 @@
     },
     {
       "path": "CONTRIBUTING.md",
-      "baseSha256": "534d8809ff17ab6254fcfbbf2c35be26a3afe33aa8ff66f09316598ea102bc41",
+      "baseSha256": "83ee4b8b0aa7e0c0f9b91f83078f6469ae1327f0a6315fe1e7853e95498e4b98",
       "sha256": "0d33b40d6556481699862d0d5c81481fc1cf8f18e0c973f5ba368e08618f346e",
       "executable": false
     },
@@ -49,25 +49,25 @@
     },
     {
       "path": "README.md",
-      "baseSha256": "582bb705d0ee156cdbc8a4c6ca70932d99cfb1db635aac5adc444bf91af5e6e2",
+      "baseSha256": "29850ed3dca387bcca4d994fa2ef4179777362ffd1742f47601bcde0af56c276",
       "sha256": "9203f471e703bbae612ff09f2ae440e9891f1b9505762d3394f9ed468f18088a",
       "executable": false
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "baseSha256": "ae61e463147e9cb3c3f785afdce8d54bc9ca0cc9e243d3c05f6003889a10831c",
+      "baseSha256": "8f463397a59f5b0755a2cedb1af13b6af1cd8002e487fbee3ea4a4176e20d625",
       "sha256": "1364b08649ec44aa2506f40734d47c90d9e3feab660ba809f62f9203939724fd",
       "executable": false
     },
     {
       "path": "build_app.py",
-      "baseSha256": "d3cba17d481e11d2751943a59dec1ccc8039fa2a1b89e98e0fd01602c54b700a",
-      "sha256": "347ea6465d67657fa2decf1ac07c1385d7f46db27dda425efff1e91c3d9998db",
+      "baseSha256": "cdb758efe1bea6f83fe83a6fb0d3cbbcc2ed97f60176f461c710a50655b8bed1",
+      "sha256": "8a7fa855358f1697b8b8a6781a6ef3fec2108e5e70cc8ae7a63f74736e28a4c1",
       "executable": false
     },
     {
       "path": "docs/audio-troubleshooting.md",
-      "baseSha256": "d3c5544769655056149981feaebe9d0ce7fbb207398f5d607c60b06da68c761c",
+      "baseSha256": "d6a4e7f25beb286db83787295528ac375e076ecb8d930f79291abf378bebb3c0",
       "sha256": "22b6893c5a20999b8ff858b1d6ff3d306010508f4a37b7805f10728d3e172826",
       "executable": false
     },
@@ -85,7 +85,7 @@
     },
     {
       "path": "docs/first-launch-shaders.md",
-      "baseSha256": "5c58e526ffce20318fb504633bd364762a1250b23881f0b44bb61f46a1e35f44",
+      "baseSha256": "891a6394007834be3f7777ce617df7ed7b021fa081da2870be5fbb434bc6311e",
       "sha256": "e9cf1c5e3d182302af55a12ba6d92479b318c6d318ff60577d99922efeb7e517",
       "executable": false
     },
@@ -109,7 +109,7 @@
     },
     {
       "path": "docs/how-it-works.md",
-      "baseSha256": "ec7c8c86fa693d9d6f85796e0e067a59cdae99dd544948d0ae502156ebf00643",
+      "baseSha256": "f0c31651bb014040d79bbdfa66fb34ab953c438e143d3e5b20f6d7d9ad91bfbe",
       "sha256": "95f3370be01e100ba52d027dd0c2f81b265bf4b5537126de2eeb6008a91fdc41",
       "executable": false
     },
@@ -127,7 +127,7 @@
     },
     {
       "path": "docs/mods.md",
-      "baseSha256": "61cdc8c8686f0af635e37b9f5344ab0af724d85fe36e3a61e8352090898df3ec",
+      "baseSha256": "84a2085cbeab3dc566f8608eaea013e3de4338d4ff061d5fc5972dcf3f1dc9f2",
       "sha256": "daa77300807b36877295fe373d66f67fd4717f2105da3b79e991ccc2c83abc92",
       "executable": false
     },
@@ -181,13 +181,13 @@
     },
     {
       "path": "docs/shader-list.md",
-      "baseSha256": "c9ef4f7ebd421509715fd45452143e8da2ce62221a17ef202891b9dc85a626a9",
+      "baseSha256": "95f8273b5b3b68ea26af4b60eba416a57b7308cc111766aec8a8fac452b3f135",
       "sha256": "f4d4cd6adfeec9a89af15e9341ce21f07ad7c9c4796fd00898a4e930ff94f188",
       "executable": false
     },
     {
       "path": "docs/shader-variants.md",
-      "baseSha256": "4188270a854b295d0f14b2ceabe4ec6327fb1a67152c8591bb0213fd3ca0c1d2",
+      "baseSha256": "712ffd691e59d4b86862183e017ff87f9941b8647044d6732463fa2087019a00",
       "sha256": "22cb4afd25fcf591adcc4bd9e94fa6c78c10c6202a54d2a139ca8544c768e63a",
       "executable": false
     },
@@ -235,13 +235,13 @@
     },
     {
       "path": "games/totk/Makefile",
-      "baseSha256": "6f05e66f0fb12f7752db61ae8c05180247ca0023d3d140cb56daf716109b1a0f",
-      "sha256": "fa64c3542b3f707fcbd24b7ad32aef13f800ad1d062ac11182c79b4dc57eea97",
+      "baseSha256": "b7d4df228de48600d28930e64af1072f77136fc4ec65fb241b91fab20cdf76b7",
+      "sha256": "165a79a7408a0053eafb3055647e296e8b9e9636496e3d5a2f76b2d2d06c9abe",
       "executable": false
     },
     {
       "path": "games/totk/app/launcher.m",
-      "baseSha256": "796ec28c68cee044ef4145753524bdc92d9b46ee681ddfdeab8678b07dd76f85",
+      "baseSha256": "5ae140b2a4f0548f74fe568614ecb7c9038ebc579dae66c2382ed8e8c4a78368",
       "sha256": "ec91afe7f19ebba8165aa563c5a90c44d8bb53e735a73162960f80850c4bd085",
       "executable": false
     },
@@ -272,8 +272,10 @@
     {
       "path": "games/totk/assets/shader_list.tsv",
       "baseSha256": "b90b5a4d09cf262325bc3d496549260e5299147a992a7e82f6ac0830db3a2097",
-      "sha256": "b90b5a4d09cf262325bc3d496549260e5299147a992a7e82f6ac0830db3a2097",
-      "executable": false
+      "sha256": "d07c8b5a09983ea4a16dc296424040d35d3f28cf248e16d9d95bea85ced3f3d5",
+      "executable": false,
+      "baseCommit": "f3e2f661dfc05d7f6708c903ea513c297db195f1",
+      "transform": "canonical-shader-list-v1"
     },
     {
       "path": "games/totk/docs/mod-support.md",
@@ -301,26 +303,26 @@
     },
     {
       "path": "games/totk/prebuilt/macos-arm64/README.md",
-      "baseSha256": "bc339c3ca3e023b31321c5e530d0496141ede7b19238d15eb48631e49bdcdaff",
-      "sha256": "bc339c3ca3e023b31321c5e530d0496141ede7b19238d15eb48631e49bdcdaff",
+      "baseSha256": "5734cdcce259c18ef30b1236631d7fa26440f8c5bd726d0e63552b1234270046",
+      "sha256": "5734cdcce259c18ef30b1236631d7fa26440f8c5bd726d0e63552b1234270046",
       "executable": false
     },
     {
       "path": "games/totk/prebuilt/macos-arm64/totk_xlate",
-      "baseSha256": "b0de7abbe1c5af35d036a2043415417e9036d14188d9c4f427dba7c5554eae75",
-      "sha256": "b0de7abbe1c5af35d036a2043415417e9036d14188d9c4f427dba7c5554eae75",
+      "baseSha256": "b3c7dcef2331fcdd94657d3a191ec66ac35159f1ac9dc88f7d7e8c6710d7dc08",
+      "sha256": "b3c7dcef2331fcdd94657d3a191ec66ac35159f1ac9dc88f7d7e8c6710d7dc08",
       "executable": true
     },
     {
       "path": "games/totk/prebuilt/macos-arm64/totk_xlate.sha256",
-      "baseSha256": "270fcc32828094908c8893b1618d48672bedb6de60ec13e44c4bc6eba782a73c",
-      "sha256": "270fcc32828094908c8893b1618d48672bedb6de60ec13e44c4bc6eba782a73c",
+      "baseSha256": "9cfe6de51a85d4749ce4040ee49b9cca1405d91f64967714730cb8ce8d829167",
+      "sha256": "9cfe6de51a85d4749ce4040ee49b9cca1405d91f64967714730cb8ce8d829167",
       "executable": false
     },
     {
       "path": "games/totk/requirements-dev.txt",
-      "baseSha256": "3a20cde4f2a9ce594cc857815293f3c4ddad77873fb9eea8cc833f1a7dfadc9f",
-      "sha256": "3a20cde4f2a9ce594cc857815293f3c4ddad77873fb9eea8cc833f1a7dfadc9f",
+      "baseSha256": "ca231c656fe547e64d626c7d05a1aa25f688c2ac3ce1ae5f5ad42c9aca85d8c9",
+      "sha256": "e1189803e6e420583904e0872fc45234560569b920ecc975cdcc901a60977880",
       "executable": false
     },
     {
@@ -355,13 +357,13 @@
     },
     {
       "path": "games/totk/runtime/aspect_math.h",
-      "baseSha256": "0d7f2298454a91a30b9a205afae7a45336d65b7209dd03dc6308081b6a5a95e2",
+      "baseSha256": "2fa72ae0cf1345ac4d76ff662ebede4f0f36bce9b4e8371700b2601f5ead0f38",
       "sha256": "0d7f2298454a91a30b9a205afae7a45336d65b7209dd03dc6308081b6a5a95e2",
       "executable": false
     },
     {
       "path": "games/totk/runtime/aspect_patch.h",
-      "baseSha256": "0904da16f0026da066ad85dff92e53d401a864d8f2d37f63c24f6d2ced570306",
+      "baseSha256": "9040ff5b4ee6d2ebd22f618e51fe6284ef660f5bf3ca3c55ba9bf70821a4fb28",
       "sha256": "0904da16f0026da066ad85dff92e53d401a864d8f2d37f63c24f6d2ced570306",
       "executable": false
     },
@@ -379,19 +381,19 @@
     },
     {
       "path": "games/totk/runtime/audio_mixer.c",
-      "baseSha256": "c7e338306ee777c972575078a2e7ff465b994bb3fc1807b02ffc9883ca24896f",
+      "baseSha256": "bac47cc89f32b794a19671872394db8467cef57a7aeabee456e8ae482a6b356e",
       "sha256": "c7e338306ee777c972575078a2e7ff465b994bb3fc1807b02ffc9883ca24896f",
       "executable": false
     },
     {
       "path": "games/totk/runtime/audio_mixer.h",
-      "baseSha256": "b152f05e546a4172a65d13712fe35e38d7d349f70f6869ae820078923aa85865",
+      "baseSha256": "80b0c89cf4d4e9e3c3815abfceb9cae03f7f7b5f7e759dd8e9949a38e6897bd6",
       "sha256": "6f5a83b9f35ca9fbfe70b1fa4fa6b290ab07f76da79cf042bf8e9eb67f454cbc",
       "executable": false
     },
     {
       "path": "games/totk/runtime/audio_renderer.c",
-      "baseSha256": "8058b366cf63368256c88a992ef1e53aa2f6e9659d29c844581e02d302f89260",
+      "baseSha256": "5d0258e9beb544da901f4a227bdcfda7da0338891f8be2554822c1921ee18100",
       "sha256": "a9e998eb1e44cd142c05ab0edfff04420ea0d81fb5e526c22ae6ba5b0598586b",
       "executable": false
     },
@@ -457,8 +459,14 @@
     },
     {
       "path": "games/totk/runtime/controller_map.h",
-      "baseSha256": "4ca3997a4cf2148be0bba5e5f52c97bd044596893be99c0067affe6b1a61d8db",
+      "baseSha256": "0daba28b6a2b97d238fac68bcc527f8b2352ee84fc1a01cf4ef952ad30326f44",
       "sha256": "a4d25c0a86728aa4e6281c4dd961ecde996153399ec8d2fa16306b95b3040584",
+      "executable": false
+    },
+    {
+      "path": "games/totk/runtime/danmaku_overlay.h",
+      "baseSha256": null,
+      "sha256": "84bc8f2fa64d15b503652a560aa424df83b9a95d2845ece92df46dd250a1dd21",
       "executable": false
     },
     {
@@ -481,8 +489,8 @@
     },
     {
       "path": "games/totk/runtime/frontend.m",
-      "baseSha256": "0755e7542abe1d9ae1345f3fcd306f3703defb44f4126551ca26a22f2b6fedce",
-      "sha256": "37bf10a14b31950cdfd1accb2eb8eeba67c7f59ab9ad32b0e14657002bb6ee10",
+      "baseSha256": "357f47d93da86737b4732b7c8ee268e2a8876e0a9fb584e4c6c48e84b5b8868b",
+      "sha256": "98ee13457ac0f2f5aaf1bbd7c60424df9dfe11c5b3f65e3689dd8271167cfbcb",
       "executable": false
     },
     {
@@ -505,8 +513,8 @@
     },
     {
       "path": "games/totk/runtime/game_patches_v143.c",
-      "baseSha256": "a742b2a9dc4e9b2b49e52e9dc239d962aa9a5ff1dde8f023e65f186fc50c0025",
-      "sha256": "c206f8b14cb3d8a5a5f3e3834dfe91c7fcac2862a0bbba0f541f0bc0de1d14e7",
+      "baseSha256": "2837f19188a9e5f91007da2de56cd9438143ef30281262161ecac9b2fc4ecd38",
+      "sha256": "5c52645b4ef709bbec879d1171a739ca61eaf886586302d7e912520a77127ae0",
       "executable": false
     },
     {
@@ -517,25 +525,25 @@
     },
     {
       "path": "games/totk/runtime/game_version.h",
-      "baseSha256": "907830064131178fc8b122c2004e6e3e02605c7b0631cd34bd84941a03f2115f",
-      "sha256": "145559d466f54db041161ab47a02199da4f627e8404861ad883cb747e1cb0a39",
+      "baseSha256": "57face2662f7c40358c85b2dfe83201c73c1ab6a6b1b6c07dfb5d0a44ecbf440",
+      "sha256": "a938590e6627da94502c61699e31563f4cbcbfc90907b40dab2495a6594ded85",
       "executable": false
     },
     {
       "path": "games/totk/runtime/gamepad.m",
-      "baseSha256": "b5cb59ad9f539494c0e6b993c9598321b0ae4531be679a190ab29c9030472dd3",
+      "baseSha256": "a612355dcb31160c1fc8114e4bcce354619bd5188fae4d930168de1a3fb82d52",
       "sha256": "054fb315b44faeaf6c98bba2b96b20c1e51087a51e2f2a88135b2452fdf75558",
       "executable": false
     },
     {
       "path": "games/totk/runtime/gamepad_feedback.m",
-      "baseSha256": "f6165ead8c552156884a3b85eb9dc2ee7b9c1272e1d50f62cdfcdf99bc0ebd8c",
+      "baseSha256": "08a52af451dc8a5d0b91818a7a1ec4391797bdef18713eb65407ac23172b7d61",
       "sha256": "6e674288e59308888820c92982cfa19d6c852e33f4c5b46e8e0b96ba5e748ba1",
       "executable": false
     },
     {
       "path": "games/totk/runtime/gamepad_layout.h",
-      "baseSha256": "f79fa63bf4da402855f185a4af4f608b6ab2f6917f3a33e35733cafebef3b677",
+      "baseSha256": "e472ec5230ae38e54bc76468b7b9c304b1050e9f053b52511dc6f5c6fa7ac890",
       "sha256": "80876703b4150b20b82345e159eb510aebf5df8a5248304e11c1eca6918faa2a",
       "executable": false
     },
@@ -565,8 +573,8 @@
     },
     {
       "path": "games/totk/runtime/gpu_path_probe.m",
-      "baseSha256": "aec1671a18f987141418a77fbc731d8bc5857607eb7ed14a117bf6dec49bfe31",
-      "sha256": "aec1671a18f987141418a77fbc731d8bc5857607eb7ed14a117bf6dec49bfe31",
+      "baseSha256": "ad32e29240798a269a2e5953fe77febfb7f100fc85ffaf3903e108ff7a756d3b",
+      "sha256": "555b72f03d39a8e27aee0121224a5b523f646c70fdf0ad2a808771215aad1e6b",
       "executable": false
     },
     {
@@ -577,7 +585,7 @@
     },
     {
       "path": "games/totk/runtime/hid_feedback.c",
-      "baseSha256": "a80da76994cdf6efba853124e1cdbbd1419c56773816f1db2795f1c53db97fbe",
+      "baseSha256": "972986258ae4c78c35fab4a2bdda90ce46a96f8bd547dae6577d196549efaa83",
       "sha256": "a80da76994cdf6efba853124e1cdbbd1419c56773816f1db2795f1c53db97fbe",
       "executable": false
     },
@@ -595,7 +603,7 @@
     },
     {
       "path": "games/totk/runtime/input.c",
-      "baseSha256": "b589bc005ae5e1109821bdb143faebe2d802bb315c67fa0a132f83ba748a2408",
+      "baseSha256": "4b707f2207ff95bdb393564f7cdf153f021d197e7bd40645e3f60c4b2d252d91",
       "sha256": "5d7391f4ad636058d3be41ff6c4c312191ca173e729e6866bcd21a1a624a6ab8",
       "executable": false
     },
@@ -619,14 +627,20 @@
     },
     {
       "path": "games/totk/runtime/keyboard_map.h",
-      "baseSha256": null,
+      "baseSha256": "0fc0cf783cd57b9c61a69b8aef34f4a379483154a2716ea783448838cc0e29a8",
       "sha256": "4cf8090617b3d2d4203dd473dc96bf4856db70a81058aa8ef469d4ac99705bbc",
       "executable": false
     },
     {
       "path": "games/totk/runtime/loader.c",
-      "baseSha256": "2c368969b5cd678157da3daff60001a3897a4734b8e20f65b680b27e75089833",
-      "sha256": "0b8197bfcb4994d0f4fecc5d90c10425919d60c051c77dff1acb2c39fa7e8576",
+      "baseSha256": "3dba85e1db18cb55ea6742c971c8ef9c6c1863786887fa382bb13281a8f551be",
+      "sha256": "1d5837a0a1f8b4b8d752c6d860ef3dc3a46d89732774968727c6820fc6186316",
+      "executable": false
+    },
+    {
+      "path": "games/totk/runtime/map_ui.h",
+      "baseSha256": null,
+      "sha256": "007e0f3811f0ddd907cf4bf26c65de5a8048c0e8acf35031997e7d34faf759f1",
       "executable": false
     },
     {
@@ -637,13 +651,13 @@
     },
     {
       "path": "games/totk/runtime/motion_fusion.c",
-      "baseSha256": "26e404066f0743e4aad3f3eae4320cda7e937c19645cb4e30b77b4e42191b127",
-      "sha256": "26e404066f0743e4aad3f3eae4320cda7e937c19645cb4e30b77b4e42191b127",
+      "baseSha256": "f43d374e52a6b28c3b08b991293d2026c3609e3f661bbed9d76871016130f4cc",
+      "sha256": "4790ca59a17023af49e36223d2607b955f5d203d79eaae9c92bdc497adebded9",
       "executable": false
     },
     {
       "path": "games/totk/runtime/mouse_look.h",
-      "baseSha256": "297b578767fd6f010bc8b161a072005bde859390d98c0f61e4b40f60785afc79",
+      "baseSha256": "f8a8d575da8ebc73292ac883e78a7475039b6de41577b6298561f36512f167ed",
       "sha256": "a22545d7f9c384cdae642a6b40cff858916b8b27390644a01702eaad3047647b",
       "executable": false
     },
@@ -684,6 +698,12 @@
       "executable": false
     },
     {
+      "path": "games/totk/runtime/phone_motion.h",
+      "baseSha256": null,
+      "sha256": "98e05b12a41575f18ab589a6463933ad9825befadc1760cd8b50c0e37d200f95",
+      "executable": false
+    },
+    {
       "path": "games/totk/runtime/player_state.h",
       "baseSha256": null,
       "sha256": "516f0fc65c791d6a7d14435212954a7ea107539311a0b329ba624d18be987b0c",
@@ -703,7 +723,7 @@
     },
     {
       "path": "games/totk/runtime/romfs.c",
-      "baseSha256": "1e18e70da39b435cd49e4fcef7ecaebf5b0f0f5ba67978be9c224fe1bc15dd7b",
+      "baseSha256": "a8f78064ca7804c39e9ca9fd7c5fd543727bc5df556d39a449e506aa29c5cb05",
       "sha256": "16294b8e14e7b7f1084bbc2fd144b129c1e9e6c8ecbc1740f17e230e9f6a4f31",
       "executable": false
     },
@@ -715,19 +735,19 @@
     },
     {
       "path": "games/totk/runtime/runtime.h",
-      "baseSha256": "f39d762ebf54ed1188255120efb328753264a231d2225a7ec896a0c6db3aea94",
-      "sha256": "1145d03e9ef4561a29c757caa22ac2eaaac7b10ee3fd21047492abfc7c8e6db1",
+      "baseSha256": "752aec0def69272b01683b51f2b2126cdbea0a29781a2a3d9945b8e8e6301df3",
+      "sha256": "c9162ee3183b495f54ddd4949bf9fd5ca0f7f656dfedaf8f19ae60a65e2a1d6d",
       "executable": false
     },
     {
       "path": "games/totk/runtime/services.c",
-      "baseSha256": "541edc0339fb40932f43031d8434fda17769868f73b2db67563a0a2c3bc2f7d0",
+      "baseSha256": "13d77a9b80338eafcbff19752cf99812d519f9535b148265a69eecce883088a7",
       "sha256": "3639080a09e880fefff512572464462c36003a883423bc16a3abe8f038ffde39",
       "executable": false
     },
     {
       "path": "games/totk/runtime/shared_font.c",
-      "baseSha256": "52994a3e65e1e5dae3587ae37ee3190cd5fd5daa7344c32062afa16663b5710c",
+      "baseSha256": "9d02300e23dc288d0d069757e1e007c74572b8fab068e3e293c71359625907a5",
       "sha256": "585ca3c299f6548a5875863b99bb490fa5a0144ecbc2a599568b205e68939abf",
       "executable": false
     },
@@ -745,14 +765,14 @@
     },
     {
       "path": "games/totk/runtime/swkbd_host.c",
-      "baseSha256": "e79bf820d1b8f3a4d137a2bf867239699b81494323997f1fabf8e905add04bab",
+      "baseSha256": "18a51a366291eea70d6837a065b8ddf66fbf8df8bcbec5ee8efae01107cbf7f8",
       "sha256": "e79bf820d1b8f3a4d137a2bf867239699b81494323997f1fabf8e905add04bab",
       "executable": false
     },
     {
       "path": "games/totk/runtime/telemetry.c",
       "baseSha256": null,
-      "sha256": "aa05366fb6b00142b909867bbcf0ff4295fff1d9658fc12bc0fce9d961be4f7a",
+      "sha256": "808779afc1de057034fcf7649a13d8ab060478e993e13e77ea6ce5dac2eed727",
       "executable": false
     },
     {
@@ -775,7 +795,7 @@
     },
     {
       "path": "games/totk/runtime/threads.c",
-      "baseSha256": "449462d604cdae1285c2de2dfb50533e02618879ce5a34fa75908c2ccbe9db83",
+      "baseSha256": "2d6f5d71753c99a0af8ec5d2a18f969b14757acb1b858432dcb51df8a7c78b5d",
       "sha256": "15776173b0faf09f13cedde6a12016bf24f82c968308e2eb6c795563207dd785",
       "executable": false
     },
@@ -817,14 +837,38 @@
     },
     {
       "path": "games/totk/runtime/world_survey.c",
-      "baseSha256": "77cda68d1a4acc5b3da429d90c3e6526f533ef44851023ace0ba9b35a76ff6d8",
+      "baseSha256": "168c5be134bd20160678ef7c84caa17ddad67e78bbb1c8cb0a37ef01f457f134",
       "sha256": "83a886f2ba26fb7867188b5a1cc79124ae6df9f903a640140553dee48a2c881a",
       "executable": false
     },
     {
       "path": "games/totk/runtime/world_survey.h",
-      "baseSha256": "847172d7d53e3f88e687f5cc72440319d233daa4c3dad3d45cb68c8e3780b8dd",
+      "baseSha256": "f31110a5bfa706c49e2b49a5247bd78fc772140554510f95978337207e131a6e",
       "sha256": "ea7d7b5122b4691d1e361ded0893ce529ad3c12c7b8ed58e24344f2b4d51bca0",
+      "executable": false
+    },
+    {
+      "path": "games/totk/scripts/animation_research/README.md",
+      "baseSha256": null,
+      "sha256": "0612b0bf90d5e89fad8e687fc8ac9a3b82115c090115e40fb88fc3397a433b0b",
+      "executable": false
+    },
+    {
+      "path": "games/totk/scripts/animation_research/RESULTS.md",
+      "baseSha256": null,
+      "sha256": "24f633d707da2e20d9a4937597532049af0a946501699d109849b7ccd87cc79c",
+      "executable": false
+    },
+    {
+      "path": "games/totk/scripts/animation_research/inspect_resources.py",
+      "baseSha256": null,
+      "sha256": "f21c93675ffca59776809a7fb03cabf1024b4866645b3b6448ba1d87b1b73e98",
+      "executable": false
+    },
+    {
+      "path": "games/totk/scripts/animation_research/probe_asb.py",
+      "baseSha256": null,
+      "sha256": "704dad66ddea6427d1de3036f32dc21d2196977ef8f9733ad3ff0c28256aebf6",
       "executable": false
     },
     {
@@ -835,8 +879,8 @@
     },
     {
       "path": "games/totk/scripts/collect_shader_issues.py",
-      "baseSha256": "2f13981156f6b81434b0840e167839160f1ef024aab71428b67b326c84c5c8e9",
-      "sha256": "c0d75ad6a57f5f736ab8ce33109d1ac369a9d219ab347dd639294535ab346daa",
+      "baseSha256": "4350c328393b7431841d017e56cfcaaa650159c67bdc62608c299d7a16f1f981",
+      "sha256": "b77cb778bbca95e6b7280a659097bf234780c3e8e04b9bb5188a86124407c001",
       "executable": false
     },
     {
@@ -913,14 +957,14 @@
     },
     {
       "path": "games/totk/scripts/make_button_icons.py",
-      "baseSha256": "cf3fc312e42f468f834fb0589f007ab92ed4073ffe4a782d28db59bd73febe9a",
-      "sha256": "8341a7ef3fa056954461488a5407b43191d393c127c4beb7bafedcf624b58f16",
+      "baseSha256": "65bd1896fa969fc74171f2c4efcd9716c77c3db9e9c28dbb2039d31c5d9d075f",
+      "sha256": "c5546784208b4ad520aef510b0c192876f7770eaaee0b95594a20f45273ba000",
       "executable": false
     },
     {
       "path": "games/totk/scripts/make_mod_manifest.py",
-      "baseSha256": "530e3078af1b5c12e2e0fd78285a78a2669fbe62b01db356db70a2ea3ccdd2a3",
-      "sha256": "2c8e05ad0f8958f91071c0454aaf67a9ef2896ec545a2512185403a62ac7dee3",
+      "baseSha256": "8b9284de66836301d12692460f5fad9da303d7c9b494cb09a60311724a3cda7f",
+      "sha256": "daa77861c23315869be022611817d8288b3b3609c8fbf62ea9537fd7d7425a55",
       "executable": false
     },
     {
@@ -949,25 +993,25 @@
     },
     {
       "path": "games/totk/scripts/prepare_romfs_backend.py",
-      "baseSha256": "00402905e941e51af1307ad17b90cf8e1ad0a568fa2272f5282df471293c7ea2",
+      "baseSha256": "ee16888167cc770a4bba2b020bbb911656d48556ed16fb76f0af951ac2a43933",
       "sha256": "299c6ba25a97b92f847847294a262c9be572b04f0880682a358f19bd83d5f064",
       "executable": false
     },
     {
       "path": "games/totk/scripts/prepare_runtime.py",
-      "baseSha256": "1fc9778ebb4ce1855f17b529bcd3c8b5835eb5f1ce973609d62d3a234e0d3b97",
+      "baseSha256": "b28bd537f7d7023687c9aad95c4016fb2751deb52dad44b9ce840159a39db4f8",
       "sha256": "be8fb74495d2b3ac9630b55de4e984f94be795eaf495118ba0de230ad5aaf02a",
       "executable": false
     },
     {
       "path": "games/totk/scripts/prepare_shader_seed.py",
-      "baseSha256": "0fc1b5ea582d8926d393b5a1808b60ad99e9f43764bf47fa336ad70b064387ef",
-      "sha256": "c8c2d4d992784afd3f440b483c7a58563a2461558039763638f8d4468bd7ca32",
+      "baseSha256": "f19d6d265597278345c3d3e499b16cd6877e3c7483b85e8c560856ace682e7d8",
+      "sha256": "1fdad3c095852304782a4fd4e04473a7c7fcaf55939d2b970501c8c11059bb00",
       "executable": false
     },
     {
       "path": "games/totk/scripts/prepare_shared_fonts.py",
-      "baseSha256": "67fee4631f8a153d311703a36fc16cea530d00a6aa045ba93424e9ce3478284e",
+      "baseSha256": "1e33b2c040ef4e634093c551219647752db6288944296bd73b7fcd2b02aca243",
       "sha256": "eb6c95816569506aae41e7c86b6e58a94b9a0f2787eec9bdc86cbb091b7801c5",
       "executable": false
     },
@@ -1011,6 +1055,12 @@
       "path": "games/totk/scripts/probes/input_probe.c",
       "baseSha256": null,
       "sha256": "7a30e3a08423c62add252029f4e5bd2e01a3b77fa58067ed26d444338ad57bc8",
+      "executable": false
+    },
+    {
+      "path": "games/totk/scripts/probes/inspect_map_ui.py",
+      "baseSha256": null,
+      "sha256": "cc4f9940656f55e7dde54e554604dd72d38d0c81d90dd7ae347ed8599013bde8",
       "executable": false
     },
     {
@@ -1124,7 +1174,7 @@
     {
       "path": "games/totk/scripts/probes/v143_timing_fixture.c",
       "baseSha256": null,
-      "sha256": "ec386fd975047942e34772e4f7df44358180d44259fc8abd30237a6adf2fb68f",
+      "sha256": "66ac5cfc70a2908580a81092246afb8523f36be4b0e9d6629ca6cc13fbfbb9fd",
       "executable": false
     },
     {
@@ -1147,8 +1197,8 @@
     },
     {
       "path": "games/totk/scripts/shader_list.py",
-      "baseSha256": "17f3ca64e50f8a03db2d291baaa4fd81574bbc1b8182a3f819af88a1e6254679",
-      "sha256": "75569a4cdcbca74a50fb04cd2e8c697d0529d506112a312d622b34f53cb95ad2",
+      "baseSha256": "24e88cf1cec77d02ab216a823ca3c31fbd1e1ecada26e6fc6e998816b9b699c5",
+      "sha256": "2bd638096108f5016fd5b788756061c20e258ef1fe70e14ed2dbca36e0d55d59",
       "executable": false
     },
     {
@@ -1189,20 +1239,20 @@
     },
     {
       "path": "games/totk/scripts/verify_first_launch_shaders.py",
-      "baseSha256": "43f7e10782b20edee0bf0bf8a0f23cb0cd37aec8193e281a27c82ff33e3bfd26",
+      "baseSha256": "6a7e3d35f603abf3b47e9dced7e9016ff5b5814611be9f796d761cfc60c03a4c",
       "sha256": "43f7e10782b20edee0bf0bf8a0f23cb0cd37aec8193e281a27c82ff33e3bfd26",
       "executable": false
     },
     {
       "path": "games/totk/scripts/verify_fp64_fallback.py",
-      "baseSha256": "9ea3c5398d0c2bc344ee9bbdcf4a8477b4615efb52a8881bd332a9ddcfea98a0",
+      "baseSha256": "e48081db4e70e2cafa1529ccba02b83a962b0db925ed23430d9e5562b540a4cf",
       "sha256": "6e1b8f89bee773a0c04f1c450f478f0935d2446b913094c9364137a5e90cc969",
       "executable": false
     },
     {
       "path": "games/totk/scripts/verify_gfx.py",
       "baseSha256": "04798d765c49f4b702a75af703594a41635c890c1eca559b8118309be3243e09",
-      "sha256": "db0dc86c21b2ae92badc394c689ccaaf45719ee1fdccbab6217ce553b0ae0ba0",
+      "sha256": "60e091bba3d961ccc59b417d67af4eab50721c4986fc6a867c2c6030fee3eede",
       "executable": false
     },
     {
@@ -1255,19 +1305,19 @@
     },
     {
       "path": "games/totk/scripts/verify_v143_timing.py",
-      "baseSha256": "bae46b77679e0304099947048ead58fcb1fc5466f882d4968d1d02f2791be209",
-      "sha256": "459323d738890920a63e50803efd26ef7efdab4f034d1dea78e8a47394c0c475",
+      "baseSha256": "22c1e076cf0d10c105adef05a9000ce9894aa419ef5cf43e5a1ff28b5a6ddc6b",
+      "sha256": "d53c3d6e8230a2eb8e2cd666c8ae75167b3a349a2003237640dffdacafdca658",
       "executable": false
     },
     {
       "path": "games/totk/scripts/verify_v143_upscale.py",
-      "baseSha256": "a5635d938172888b2a42e3cfad52235f866af0725686208385339d69bd56618e",
+      "baseSha256": "0c2182333ebebff0f26fb35c69e109a7c42b302f9409a88829b15da520927e75",
       "sha256": "fb491d203c7eda631a931b89cac822ed035ca87ed7a400005ed7c47779be40c2",
       "executable": false
     },
     {
       "path": "games/totk/scripts/verify_vertex_counter.py",
-      "baseSha256": "6b3739d13dc06a1d90de08b835494a90c280e3443de5eade493ac0283e2d9f9b",
+      "baseSha256": "1a396e23ca010d75332e60d142f7671773c6106b0f1c28b2de82dda5c1be4dc9",
       "sha256": "6208097a1cecbc2d1c04282ec5e92c0a84abaf09b1d48c829d9ee6c692dc138a",
       "executable": false
     },
@@ -1291,7 +1341,7 @@
     },
     {
       "path": "games/totk/tests/audio_effects/mixer_probe.c",
-      "baseSha256": "3281681cfc82035b7f68f572949b25a3f81516344a112aa3e8c003d2a7517f6c",
+      "baseSha256": "230ae98db1defc580a93dbf5b38ab059891462dc694f5491d023e46fc311c002",
       "sha256": "3281681cfc82035b7f68f572949b25a3f81516344a112aa3e8c003d2a7517f6c",
       "executable": false
     },
@@ -1333,13 +1383,13 @@
     },
     {
       "path": "games/totk/tests/command_q/probe.m",
-      "baseSha256": "3a137a523e828f7cfe05acc43772bd0096877a48b05a6af49ae00a86f2c8ef0b",
+      "baseSha256": "0519a75f0b5be27e690d3a45b2c01f70fdddd9ea88d6d14ec107ca5b1a128b15",
       "sha256": "73ab49ef16203cc4c9dc43ce87b0410b406b53e5f4ea229a7bfe64b95f13c7aa",
       "executable": false
     },
     {
       "path": "games/totk/tests/command_q/test.py",
-      "baseSha256": "ab1b513674f1e1aab22cd0cd77931756d7ad495f005a3420917707cc4905ec5c",
+      "baseSha256": "a18168b2a2adba68428a87e3887b7c3fbe6315c88f512a6da1eebb8502784430",
       "sha256": "ab1b513674f1e1aab22cd0cd77931756d7ad495f005a3420917707cc4905ec5c",
       "executable": false
     },
@@ -1369,7 +1419,7 @@
     },
     {
       "path": "games/totk/tests/dirty_race/probe.c",
-      "baseSha256": "210b210ec2e2ea0720d96ad669120aa2d62e4230ddb20ed553f1f415bced9766",
+      "baseSha256": "6b172060a1ed2bd5067c292cec982dd1c1eec3f52194ad33542b9100c847eda6",
       "sha256": "91dd30105fa68efefba9460a5dcee83f623894662115e5c0ba17f219b9210570",
       "executable": false
     },
@@ -1386,14 +1436,20 @@
       "executable": false
     },
     {
+      "path": "games/totk/tests/fbread/probe.m",
+      "baseSha256": "634a9b32fc364e942abf91aac3e4f75890344b5acf3f6bb1f768b28c9a9c3b9f",
+      "sha256": "634a9b32fc364e942abf91aac3e4f75890344b5acf3f6bb1f768b28c9a9c3b9f",
+      "executable": false
+    },
+    {
       "path": "games/totk/tests/fps_overlay/probe.c",
-      "baseSha256": "d0dfef2261efc5ff096f163e33efd494472bfb7b679eeccf9b878d482d777b4f",
+      "baseSha256": "46b4b4f01894eff63dd9086dedf7be276d2969798ce41d72ad697e1fcdbf991a",
       "sha256": "66f6bd87d052f122dd32e84456af3c647256114294ad06bfe87357075a9ec1c1",
       "executable": false
     },
     {
       "path": "games/totk/tests/gamepad_layout/probe.c",
-      "baseSha256": "666291ac36a79fa65dfc7429ff162bb25fcd0890062ead3fe9263f7a4a2e9a69",
+      "baseSha256": "f6c1fb7388c49c339a2fe0fee401f127c46ba78eefc2fa5d29134c4b9e582bf6",
       "sha256": "6fd74ee61de6788ba5da58bc6c940068ee1a9acc1de54ae75925bb12c81a1c8e",
       "executable": false
     },
@@ -1453,14 +1509,14 @@
     },
     {
       "path": "games/totk/tests/shader_contrib/probe.m",
-      "baseSha256": "4f8282f2bc5fd0e43c4cc5ea8433a5594e1f1bb8501bca4b3d899a4d752c81c6",
+      "baseSha256": "56a95188e089c5403dec1f4cf3dca835dded4f7f1c6ed674aa22dfc2f82fb134",
       "sha256": "d5e31cbd5387b63d68e161bfc38d22a3e8126a93bc70d7de7b3fbbbb23ceaaa6",
       "executable": false
     },
     {
       "path": "games/totk/tests/telemetry_test.c",
       "baseSha256": null,
-      "sha256": "709635b860577dc59bd6ad804d1e5443eecc391cb35e989f3c1ee79791595c15",
+      "sha256": "4e8cb391a39c5b7cbba848e872a5787b67772729ca2ca32e3bdbc6a328937566",
       "executable": false
     },
     {
@@ -1501,7 +1557,7 @@
     },
     {
       "path": "games/totk/third_party/d2r/README.md",
-      "baseSha256": "111525c65bfb0857800ad6de167387aa3dd492748225baf7b30378a0687e7a81",
+      "baseSha256": "7976c0b333d99feee1f4190bb9ea9f020a425acad45fbdd2dd7249b279633fbb",
       "sha256": "111525c65bfb0857800ad6de167387aa3dd492748225baf7b30378a0687e7a81",
       "executable": false
     },
@@ -1513,7 +1569,7 @@
     },
     {
       "path": "games/totk/third_party/d2r/equiv.py",
-      "baseSha256": "bdfbfe8d1dafe074599275d1ddc4ed7c09454d3b8c5189718a7dbca85cb9c808",
+      "baseSha256": "bba2a261659de2aaa8286c217bb42fa7d34b1cfbf293e524c77cecef88fdbeb0",
       "sha256": "bdfbfe8d1dafe074599275d1ddc4ed7c09454d3b8c5189718a7dbca85cb9c808",
       "executable": false
     },
@@ -1525,7 +1581,7 @@
     },
     {
       "path": "games/totk/third_party/d2r/patch_nso.py",
-      "baseSha256": "c38b1d3eb240f8f87dad4bfee4271adf47604a0a2d07051cee4a8523b36fa3c9",
+      "baseSha256": "42cf70d595654d83db1c1a7ffe6db7663f2817af5abd01b4311b4b24d5824327",
       "sha256": "c38b1d3eb240f8f87dad4bfee4271adf47604a0a2d07051cee4a8523b36fa3c9",
       "executable": false
     },
@@ -1537,7 +1593,7 @@
     },
     {
       "path": "games/totk/third_party/d2r/structck.py",
-      "baseSha256": "2be8edddd457f4918719c38141521e87992c33a4b8a25bb36afb31dc1fc10429",
+      "baseSha256": "bcb6c510bcfae6b556a47da30d1c8a0a4e5cc8c484d9bfeee2bcd1273da84312",
       "sha256": "2be8edddd457f4918719c38141521e87992c33a4b8a25bb36afb31dc1fc10429",
       "executable": false
     },
@@ -1561,31 +1617,37 @@
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/dmsh_chain.h",
-      "baseSha256": "8397e388fb4325a7205a3e9f3470596bf474e12b58bcef4d867b7365a0313830",
-      "sha256": "8397e388fb4325a7205a3e9f3470596bf474e12b58bcef4d867b7365a0313830",
+      "baseSha256": "c4bb6c765c7c3c65e4b87f051e99df4cb7c22a0d139abf9e1b35ecbc8e1df0d2",
+      "sha256": "c4bb6c765c7c3c65e4b87f051e99df4cb7c22a0d139abf9e1b35ecbc8e1df0d2",
       "executable": false
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/fps_overlay.c",
-      "baseSha256": "3fe9ebee37c357ebfe670d7922d6ad4837a4ea08a42dbabe9cf5c309afe3ada9",
+      "baseSha256": "ec9af24699571e5bfde78dd158f80d5745fb2627fc0b5557f954fa68e89e8786",
       "sha256": "71dd3de5f24e269a03cb6158a250b202f27f01c184a3080b7517dbb288350cfa",
       "executable": false
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/fps_overlay.h",
-      "baseSha256": "08a2e60328f6042d98b1805c3de790692f834655ec794a3d7172b09c4680ad16",
+      "baseSha256": "b428e792f667e128b50e3ff40958d8a520cf87a394255c1fa47c9924018bcf84",
       "sha256": "644528c0ff5d5c9220ae60c1bf103bee67abe9bbe7bee88183b67baf69172ae0",
       "executable": false
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/hle_nvn.c",
-      "baseSha256": "5614c4c997dfe4a49ebb1c51ed5581c76e2af89a14acae7c4300cf0553bfa831",
-      "sha256": "afdfead159119d5c21481cedabf9a7c753aae6cc39273ed7f7731da9144e4fdb",
+      "baseSha256": "5f71b591595e1844978ca1cd6c8e000b82af68237e0c7477e92bf7eb7cd05ea6",
+      "sha256": "65e641583d9a4d894dcc8ae1f9c4e41a4ea1119120a5c752b82a5cc7bed90c60",
+      "executable": false
+    },
+    {
+      "path": "games/totk/third_party/d2r_gfx/gfx/nvn/include/dm_wait_stats.h",
+      "baseSha256": "059322aca62822cb545c260e9757594db0986e9821f26e8c6489d4da4df2606a",
+      "sha256": "059322aca62822cb545c260e9757594db0986e9821f26e8c6489d4da4df2606a",
       "executable": false
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/include/mach_vm_compat.h",
-      "baseSha256": "b681c0778caf4b37993d983963cf725808da53a33e1dff358b575bc7ebac4ce7",
+      "baseSha256": "4c30112044ef282bc7e0bc2c09920f4819cd7ddc9e3394d712580461b2a38d31",
       "sha256": "b681c0778caf4b37993d983963cf725808da53a33e1dff358b575bc7ebac4ce7",
       "executable": false
     },
@@ -1597,8 +1659,8 @@
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/include/totk_ui_lang.h",
-      "baseSha256": "161ff964a975022af3186c4c06f1e5db7910b1f08d2cf60d34dff90869b147b5",
-      "sha256": "161ff964a975022af3186c4c06f1e5db7910b1f08d2cf60d34dff90869b147b5",
+      "baseSha256": "5c780de9ffafe52b0b4bdb6cb29043eb41bd9ff0767e79b1c28fcf3ef876a31f",
+      "sha256": "5c780de9ffafe52b0b4bdb6cb29043eb41bd9ff0767e79b1c28fcf3ef876a31f",
       "executable": false
     },
     {
@@ -1611,6 +1673,12 @@
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/nvn_arg_address_cache.h",
       "baseSha256": "64d062b5bc3aeb234fea3a9e68e51ccc904c3b815e8a75f839368e27802b3211",
       "sha256": "64d062b5bc3aeb234fea3a9e68e51ccc904c3b815e8a75f839368e27802b3211",
+      "executable": false
+    },
+    {
+      "path": "games/totk/third_party/d2r_gfx/gfx/nvn/nvn_args_invalidation_probe.h",
+      "baseSha256": "f01d3fe7bd006bdb88528261a01689305e3bf9a21957beff209619324b2c2c22",
+      "sha256": "f01d3fe7bd006bdb88528261a01689305e3bf9a21957beff209619324b2c2c22",
       "executable": false
     },
     {
@@ -1657,14 +1725,14 @@
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/nvn_dirty.c",
-      "baseSha256": "4b46b438a3bdf66e27d57e0b55f88720374a427fda97563fefd3dfe36e95ffef",
-      "sha256": "c119fe5c859d939fa57ff9250da907860cefc2efc0cb007c66dc82c0fab2e058",
+      "baseSha256": "24c59b5bb27617b78a6abc0851b5383deaad2c93ffe2c91f7b1a01fa3ec7e413",
+      "sha256": "24c59b5bb27617b78a6abc0851b5383deaad2c93ffe2c91f7b1a01fa3ec7e413",
       "executable": false
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/nvn_dirty.h",
-      "baseSha256": "ff8e0775dd609b4c0b984d7efc054025b8f0eb1cd17e96fdd1129f773f5a55ce",
-      "sha256": "ff8e0775dd609b4c0b984d7efc054025b8f0eb1cd17e96fdd1129f773f5a55ce",
+      "baseSha256": "1845ba979344647cc3a17a4192464e7ae2687df4b108819e59b6c5e1cec722e1",
+      "sha256": "1845ba979344647cc3a17a4192464e7ae2687df4b108819e59b6c5e1cec722e1",
       "executable": false
     },
     {
@@ -1680,9 +1748,15 @@
       "executable": false
     },
     {
+      "path": "games/totk/third_party/d2r_gfx/gfx/nvn/nvn_fbread.h",
+      "baseSha256": "08c79a234616a744bd830e018fa2e440b04be759692d1860e488747e1fb40c8c",
+      "sha256": "08c79a234616a744bd830e018fa2e440b04be759692d1860e488747e1fb40c8c",
+      "executable": false
+    },
+    {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/nvn_hmap.h",
-      "baseSha256": "ef7797bd44d9cc3e47010c9913dd3e1972e64c206ddd05f8beeecb643784c55e",
-      "sha256": "ef7797bd44d9cc3e47010c9913dd3e1972e64c206ddd05f8beeecb643784c55e",
+      "baseSha256": "ac89eb9a5f6ac29ad433c71b92eca01b1e365da3aad06e8931213e2de876438f",
+      "sha256": "ac89eb9a5f6ac29ad433c71b92eca01b1e365da3aad06e8931213e2de876438f",
       "executable": false
     },
     {
@@ -1693,20 +1767,20 @@
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/nvn_mtl.h",
-      "baseSha256": "bb951d31d069011d18a66cb0a5870f6abb28ce651af9de8db43af04a2b7282a1",
-      "sha256": "bb951d31d069011d18a66cb0a5870f6abb28ce651af9de8db43af04a2b7282a1",
+      "baseSha256": "50eba4913ec53d31abf98688e143a2dfe3284bdb7f4acafd0a723a84a7a979e8",
+      "sha256": "50eba4913ec53d31abf98688e143a2dfe3284bdb7f4acafd0a723a84a7a979e8",
       "executable": false
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/nvn_mtl.m",
-      "baseSha256": "4d5761ff2ca09c3a7aa307c5ea31f1cf1894be7e0790d02d1d329be71e38f03d",
-      "sha256": "4270c2e50142d035018c60a533aabec5db47b4e0e2c8f77e6ab76ccd67bc9679",
+      "baseSha256": "ef08cdbb48be4a90d8d8ebe3900239ea98bc84afc1bd8b61db12efc626ce0975",
+      "sha256": "457cbd510b10712ab8ce379f419caeed6d66f56289c9bd669cbb79e8fc224db6",
       "executable": false
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/nvn_obj.h",
-      "baseSha256": "66a7d3d9e3e30a20c50728996cd54a7fc761ab3710aba32a7dcf55868fc86727",
-      "sha256": "66a7d3d9e3e30a20c50728996cd54a7fc761ab3710aba32a7dcf55868fc86727",
+      "baseSha256": "eebb310521067c49e5f591c59fd26065e09466aa4ffadfe75aeec62844222fb0",
+      "sha256": "4b67418c8725ed0bbad51426447a5b14a2488cf08ddbc5bd42ea3e0f8355c9f1",
       "executable": false
     },
     {
@@ -1737,6 +1811,12 @@
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/nvn_pso_skey.h",
       "baseSha256": "380436ba27859b0671c96c535c119045366e35076ef0037eb4a2523d33aec8fd",
       "sha256": "380436ba27859b0671c96c535c119045366e35076ef0037eb4a2523d33aec8fd",
+      "executable": false
+    },
+    {
+      "path": "games/totk/third_party/d2r_gfx/gfx/nvn/nvn_quad_strip.h",
+      "baseSha256": "bca0e89e40ba9bc6d90f5c37c43c69580e2e8ccf7b4d85ad50007621daabe638",
+      "sha256": "bca0e89e40ba9bc6d90f5c37c43c69580e2e8ccf7b4d85ad50007621daabe638",
       "executable": false
     },
     {
@@ -1771,8 +1851,14 @@
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/nvn_sampler_border_probe.h",
-      "baseSha256": "c26b231155281d6998c97fbccd2cb58bc45e5991e082adcda075012faf9616b1",
-      "sha256": "c26b231155281d6998c97fbccd2cb58bc45e5991e082adcda075012faf9616b1",
+      "baseSha256": "b0534d16186b7c79d5e23133e4294242ce662cb1fbb321f0ad5184a121938feb",
+      "sha256": "b0534d16186b7c79d5e23133e4294242ce662cb1fbb321f0ad5184a121938feb",
+      "executable": false
+    },
+    {
+      "path": "games/totk/third_party/d2r_gfx/gfx/nvn/nvn_scan_budget.h",
+      "baseSha256": "0b0357174b73bd5f8b07d693a89468078a98d2198e6c3308555d808aa72e695e",
+      "sha256": "0b0357174b73bd5f8b07d693a89468078a98d2198e6c3308555d808aa72e695e",
       "executable": false
     },
     {
@@ -1812,6 +1898,12 @@
       "executable": false
     },
     {
+      "path": "games/totk/third_party/d2r_gfx/gfx/nvn/nvn_writeback_probe.h",
+      "baseSha256": "c427b7fb4ba61cb6b10b0f40c381f7b25f17452847cef9b8b0c57e480e6466e2",
+      "sha256": "c427b7fb4ba61cb6b10b0f40c381f7b25f17452847cef9b8b0c57e480e6466e2",
+      "executable": false
+    },
+    {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/rt_range_check.inc",
       "baseSha256": "5ea5738eac7ef458bf08783bb751077f43cf8382492503327d564cafb20ff580",
       "sha256": "5ea5738eac7ef458bf08783bb751077f43cf8382492503327d564cafb20ff580",
@@ -1831,32 +1923,32 @@
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/totk_mfx.h",
-      "baseSha256": "14940e37b699e96820e4ba14d8825d45f016e2dca0ffdbe7b4b9f721c6ae6784",
-      "sha256": "14940e37b699e96820e4ba14d8825d45f016e2dca0ffdbe7b4b9f721c6ae6784",
+      "baseSha256": "07d1cd19c172c2bd294226946a98ed44d06e2ad11e6d3a6c2597c8382c122d9d",
+      "sha256": "07d1cd19c172c2bd294226946a98ed44d06e2ad11e6d3a6c2597c8382c122d9d",
       "executable": false
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/totk_mfx.m",
-      "baseSha256": "27023215160b45479bffc1383561c5580ca61bbee2f115727504831e0bc3eaab",
-      "sha256": "27023215160b45479bffc1383561c5580ca61bbee2f115727504831e0bc3eaab",
+      "baseSha256": "06fd5fa66fb4823c823735d356d399982d476699a4ca54c6859fdc9f04d9feae",
+      "sha256": "f3fe7f6437c34f3892f811b41005fbf4c9028f2b51442f8f8113a7467c7c70b9",
       "executable": false
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/totk_mfx_mode.h",
-      "baseSha256": "f005ff3fb6984eeb9b0000aa1245a2d689cb52799f0c5ecdec642480ebd0fe44",
-      "sha256": "f005ff3fb6984eeb9b0000aa1245a2d689cb52799f0c5ecdec642480ebd0fe44",
+      "baseSha256": "3fff3f4fcc5e0da6dc2eda153df525ef1ece518133716b89acfbc2ee444c7405",
+      "sha256": "5092edb28ed5e475c162eae185acbadd164e1bf70d08ae461436a8ab505204bd",
       "executable": false
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/totk_mfx_up.h",
-      "baseSha256": "8ff05635c5ea64dadbbffe4e88382bfb757af11f59967a57724fcd1f9c287cd5",
-      "sha256": "8ff05635c5ea64dadbbffe4e88382bfb757af11f59967a57724fcd1f9c287cd5",
+      "baseSha256": "a94d130007a1b650b1123728523762fde0528fdc61cf29974590d3679f478b5a",
+      "sha256": "a94d130007a1b650b1123728523762fde0528fdc61cf29974590d3679f478b5a",
       "executable": false
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/totk_mfx_up.m",
-      "baseSha256": "0a0937483b7e8ce6a553d6fa1869adb75ca93de8a83d3dc41b8ff1efdc2a82e3",
-      "sha256": "0a0937483b7e8ce6a553d6fa1869adb75ca93de8a83d3dc41b8ff1efdc2a82e3",
+      "baseSha256": "889cb0de3574c116184d6a0efb9ad56a8cb788a5dee0e2a994ef0d81d3d97a72",
+      "sha256": "889cb0de3574c116184d6a0efb9ad56a8cb788a5dee0e2a994ef0d81d3d97a72",
       "executable": false
     },
     {
@@ -1867,8 +1959,8 @@
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/totk_pipeline_archive.h",
-      "baseSha256": "780ef8b572441813c1fc4c3460237f7d5df2bb32e049f539169be2b917369f2d",
-      "sha256": "aed68d9d91b025635058283e8983a0e9854bbae6954e703e5d246ed8cd8d2ef6",
+      "baseSha256": "9a58e57e29340fe34065e4848e5d13532680d05b0b9b836b084fd1528a410fc9",
+      "sha256": "6e2b498278fb190944cd1dab872870d3607a8a668b77e9ff1f7924b322a74d52",
       "executable": false
     },
     {
@@ -1879,8 +1971,8 @@
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/totk_shader_contrib.h",
-      "baseSha256": "804dedc6b2d0b71c02ed47d78d97457d59bd7f7140f81767d3c2d7ffa6410e41",
-      "sha256": "0a4282169a19197b353ef3cdea42c64833536df743af6c8b1e87cd448560020c",
+      "baseSha256": "a00324d15b1e7d6b3a4e4d4a77256a9371fb25fdf29b4caf222c643a51c5a129",
+      "sha256": "7f3292035420dec6341d42f77cb810204202a7f4d964d76506d3535b2c795b3e",
       "executable": false
     },
     {
@@ -1891,14 +1983,14 @@
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/totk_shader_rt.h",
-      "baseSha256": "a40f297f5e492dc4080fc599f7a2e74b5041eebbc1271adfba822095d0ac46a9",
-      "sha256": "a40f297f5e492dc4080fc599f7a2e74b5041eebbc1271adfba822095d0ac46a9",
+      "baseSha256": "7707b34078767d0ae0c5ff8fda555669fa978eb36f4115875b201bfc509cab85",
+      "sha256": "e5b9927e7ad3b4e10dd92d61d89c4c36b3f36cc5abd10716a218ebccedb66f38",
       "executable": false
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/totk_shader_rt.m",
-      "baseSha256": "d8bc8d2dbe6e13a64fcedb744bb9f48ef1e0b769db5f2abd19081d43ef9957d1",
-      "sha256": "d8bc8d2dbe6e13a64fcedb744bb9f48ef1e0b769db5f2abd19081d43ef9957d1",
+      "baseSha256": "28c3d613d3dcb2974b118a9d144e861dfb08277db0dbc608446c7b5c3702cee6",
+      "sha256": "ccb9fc7837c9928c0e5da798c1900c1cc9abdb5bd0639c7e578bb1455d074636",
       "executable": false
     },
     {
@@ -1909,13 +2001,13 @@
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/totk_shader_seed.h",
-      "baseSha256": "b8dc30b1afc8646436670d07b0634501ae062b65839357b8c05d38622a65d473",
-      "sha256": "ad329dd3ebf4773173ba2b3216b4bec2999b2c95f8c9367537387f35f633160b",
+      "baseSha256": "ca91848100cc172d2660729473297c073aaf3e9d4d964ecb1420f03bbf17dfe6",
+      "sha256": "9048aacfcf41c652f1a73b5e416a34e0a5cd89335c1a61db03650ddf9417ed7c",
       "executable": false
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/totk_sysload.c",
-      "baseSha256": "1f6160b2991fe85e53603e22be0b7afd7628a7da69cc4d6724be0d70bbc37227",
+      "baseSha256": "3e6d2db1e383caa7b1b895fbe99ee2240128152b57212beb6eaf018429b7298c",
       "sha256": "e29e4415dd7c3c9653836fe3ec3355e0b8304caa4065bc997a20ae9626841b6e",
       "executable": false
     },
@@ -1927,25 +2019,25 @@
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/totk_taa.h",
-      "baseSha256": "d9140be22a8e759e36bf7b52f8e558c61121b55af59ff119a240a00af90d6610",
-      "sha256": "d9140be22a8e759e36bf7b52f8e558c61121b55af59ff119a240a00af90d6610",
+      "baseSha256": "5d27b798364a3fdf01fd8528d67b502cacaf9a186de633453edd14481c892d0c",
+      "sha256": "4ebeefcfa3b8a54986cc7dd41b1582df8093d7e0d0d5a96e1548ca1d33beb5f2",
       "executable": false
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/totk_taa.m",
-      "baseSha256": "2289fc671e095267f09b5a4790346a6ec11bfb25f6f71de3d92626c6187cf3a8",
-      "sha256": "a3f3db78ace3b0d043a4077218cdfcaafb5462c8b192bc09f6c710f64de517cd",
+      "baseSha256": "04a355905fd6f8e1daa630ccaa891f90d08be1d8c5ddecafc1b306ffcbf5e801",
+      "sha256": "0107bab75efd879c178c5e40785c3d5e73e2456bc977e0892774b16cd7164731",
       "executable": false
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/totk_timeline.c",
-      "baseSha256": "40a1ce9328b1bda49b15ae04ab569bfe7521942c99a761b37f05eee33326af7c",
+      "baseSha256": "a82c76c946c43d9ba2a0d57eef6fbde7a35b5c4624bf340ba1483358dd1fee9d",
       "sha256": "40a1ce9328b1bda49b15ae04ab569bfe7521942c99a761b37f05eee33326af7c",
       "executable": false
     },
     {
       "path": "games/totk/third_party/d2r_gfx/gfx/nvn/totk_timeline.h",
-      "baseSha256": "28deb424682bea005a5bcda59f1cc576ea85c901cbecbcf06d7f5585fef5b4d3",
+      "baseSha256": "e3aef8f0ece2fbf4c5b6c70977e281e442bb3fbc535fb461ab6db739e7d5e670",
       "sha256": "28deb424682bea005a5bcda59f1cc576ea85c901cbecbcf06d7f5585fef5b4d3",
       "executable": false
     },
@@ -2119,14 +2211,14 @@
     },
     {
       "path": "games/totk/tools/totk_xlate/Program.cs",
-      "baseSha256": "a2da879fd222f0ca0b23992f31bf48217b604ebe01350978564dcf18c637072b",
-      "sha256": "a2da879fd222f0ca0b23992f31bf48217b604ebe01350978564dcf18c637072b",
+      "baseSha256": "9e19a5a677851d6de66b84c378e33a85c8ce0a969ef244558e3899e98d49e2b7",
+      "sha256": "9e19a5a677851d6de66b84c378e33a85c8ce0a969ef244558e3899e98d49e2b7",
       "executable": false
     },
     {
       "path": "games/totk/tools/totk_xlate/Service.cs",
-      "baseSha256": "b1511e87a4a36563308973ef4828e190489157c3cff6826307a3d69f6257e233",
-      "sha256": "b1511e87a4a36563308973ef4828e190489157c3cff6826307a3d69f6257e233",
+      "baseSha256": "717a8b3de5b81f181b27cf78eb529db405da8ad30f93ea24ee188c40c3ce71ec",
+      "sha256": "717a8b3de5b81f181b27cf78eb529db405da8ad30f93ea24ee188c40c3ce71ec",
       "executable": false
     },
     {
@@ -2167,14 +2259,20 @@
     },
     {
       "path": "games/totk/tools/totk_xlate/publish_native.sh",
-      "baseSha256": "46aa53d06f39be03cdcf8b30700e44fb7391ebfad42561734fbd425a6ad60aad",
-      "sha256": "46aa53d06f39be03cdcf8b30700e44fb7391ebfad42561734fbd425a6ad60aad",
+      "baseSha256": "2c47bf40490df84e8b85a79e89d4cea027b5a69a60555806bb1c749d85d28feb",
+      "sha256": "2c47bf40490df84e8b85a79e89d4cea027b5a69a60555806bb1c749d85d28feb",
       "executable": true
     },
     {
+      "path": "games/totk/tools/totk_xlate/spirv_cross_inproc.cpp",
+      "baseSha256": "12ee010971d6d3f0635f090aecbcb0bf3b45a8fecc2ace65f169832b4136521a",
+      "sha256": "12ee010971d6d3f0635f090aecbcb0bf3b45a8fecc2ace65f169832b4136521a",
+      "executable": false
+    },
+    {
       "path": "games/totk/tools/totk_xlate/totk_xlate.csproj",
-      "baseSha256": "cee5760b673729e2348b8df87c7a9f6c47530fadd9d9247d15f715312bb91288",
-      "sha256": "cee5760b673729e2348b8df87c7a9f6c47530fadd9d9247d15f715312bb91288",
+      "baseSha256": "89a73d62b1e0e05ef33430a7bfca52ecf89eca5f2ae2bf0136ea89c0e04c3dfb",
+      "sha256": "89a73d62b1e0e05ef33430a7bfca52ecf89eca5f2ae2bf0136ea89c0e04c3dfb",
       "executable": false
     },
     {
@@ -2190,20 +2288,50 @@
       "executable": false
     },
     {
+      "path": "tests/danmaku_probe.m",
+      "baseSha256": null,
+      "sha256": "dfc8e7653d826fcfcf4edea6de175ca1a2d6ca9f2557bcb057964002458e822a",
+      "executable": false
+    },
+    {
+      "path": "tests/map_ui_probe.c",
+      "baseSha256": null,
+      "sha256": "24ba9e35693b832e382ed58b0a6501ff195da92a6979f9d44ef540bc28a6e22b",
+      "executable": false
+    },
+    {
+      "path": "tests/phone_motion_probe.c",
+      "baseSha256": null,
+      "sha256": "246c06ec82c71b8b6a43f4e142db225d78fb0fe10d1c7e1a556c45a102b34897",
+      "executable": false
+    },
+    {
       "path": "tests/shortcut_output_fixture.c",
-      "baseSha256": "0e3faf8ba68b71c58cc5a75d476b5e7c799074e49c55b674d590db34969b9fb2",
+      "baseSha256": null,
       "sha256": "1bcb13584525d0a572197cb5c571d1d307ab7baf36a40f752f1aef92ad72d8a4",
       "executable": false
     },
     {
       "path": "tests/shortcut_status_probe.m",
-      "baseSha256": "399b16ddfe78da1385259c8ddf23aaaf749c9f3415f0c6c6ffe939683c1f6a29",
+      "baseSha256": null,
       "sha256": "06d77b0765cfc257963fad658e0b70e54250dcc2dc4819ccef4a10b46922ff93",
       "executable": false
     },
     {
+      "path": "tests/telemetry_udp_probe.c",
+      "baseSha256": null,
+      "sha256": "f11cfd28b111ba59c9b542944e488df142d34f74b2a8173fdf8aa94c259c6d3c",
+      "executable": false
+    },
+    {
+      "path": "tests/test_animation_research.py",
+      "baseSha256": null,
+      "sha256": "cd2740c095e13838c4de5499096c8038333a3e48d33642f9945636ebb543f529",
+      "executable": false
+    },
+    {
       "path": "tests/test_aspect.c",
-      "baseSha256": "7808ffed10cc95be3f73f43ad47d28798b1cbb5f676deebd8b5fadd8308b3a39",
+      "baseSha256": "53d81b2f072d2cf632c8f53b6afeaa8118bb704440f61b9977a655459b03db9c",
       "sha256": "7808ffed10cc95be3f73f43ad47d28798b1cbb5f676deebd8b5fadd8308b3a39",
       "executable": false
     },
@@ -2226,6 +2354,12 @@
       "executable": false
     },
     {
+      "path": "tests/test_button_icons_hud.py",
+      "baseSha256": "fd73170691aaf311f22e6e13a18811e914ad645fb8c8872e8743283172dba2b8",
+      "sha256": "fd73170691aaf311f22e6e13a18811e914ad645fb8c8872e8743283172dba2b8",
+      "executable": false
+    },
+    {
       "path": "tests/test_clone.py",
       "baseSha256": "58b00f94c61a02bf4b7ac72323b0466426810ca61e49ea567aebb88038892206",
       "sha256": "58b00f94c61a02bf4b7ac72323b0466426810ca61e49ea567aebb88038892206",
@@ -2233,7 +2367,7 @@
     },
     {
       "path": "tests/test_controller_map.c",
-      "baseSha256": "e9a1e1ce082233d06909596bbc309f9f8bccaa0d03717dbdb54e73e7caafa54f",
+      "baseSha256": "5f231bbccf311a966c9d72a9662a567beeaf00a87ed13e7041f449d05e4cfd83",
       "sha256": "e9a1e1ce082233d06909596bbc309f9f8bccaa0d03717dbdb54e73e7caafa54f",
       "executable": false
     },
@@ -2241,6 +2375,12 @@
       "path": "tests/test_controller_map.py",
       "baseSha256": "9b9d079eff182ac7adc46d28cd1743b1d1e4be3eefa991240a2f0f07cd5d7da1",
       "sha256": "9b9d079eff182ac7adc46d28cd1743b1d1e4be3eefa991240a2f0f07cd5d7da1",
+      "executable": false
+    },
+    {
+      "path": "tests/test_danmaku.py",
+      "baseSha256": null,
+      "sha256": "a36001d8f25aaca6da8d8cc26dc64dbbc23c897e1254a2b38612bb8f7dc3d7e3",
       "executable": false
     },
     {
@@ -2253,6 +2393,18 @@
       "path": "tests/test_desktop_entry.py",
       "baseSha256": "1a1fd1d368c5aaf75fb613d4d5d920932b97fa3af52a3109519293ff9c057673",
       "sha256": "1a1fd1d368c5aaf75fb613d4d5d920932b97fa3af52a3109519293ff9c057673",
+      "executable": false
+    },
+    {
+      "path": "tests/test_frame_step.c",
+      "baseSha256": null,
+      "sha256": "7c368d867b2ee8d874d85cf95cadabbcce1527ad22a0335978cc387cd4473907",
+      "executable": false
+    },
+    {
+      "path": "tests/test_frame_step.py",
+      "baseSha256": null,
+      "sha256": "5dbd36e8a99d4ae979ee374b99ae438f7339fa54ec886d299af5d47a632cbc23",
       "executable": false
     },
     {
@@ -2281,13 +2433,13 @@
     },
     {
       "path": "tests/test_keyboard_map.c",
-      "baseSha256": null,
+      "baseSha256": "1f3b6bf1e3fa681a5e0c1bdddd8024e49a2a7ee0a88a201eef4e0327b53d6f37",
       "sha256": "eec4cd071f022adb1065a4a58dac726833313a70069a86fb41072eba0df8d769",
       "executable": false
     },
     {
       "path": "tests/test_keyboard_map.py",
-      "baseSha256": null,
+      "baseSha256": "87aa51b512bccee5e475f7122f537554b67a5828d691df76a68ca371dba1282b",
       "sha256": "29367b5668931ab2b2975cef26de9962446df6294581f4b3167723d6b956920f",
       "executable": false
     },
@@ -2298,9 +2450,21 @@
       "executable": false
     },
     {
+      "path": "tests/test_map_ui.py",
+      "baseSha256": null,
+      "sha256": "dd6a50dcf3a4e262dd848b4ef0381ce012c6019610682edd550ca99651b4febb",
+      "executable": false
+    },
+    {
+      "path": "tests/test_mfx_modes.py",
+      "baseSha256": null,
+      "sha256": "1e82f9128fa82781b34a30ac2cb3df72d8b1d9d3edabf11f0f9eeb430667e499",
+      "executable": false
+    },
+    {
       "path": "tests/test_mod_manifest.py",
-      "baseSha256": "a150fa908dacb4b4da3be0dcb3f28ca4b20aadb3a9f0d5842388b8e19cc6bd28",
-      "sha256": "af9d88539db7d7f2821f90fc8fe3d7c3ce1bf63dbca1307813080a1d586565fd",
+      "baseSha256": "a88a554a43f69456052af64283eaff0ebca04878af7f4058c67f1c7e635afda9",
+      "sha256": "db3d97e7cfd679db3df18d7f37aeb73210ed78cf5dc5acd10ef017f4b4534b79",
       "executable": false
     },
     {
@@ -2310,9 +2474,39 @@
       "executable": false
     },
     {
+      "path": "tests/test_performance_batch.py",
+      "baseSha256": "b25b43fcb1ed69ec65518bb8806a90c16c5b28f84dc319b6d414138bb4e197cf",
+      "sha256": "5be6366aeee1d0271d168d5b5f845f3b70a45eaf0d7d3fb06a702db70d86f611",
+      "executable": false
+    },
+    {
+      "path": "tests/test_phone_motion.py",
+      "baseSha256": null,
+      "sha256": "70508b7b628ebe5be3970d0df3dbb4bf718eb30f9d3ee0ee66a9421c5dab72d4",
+      "executable": false
+    },
+    {
       "path": "tests/test_pipeline_rescan.py",
       "baseSha256": null,
       "sha256": "f0765ec2dd05409abe1f127f45d0b3a7c428f2eca3b91ff1f80b755a0b9a0625",
+      "executable": false
+    },
+    {
+      "path": "tests/test_pipeline_scan_budget.c",
+      "baseSha256": "c0975b5c67963587a0dc33a7c9c03e64628e8cd8069817cf449ab87640dc6ce8",
+      "sha256": "c0975b5c67963587a0dc33a7c9c03e64628e8cd8069817cf449ab87640dc6ce8",
+      "executable": false
+    },
+    {
+      "path": "tests/test_quad_strip.c",
+      "baseSha256": "bed74132e4d3066a7211fd9839d3b4f98b67275a05098df4b1e6b6edb4458fae",
+      "sha256": "bed74132e4d3066a7211fd9839d3b4f98b67275a05098df4b1e6b6edb4458fae",
+      "executable": false
+    },
+    {
+      "path": "tests/test_quad_strip.py",
+      "baseSha256": "f7e89db0a76f18c542aac75165895d517f3cc0ed7425b17661374c78d3636222",
+      "sha256": "f7e89db0a76f18c542aac75165895d517f3cc0ed7425b17661374c78d3636222",
       "executable": false
     },
     {
@@ -2340,6 +2534,12 @@
       "executable": false
     },
     {
+      "path": "tests/test_sampler_caches.py",
+      "baseSha256": "0b750ec32592c5638bd891e7c9e25ed648bc8a80848a1653d69660904711b3a5",
+      "sha256": "0b750ec32592c5638bd891e7c9e25ed648bc8a80848a1653d69660904711b3a5",
+      "executable": false
+    },
+    {
       "path": "tests/test_serial_set.c",
       "baseSha256": "bafd48d2790f2f79cc146d5351fe7ea2a5a6e766c33b4a61e930d5a802d04d4e",
       "sha256": "bafd48d2790f2f79cc146d5351fe7ea2a5a6e766c33b4a61e930d5a802d04d4e",
@@ -2353,14 +2553,14 @@
     },
     {
       "path": "tests/test_shader_contrib.py",
-      "baseSha256": "d3207b2eac8e05b182a52240c4bb722a2a00024885562e4b1f3bfbd7703f8ab5",
-      "sha256": "4f55d65e371feae803dee073cbeacecc80bb304fc27c128a29758198904895fc",
+      "baseSha256": "79a096bc783edda54b72057de1734173cd5e65fe81ad4a4f82e56c4e52778bd0",
+      "sha256": "60a4255ef321a7bb358812c5597efb7897b22d4ff063590e474c8ffe37bed16e",
       "executable": false
     },
     {
       "path": "tests/test_shader_list.py",
-      "baseSha256": "4c9f6e9389cfc2957e0004534c1f982b4ad5f4ce23d3d20d9c085536f7a3c199",
-      "sha256": "b2a191717659a5a7bff0abb952d4ddc650607507c1c431c8246ebdcf52dce894",
+      "baseSha256": "a48ffe355fc41284c3bd0c47487cb256e595a03703a5b69192eb65bac54062e2",
+      "sha256": "ff69e14de71f53ec2865597699ac8e6ca62780d2b5a379af72d221dc973a586b",
       "executable": false
     },
     {
@@ -2371,13 +2571,13 @@
     },
     {
       "path": "tests/test_shader_seed.py",
-      "baseSha256": "d265240bd336c4b770678f04395033067fb3a146e499d8bd39894cd561d09481",
-      "sha256": "05469ff426901fe4cc333d41402d3188642fe9ef7e2004e37314d29fe5997857",
+      "baseSha256": "1c92069b36776ef4d94eaf2c32d56ab5fdf31fb1db696c8c1a694374eb6954ab",
+      "sha256": "c5c3d2e89746088c27e45836a5e123fcf4761098df536d0a8b0a05704ba73eae",
       "executable": false
     },
     {
       "path": "tests/test_shortcut_status.py",
-      "baseSha256": "7c952cf4ff784e9f33fe63e4203cd59a060231dc9e8c5ea2fee449e2e3d20248",
+      "baseSha256": null,
       "sha256": "a3c937c701907f5d3435782ed6a5a69d85ed9e95b3a3757f8504706f31050af4",
       "executable": false
     },
@@ -2394,6 +2594,12 @@
       "executable": false
     },
     {
+      "path": "tests/test_telemetry_udp.py",
+      "baseSha256": null,
+      "sha256": "2b4396a49564ec8ef2a47872839020185d5df34a63de93070225f3d3eef0c2e7",
+      "executable": false
+    },
+    {
       "path": "tests/test_title_menu.py",
       "baseSha256": null,
       "sha256": "d93b184a2e76168bba38bda3482e2f70bce4c8ef68f62ac0c3090dfa37c5d176",
@@ -2401,8 +2607,14 @@
     },
     {
       "path": "tests/test_updates.py",
-      "baseSha256": "13889df0c9a75f6089f871e80724e6430ef221b049551ad4bd860cd3afce2d90",
-      "sha256": "a14426a7d70876aac222ccdf41cb56b51a82d05e33628af6772c40a6ed64b929",
+      "baseSha256": "0c415d89634d8b5e05e0ee1bc89f935b6417f5965105ce896d1d73b191a30715",
+      "sha256": "1b17077daf0bc7bbc32a3daa2e6c4fd50df2c70f1d9e30fdc24cc9f29debaed5",
+      "executable": false
+    },
+    {
+      "path": "tests/test_upstream_texture_guards.py",
+      "baseSha256": null,
+      "sha256": "ac6fb334d98a6d56bc40a1c25845daa01fb43f6ed4c4cbc4b5bad5be08b7ba50",
       "executable": false
     },
     {
@@ -2419,8 +2631,8 @@
     },
     {
       "path": "tests/test_work_directory.py",
-      "baseSha256": "df34a9d0fc2322c077c6022d03e5caf84a451a941263829b17bd852949e73149",
-      "sha256": "df34a9d0fc2322c077c6022d03e5caf84a451a941263829b17bd852949e73149",
+      "baseSha256": "bed941033d9f4ff2bbc863068606476aca7a906baf26c5701e91d134bca4279d",
+      "sha256": "bed941033d9f4ff2bbc863068606476aca7a906baf26c5701e91d134bca4279d",
       "executable": false
     },
     {

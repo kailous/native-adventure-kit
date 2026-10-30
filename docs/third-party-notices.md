@@ -54,3 +54,7 @@ MIT/ISC 组件按各自条件保留版权及许可通知；BSD 类二进制按�
 ## 新增地图源码导出
 
 map-client/ 包含项目地图程序及随附 MIT 的 Reicon 通用图标；Reicon 原 LICENSE 和 SOURCE.md 保持原样。游戏图像、Figma 原稿、内容数据库和真实匹配表未复制。程序内物品/amiibo 名称与 ID 表仍保留，需区分程序、事实/名称和数据集合的权利。PyInstaller、Python、Pillow 及可选 ngrok 的成品发行通知按实际包含内容核查，默认构建不下载 ngrok。
+
+## 直播接收器（外部输入）
+
+地图2.0.24集成使用saermart/DouyinLiveWebFetcher，记录上游提交40a904bdb0561a5a9c958a95634a29681cc4fbf4；逐文件摘要在map-client/douyin-source.json。官方源码通过prepare_live_receiver.py进入用户外部工作区，接收器及其LICENSE随用户本地构建的地图保留。原许可为AGPL-3.0，不改为根MIT；上游README的声明与许可应分别阅读。map-client/douyin/danmaku_hook.py为现有集成适配器，不收录私人直播规则。mini_racer、betterproto、requests、websocket-client和PyExecJS遵守各自许可，构建者需核对二进制依赖的通知。

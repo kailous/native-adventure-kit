@@ -9,7 +9,7 @@ import re
 import subprocess
 import tempfile
 import threading
-from http.server import ThreadingHTTPServer
+from http_server import ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlsplit
 

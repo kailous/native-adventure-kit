@@ -46,3 +46,7 @@ python3.14 /absolute/work/native-adventure/MacNativeGames/build_app.py \
 - 构建失败：先读取用户指定构建缓存的日志，区分装配、工具链和游戏输入错误；不删除游戏、存档或已安装 App。
 
 当前补丁包含本地修改及已选择的上游改进，不能把所有差异归为本项目原创。补丁文本也受来源许可证约束，详见[第三方声明](third-party-notices.md)与[授权范围](../LICENSE_SCOPE.md)。
+
+当前固定上游与候选验证范围见[2026-10-30源码更新](source-update-2026-10-30.md)。本机运行积累的派生着色器清单不进入补丁；装配使用单独锁定的兼容版上游shader_list.tsv，经锁定脚本规范化并校验目标摘要，用户构建时自行生成/补充缓存，不借此声称无卡顿。
+
+清单行可用baseCommit指定独立固定兼容输入；当前仅shader_list.tsv锁到f3e2f661dfc05d7f6708c903ea513c297db195f1，避免新版管线键格式与本地运行时不一致。canonical-shader-list-v1通过已校验脚本规范化排序/重复项，不导入本机缓存；输出哈希仍在lock中固定。

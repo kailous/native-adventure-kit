@@ -19,11 +19,14 @@ MAX_RESOURCE_BYTES = 128 * 1024 * 1024
 
 
 def support_root():
-    return Path(os.environ.get('TOTK_SUPPORT_ROOT', Path.home() / 'Library/Application Support/TOTK Offline'))
+    from offline_layout import root
+    return Path(os.environ.get('TOTK_SUPPORT_ROOT', root() / 'State'))
 
 
 def content_root():
-    return Path(os.environ.get('TOTK_DATA_SUPPORT_ROOT', support_root()))
+    from offline_layout import root
+    fallback = support_root() if os.environ.get('TOTK_SUPPORT_ROOT') else root()
+    return Path(os.environ.get('TOTK_DATA_SUPPORT_ROOT', fallback))
 
 
 def resource_kind(name):

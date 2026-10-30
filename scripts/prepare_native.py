@@ -53,6 +53,8 @@ def load_lock():
     names = []
     for row in lock['files']:
         names.append(safe_name(row['path']))
+        if 'baseCommit' in row and not re.fullmatch('[0-9a-f]{40}', row['baseCommit']):
+            raise ValueError('Invalid per-file compatibility commit')
         if not re.fullmatch('[0-9a-f]{64}', row['sha256']):
             raise ValueError('Invalid target digest')
         if row['baseSha256'] is not None and not re.fullmatch('[0-9a-f]{64}', row['baseSha256']):
@@ -153,7 +155,8 @@ def prepare(work, lock, cache=None, supplied_assets=None):
         if not cache:
             upstream.mkdir()
             git(upstream, 'init', '-q')
-            git(upstream, 'fetch', '--depth=1', lock['upstream']['url'], lock['upstream']['commit'])
+            for source_commit in sorted({lock['upstream']['commit']} | {r['baseCommit'] for r in lock['files'] if 'baseCommit' in r}):
+                git(upstream, 'fetch', '--depth=1', lock['upstream']['url'], source_commit)
         # --upstream-cache is strictly read-only: no fetch, checkout, clean or reset.
         commit = git(upstream, 'rev-parse', lock['upstream']['commit'] + '^{commit}', capture=True).decode().strip()
         if commit != lock['upstream']['commit']:
@@ -179,6 +182,10 @@ def prepare(work, lock, cache=None, supplied_assets=None):
         if found != set(paths):
             raise ValueError('Pinned upstream is missing expected paths')
         for row in lock['files']:
+            if row.get('baseCommit') and row['baseSha256'] is not None:
+                # Explicitly pinned compatibility inputs, verified like the primary tree.
+                data = git(upstream, 'show', row['baseCommit'] + ':' + safe_name(row['path']), capture=True)
+                (source / row['path']).write_bytes(data)
             if row['baseSha256'] is not None and sha(source / row['path']) != row['baseSha256']:
                 raise ValueError('Upstream file digest mismatch: ' + row['path'])
         git(source, 'init', '-q')
@@ -186,6 +193,18 @@ def prepare(work, lock, cache=None, supplied_assets=None):
             path = KIT / patch['path']
             git(source, 'apply', '--check', '--whitespace=nowarn', str(path))
             git(source, 'apply', '--whitespace=nowarn', str(path))
+        for row in lock['files']:
+            if 'transform' not in row:
+                continue
+            if row['path'] != 'games/totk/assets/shader_list.tsv' or row['transform'] != 'canonical-shader-list-v1':
+                raise ValueError('Unknown compatibility transform')
+            script = source / 'games/totk/scripts/shader_list.py'
+            expected_script = next(r['sha256'] for r in lock['files'] if r['path'] == 'games/totk/scripts/shader_list.py')
+            if sha(script) != expected_script:
+                raise ValueError('Unverified shader normalization script')
+            canonical = stage / 'canonical.tsv'
+            subprocess.run([sys.executable, '-B', str(script), 'merge', str(canonical), str(source / row['path'])], check=True)
+            canonical.replace(source / row['path'])
         # Keep fresh local Git metadata for the upstream repository-policy checker;
         # no original local history, refs or credentials are copied.
         assets = loading_assets(source, supplied_assets)

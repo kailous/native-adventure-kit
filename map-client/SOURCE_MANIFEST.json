@@ -1,5 +1,5 @@
 {
-  "source": "Current outer project map-client implementation, 2026-10-26",
+  "source": "Maintained outer project source snapshot, 2026-10-30; native map 2.0.24",
   "files": [
     {
       "source": "backend/amiibo.py",
@@ -27,9 +27,29 @@
       "sha256": "b5cab5ffd0c8ebd42cc9cd605d91d004d48e06e5989c9590288e71bc470eca23"
     },
     {
+      "source": "backend/danmaku.py",
+      "target": "backend/danmaku.py",
+      "sha256": "545b7382fb55af52fcd1cda194b0956c915f0a243f323404bb2e33c6b09b106d"
+    },
+    {
       "source": "backend/data_packs.py",
       "target": "backend/data_packs.py",
-      "sha256": "0fbdf0ec0ed3def6166f096354c689bc567b723cae7465fe3c5b3a8128696b02"
+      "sha256": "a6e585d1d0c39cd832ae4a31186abaee9f2059dde9a8abb0a5f7a9f25f8e5792"
+    },
+    {
+      "source": "backend/douyin_commands.py",
+      "target": "backend/douyin_commands.py",
+      "sha256": "1260369a1f23df58a41937009a5c37648f313fb8d2737b4d484ada96f4d0c795"
+    },
+    {
+      "source": "backend/douyin_live.py",
+      "target": "backend/douyin_live.py",
+      "sha256": "262cbe9b8b42c2bc8c426224debf0ab9d5b65e79072c0bbdb555052e3df1b75c"
+    },
+    {
+      "source": "backend/douyin_worker.py",
+      "target": "backend/douyin_worker.py",
+      "sha256": "36b1f854e1f30ae41812df0f8198ea84ccb44049f22644041094d7e47adab20d"
     },
     {
       "source": "backend/game_capture.py",
@@ -39,7 +59,7 @@
     {
       "source": "backend/game_console.py",
       "target": "backend/game_console.py",
-      "sha256": "465b1ad1f2cc9d28d9db42d3baf56d1c9765e6915eb74f80f43dfea89b8ab0dc"
+      "sha256": "ccd418dcbf05cbef19f2a892527ae921803a73f9cd94d3f8e5cc7cdee895185d"
     },
     {
       "source": "backend/game_control.py",
@@ -62,6 +82,11 @@
       "sha256": "6ca8a00b4f58bcd8df0d6424e67439f81b2273807038f12d1c0b61b8dedc4d3f"
     },
     {
+      "source": "backend/http_server.py",
+      "target": "backend/http_server.py",
+      "sha256": "744f2ad49f3de4549b1f90f5931dc58113d874f642ef26b022e2c16815e3d8ff"
+    },
+    {
       "source": "backend/input_observation.py",
       "target": "backend/input_observation.py",
       "sha256": "9d9a37580a49ec7a275660e297eb4d967d7d2f601fd2762db776e8969982c4f7"
@@ -75,6 +100,11 @@
       "source": "backend/link_control.py",
       "target": "backend/link_control.py",
       "sha256": "86d5df1c6d2a936f0da4abf1f4be630f5f66487606237980b1589f3092feba51"
+    },
+    {
+      "source": "backend/local_https.py",
+      "target": "backend/local_https.py",
+      "sha256": "145fdc7a406208e8318c634c7adba2013fe5de6f281086b37916c90c1a708e0b"
     },
     {
       "source": "backend/macos_camera.py",
@@ -104,12 +134,17 @@
     {
       "source": "backend/mcp_tunnel.py",
       "target": "backend/mcp_tunnel.py",
-      "sha256": "2665e648d6d59c67cea0a7ff9d4848a89473e44ca3412ec195b3f4e5ae06e7bb"
+      "sha256": "e191677e4b237e7513f0b642ccd993d6ff0be4bb30fd65ad0f620ed3e18cf9b3"
     },
     {
       "source": "backend/mod_telemetry.py",
       "target": "backend/mod_telemetry.py",
       "sha256": "1828b75cc7c5ed0ad40a93bcc0c8eb1f1d9445e4659b69a449050105781e2720"
+    },
+    {
+      "source": "backend/offline_layout.py",
+      "target": "backend/offline_layout.py",
+      "sha256": "f8e93fe8a27408807c5d03952142af26fc48b7cfdd14bcbec007c95aac27ad56"
     },
     {
       "source": "backend/offline_map.py",
@@ -119,7 +154,12 @@
     {
       "source": "backend/paths.py",
       "target": "backend/paths.py",
-      "sha256": "d8faf8f2835ac2c2b1b6bcad791ea9a7f7fc66a1277c54ec7d10c3dba691e7ac"
+      "sha256": "01d0ee2a7ca95a2dbd5011a53332ed5d3a6b510cf968f64189d5a9bb419a212d"
+    },
+    {
+      "source": "backend/phone_motion.py",
+      "target": "backend/phone_motion.py",
+      "sha256": "8cefeaaf28bf52cf874629673c942790814ef4abb4cf6cc9c3032e00c26a1a57"
     },
     {
       "source": "backend/player_stats.py",
@@ -144,7 +184,7 @@
     {
       "source": "backend/server.py",
       "target": "backend/server.py",
-      "sha256": "a02af46621bb8efe0e5d0d6b62fc96973df853211b876d6861727e504e7b75ed"
+      "sha256": "32bcb293b94fb55a4b5fb2b59b2b46934ae248765f0940d2940ff0681173101e"
     },
     {
       "source": "backend/spawn_catalog.py",
@@ -164,7 +204,7 @@
     {
       "source": "desktop/Client.swift",
       "target": "desktop/Client.swift",
-      "sha256": "64a736158095bb9d8f65d5063da67d0388a63fe07b68bcff5cf8894b9d9dd5ce"
+      "sha256": "562c891b4fe94ce0da39526a9ec701265aebc0b938e863fe8365fcb6ca550a14"
     },
     {
       "source": "desktop/ConsoleStyle.swift",
@@ -174,7 +214,7 @@
     {
       "source": "desktop/DataPacks.swift",
       "target": "desktop/DataPacks.swift",
-      "sha256": "dd012c0027162a4a4f29639521c6dddf738946baf55de93ca03611bcd8416928"
+      "sha256": "51a92038563177f12cc3e1e36d8fa25b966719c2a18b98c523904009e86d49d9"
     },
     {
       "source": "desktop/NativeGame.swift",
@@ -189,12 +229,19 @@
     {
       "source": "desktop/backend_entry.py",
       "target": "desktop/backend_entry.py",
-      "sha256": "ef01e5fd71f28994122d70fee5e9606c1c7ff62eeb5bb3a0c12779ee945c857a"
+      "sha256": "4742c0ffa23b63d7b4becc6e4cce4cd0b04142b83cf9b3a4edf5b1020dc8c453"
     },
     {
       "source": "desktop/main.swift",
       "target": "desktop/main.swift",
       "sha256": "20520f873a4e34fdf2862f761798347c1ac5a956928929170808b0e2aa388a71"
+    },
+    {
+      "source": "desktop/tunnel-agent.json",
+      "target": "desktop/tunnel-agent.json",
+      "sha256": "cc4c1ff680a9b9b75e6a343b62ee4e82091672efb6ebd820372b061f1319859b",
+      "localModification": "Optional agent metadata updated after reviewing the official stable download (3.39.13); no agent is redistributed.",
+      "currentSha256": "2ee3677ec6644e0a01f543cde784b5b729fb5a7bdedf59457da20bea2a93199e"
     },
     {
       "source": "webui/amiibo.css",
@@ -220,6 +267,11 @@
       "source": "webui/compendium.js",
       "target": "webui/compendium.js",
       "sha256": "350758736664e7c1cbb6a6049ae5ef8e70665f5fac2f897a6f829081b0544af1"
+    },
+    {
+      "source": "webui/douyin-live.js",
+      "target": "webui/douyin-live.js",
+      "sha256": "06c94aa48f4d8c708bc915185d604a88b6fb819d26d3ea6b9141d650eb519e3b"
     },
     {
       "source": "webui/filter-sidebar.css",
@@ -257,9 +309,134 @@
       "sha256": "6e8bace2151bf8b398cb586a118d642c4743d963f9833b727045d1d30289bf7b"
     },
     {
+      "source": "webui/icons/reicon/LICENSE",
+      "target": "webui/icons/reicon/LICENSE",
+      "sha256": "c3fb62a9a75902941407987c98982b7793c707729fd7763a7044b7eb02cbfee1"
+    },
+    {
+      "source": "webui/icons/reicon/SOURCE.md",
+      "target": "webui/icons/reicon/SOURCE.md",
+      "sha256": "fdfdec7f8deef996e228b46b7999169e001eb84bc18fd7a9b6041944166c706a"
+    },
+    {
+      "source": "webui/icons/reicon/book-open.svg",
+      "target": "webui/icons/reicon/book-open.svg",
+      "sha256": "3757dd9b01eaea1aeedcf8418da177d47a2f05326a73483c6d4d30950dfd7acb"
+    },
+    {
+      "source": "webui/icons/reicon/check.svg",
+      "target": "webui/icons/reicon/check.svg",
+      "sha256": "65e7b01d04a0addbb450f1bcc668885abc9b915d11ff0e33c97748bcd6a166b8"
+    },
+    {
+      "source": "webui/icons/reicon/chevron-down.svg",
+      "target": "webui/icons/reicon/chevron-down.svg",
+      "sha256": "a647343d163817dae3cfafdb8bb715caa55164ac62a6a4d9f149427581e3f617"
+    },
+    {
+      "source": "webui/icons/reicon/chevron-left.svg",
+      "target": "webui/icons/reicon/chevron-left.svg",
+      "sha256": "088145afe0304e30c486e39fecf0685d6bfe3c6520c783c4cb9eb49d08e2d47d"
+    },
+    {
+      "source": "webui/icons/reicon/chevron-right.svg",
+      "target": "webui/icons/reicon/chevron-right.svg",
+      "sha256": "63476f84431212d2658b76a9dce591374176ff9fd76dc19579def23f051afec1"
+    },
+    {
+      "source": "webui/icons/reicon/copy.svg",
+      "target": "webui/icons/reicon/copy.svg",
+      "sha256": "9a44d24147e9d01f1389512bddeb6314ba827a98698cea06e966cc5bd8b00bdc"
+    },
+    {
+      "source": "webui/icons/reicon/document.svg",
+      "target": "webui/icons/reicon/document.svg",
+      "sha256": "fc797d116ee074e2d00a9e02af20e975c32030da5319c06445255e3594192d55"
+    },
+    {
+      "source": "webui/icons/reicon/download.svg",
+      "target": "webui/icons/reicon/download.svg",
+      "sha256": "90d3bd0dad7b885bb566af9b9164c427081393cb913c5674757760778603649b"
+    },
+    {
+      "source": "webui/icons/reicon/export.svg",
+      "target": "webui/icons/reicon/export.svg",
+      "sha256": "045ebf8294f5e72041e5c8eb734936f7378c8933880159e949fdcc303c8e244a"
+    },
+    {
+      "source": "webui/icons/reicon/filter.svg",
+      "target": "webui/icons/reicon/filter.svg",
+      "sha256": "8ea8be8c9ab3e038ac3375ae2a17bbcc559bb4a597d6864490e22f3d47bb0661"
+    },
+    {
+      "source": "webui/icons/reicon/folder.svg",
+      "target": "webui/icons/reicon/folder.svg",
+      "sha256": "c42afe97bf24fcf6653fb30d69ce23974ae4999c54b5e6be2a2c279a55b8767b"
+    },
+    {
+      "source": "webui/icons/reicon/minus.svg",
+      "target": "webui/icons/reicon/minus.svg",
+      "sha256": "3a91d4c566ff96c984726f25eee6d4350ce27bc94a24104c989586beb728b10d"
+    },
+    {
+      "source": "webui/icons/reicon/plus.svg",
+      "target": "webui/icons/reicon/plus.svg",
+      "sha256": "b618caa3fcbc065dd9270403831e6a6bf47ccf6666c8b0bcdda00f21273a0fcf"
+    },
+    {
+      "source": "webui/icons/reicon/refresh.svg",
+      "target": "webui/icons/reicon/refresh.svg",
+      "sha256": "16d02f88840e50d5be6abc6f0187c6fd3a530f91ad157b63303db5ea73dacb94"
+    },
+    {
+      "source": "webui/icons/reicon/route.svg",
+      "target": "webui/icons/reicon/route.svg",
+      "sha256": "dabc7d627febb4faf130e49f388152e3fb29f4f8d74e2ad1adf888b83b69a4c7"
+    },
+    {
+      "source": "webui/icons/reicon/search.svg",
+      "target": "webui/icons/reicon/search.svg",
+      "sha256": "031f296d22e529456f764165752be0cbc5434c5d80d7aea0dd41a916406077eb"
+    },
+    {
+      "source": "webui/icons/reicon/settings.svg",
+      "target": "webui/icons/reicon/settings.svg",
+      "sha256": "3d1375be5d01c2b76dfea4da41a0b95834a09a3e6259a58cbcebe486691f8217"
+    },
+    {
+      "source": "webui/icons/reicon/star-filled.svg",
+      "target": "webui/icons/reicon/star-filled.svg",
+      "sha256": "6198dfbe7c03200e47997c1b7aed8dabb03d51437815fc0bd84045c00ab5c33e"
+    },
+    {
+      "source": "webui/icons/reicon/star.svg",
+      "target": "webui/icons/reicon/star.svg",
+      "sha256": "95cf6f6a49a79d37b5c72c700149296b7149df5c3526596beea46eda7d916e2f"
+    },
+    {
+      "source": "webui/icons/reicon/stop.svg",
+      "target": "webui/icons/reicon/stop.svg",
+      "sha256": "531a1df0c7d7bd2491f2213e056b2fe3c3c377c26af5dabb4b3c87b0d5050d92"
+    },
+    {
+      "source": "webui/icons/reicon/target.svg",
+      "target": "webui/icons/reicon/target.svg",
+      "sha256": "e58106f29e4ac2d876aeadee692cdb34e1f6a68a2ab68ba733bc0fa33ae33d87"
+    },
+    {
+      "source": "webui/icons/reicon/upload.svg",
+      "target": "webui/icons/reicon/upload.svg",
+      "sha256": "0f7a42e8778aeabd6b3cd722711fccf3faf70513bff184e916d4d4fab0df6a0e"
+    },
+    {
+      "source": "webui/icons/reicon/x.svg",
+      "target": "webui/icons/reicon/x.svg",
+      "sha256": "abda8a066dc69b6bdb493c51913c34c22cc4dd2e8498863e085459de238965b5"
+    },
+    {
       "source": "webui/index.html",
       "target": "webui/index.html",
-      "sha256": "f1b918f347060bba2afba413b84525608c53361cf4d234dac05190ac207c1a4e"
+      "sha256": "5bb07d1a7cee1fc49611617d313de08e41086e76a054d0e9e583fc66de8bbab5"
     },
     {
       "source": "webui/interface.css",
@@ -279,12 +456,37 @@
     {
       "source": "webui/map.js",
       "target": "webui/map.js",
-      "sha256": "2946c6ea00f89b8e9dc918df4a38bfe129ab137985c77c59d062200353035a52"
+      "sha256": "c995e6e149198ebd060ae177ab2449958d8da45cdced72283b89e7bf218c26a7"
     },
     {
       "source": "webui/offline-media.js",
       "target": "webui/offline-media.js",
       "sha256": "5daaebbcc190560a5796d4875d83fe87d1e28bdd81e5636cb291f65facd04afc"
+    },
+    {
+      "source": "webui/phone-landscape.css",
+      "target": "webui/phone-landscape.css",
+      "sha256": "74ead9fb1905a5a00ca1ebbceb373c33817a68535b37cc0d8351c81f68a77e76"
+    },
+    {
+      "source": "webui/phone-motion.css",
+      "target": "webui/phone-motion.css",
+      "sha256": "a5456451d5088c2684d98ad2a4689294103a401b1ccd3d7ffc01a23be2fe093e"
+    },
+    {
+      "source": "webui/phone-motion.mjs",
+      "target": "webui/phone-motion.mjs",
+      "sha256": "2f016594814bef6c594354b0a6fe6123e9ede349614194f2f51dfd2dfcc0edef"
+    },
+    {
+      "source": "webui/stream.css",
+      "target": "webui/stream.css",
+      "sha256": "264fdb350bd413f307e18e7b51f8769593aad0f8b708ca1ffc80110710dfc02b"
+    },
+    {
+      "source": "webui/stream.js",
+      "target": "webui/stream.js",
+      "sha256": "1eb37539de8023fefab5959e2ca7eaf281baa280b53318eee3457b0f7c346f0b"
     },
     {
       "source": "webui/theme.css",
@@ -297,136 +499,9 @@
       "sha256": "ccb70548588b4a366d93c91aa28740297d935f5cbea4f1abaf32a38b73f77da6"
     },
     {
-      "source": "webui/icons/reicon/search.svg",
-      "target": "webui/icons/reicon/search.svg",
-      "sha256": "031f296d22e529456f764165752be0cbc5434c5d80d7aea0dd41a916406077eb"
-    },
-    {
-      "source": "webui/icons/reicon/target.svg",
-      "target": "webui/icons/reicon/target.svg",
-      "sha256": "e58106f29e4ac2d876aeadee692cdb34e1f6a68a2ab68ba733bc0fa33ae33d87"
-    },
-    {
-      "source": "webui/icons/reicon/chevron-down.svg",
-      "target": "webui/icons/reicon/chevron-down.svg",
-      "sha256": "a647343d163817dae3cfafdb8bb715caa55164ac62a6a4d9f149427581e3f617"
-    },
-    {
-      "source": "webui/icons/reicon/export.svg",
-      "target": "webui/icons/reicon/export.svg",
-      "sha256": "045ebf8294f5e72041e5c8eb734936f7378c8933880159e949fdcc303c8e244a"
-    },
-    {
-      "source": "webui/icons/reicon/LICENSE",
-      "target": "webui/icons/reicon/LICENSE",
-      "sha256": "c3fb62a9a75902941407987c98982b7793c707729fd7763a7044b7eb02cbfee1"
-    },
-    {
-      "source": "webui/icons/reicon/x.svg",
-      "target": "webui/icons/reicon/x.svg",
-      "sha256": "abda8a066dc69b6bdb493c51913c34c22cc4dd2e8498863e085459de238965b5"
-    },
-    {
-      "source": "webui/icons/reicon/chevron-right.svg",
-      "target": "webui/icons/reicon/chevron-right.svg",
-      "sha256": "63476f84431212d2658b76a9dce591374176ff9fd76dc19579def23f051afec1"
-    },
-    {
-      "source": "webui/icons/reicon/SOURCE.md",
-      "target": "webui/icons/reicon/SOURCE.md",
-      "sha256": "fdfdec7f8deef996e228b46b7999169e001eb84bc18fd7a9b6041944166c706a"
-    },
-    {
-      "source": "webui/icons/reicon/settings.svg",
-      "target": "webui/icons/reicon/settings.svg",
-      "sha256": "3d1375be5d01c2b76dfea4da41a0b95834a09a3e6259a58cbcebe486691f8217"
-    },
-    {
-      "source": "webui/icons/reicon/download.svg",
-      "target": "webui/icons/reicon/download.svg",
-      "sha256": "90d3bd0dad7b885bb566af9b9164c427081393cb913c5674757760778603649b"
-    },
-    {
-      "source": "webui/icons/reicon/book-open.svg",
-      "target": "webui/icons/reicon/book-open.svg",
-      "sha256": "3757dd9b01eaea1aeedcf8418da177d47a2f05326a73483c6d4d30950dfd7acb"
-    },
-    {
-      "source": "webui/icons/reicon/star-filled.svg",
-      "target": "webui/icons/reicon/star-filled.svg",
-      "sha256": "6198dfbe7c03200e47997c1b7aed8dabb03d51437815fc0bd84045c00ab5c33e"
-    },
-    {
-      "source": "webui/icons/reicon/stop.svg",
-      "target": "webui/icons/reicon/stop.svg",
-      "sha256": "531a1df0c7d7bd2491f2213e056b2fe3c3c377c26af5dabb4b3c87b0d5050d92"
-    },
-    {
-      "source": "webui/icons/reicon/plus.svg",
-      "target": "webui/icons/reicon/plus.svg",
-      "sha256": "b618caa3fcbc065dd9270403831e6a6bf47ccf6666c8b0bcdda00f21273a0fcf"
-    },
-    {
-      "source": "webui/icons/reicon/document.svg",
-      "target": "webui/icons/reicon/document.svg",
-      "sha256": "fc797d116ee074e2d00a9e02af20e975c32030da5319c06445255e3594192d55"
-    },
-    {
-      "source": "webui/icons/reicon/check.svg",
-      "target": "webui/icons/reicon/check.svg",
-      "sha256": "65e7b01d04a0addbb450f1bcc668885abc9b915d11ff0e33c97748bcd6a166b8"
-    },
-    {
-      "source": "webui/icons/reicon/copy.svg",
-      "target": "webui/icons/reicon/copy.svg",
-      "sha256": "9a44d24147e9d01f1389512bddeb6314ba827a98698cea06e966cc5bd8b00bdc"
-    },
-    {
-      "source": "webui/icons/reicon/refresh.svg",
-      "target": "webui/icons/reicon/refresh.svg",
-      "sha256": "16d02f88840e50d5be6abc6f0187c6fd3a530f91ad157b63303db5ea73dacb94"
-    },
-    {
-      "source": "webui/icons/reicon/star.svg",
-      "target": "webui/icons/reicon/star.svg",
-      "sha256": "95cf6f6a49a79d37b5c72c700149296b7149df5c3526596beea46eda7d916e2f"
-    },
-    {
-      "source": "webui/icons/reicon/filter.svg",
-      "target": "webui/icons/reicon/filter.svg",
-      "sha256": "8ea8be8c9ab3e038ac3375ae2a17bbcc559bb4a597d6864490e22f3d47bb0661"
-    },
-    {
-      "source": "webui/icons/reicon/route.svg",
-      "target": "webui/icons/reicon/route.svg",
-      "sha256": "dabc7d627febb4faf130e49f388152e3fb29f4f8d74e2ad1adf888b83b69a4c7"
-    },
-    {
-      "source": "webui/icons/reicon/upload.svg",
-      "target": "webui/icons/reicon/upload.svg",
-      "sha256": "0f7a42e8778aeabd6b3cd722711fccf3faf70513bff184e916d4d4fab0df6a0e"
-    },
-    {
-      "source": "webui/icons/reicon/folder.svg",
-      "target": "webui/icons/reicon/folder.svg",
-      "sha256": "c42afe97bf24fcf6653fb30d69ce23974ae4999c54b5e6be2a2c279a55b8767b"
-    },
-    {
-      "source": "webui/icons/reicon/minus.svg",
-      "target": "webui/icons/reicon/minus.svg",
-      "sha256": "3a91d4c566ff96c984726f25eee6d4350ce27bc94a24104c989586beb728b10d"
-    },
-    {
-      "source": "webui/icons/reicon/chevron-left.svg",
-      "target": "webui/icons/reicon/chevron-left.svg",
-      "sha256": "088145afe0304e30c486e39fecf0685d6bfe3c6520c783c4cb9eb49d08e2d47d"
-    },
-    {
-      "source": "desktop/tunnel-agent.json",
-      "target": "desktop/tunnel-agent.json",
-      "sha256": "cc4c1ff680a9b9b75e6a343b62ee4e82091672efb6ebd820372b061f1319859b",
-      "localModification": "Optional agent metadata updated after reviewing the official stable download (3.39.13); no agent is redistributed.",
-      "currentSha256": "2ee3677ec6644e0a01f543cde784b5b729fb5a7bdedf59457da20bea2a93199e"
+      "source": "douyin/danmaku_hook.py",
+      "target": "douyin/danmaku_hook.py",
+      "sha256": "bbdd9d7b0de85677b0e83cbfeec8fe58376672d8bb761a7ae1b01a99a8d90ba1"
     }
   ],
   "excluded": [

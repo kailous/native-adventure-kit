@@ -1,6 +1,6 @@
 # GPL 组件：许可、来源与修改记录
 
-核对日期：2026-10-26。适用于 `upstream.lock.json` 锁定上游 `f3e2f661dfc05d7f6708c903ea513c297db195f1` 与当前 `patches/native-mod.patch`。补丁 SHA-256 为 `20c951ca438d9fee275fb0fc498f216db3bf79a720b0939d0364b8020aeed488`。文件清单对应本项目提交 `581e7832228f5aca615bb84c9d269d29b2b4419a` 的代码内容；本次仅补充许可材料，代码和补丁保持不变。补丁改变后须重新核对行号、哈希和来源。
+核对日期：2026-10-30。适用于 `upstream.lock.json` 锁定上游 `f1d00772df1ac3230268f3124bdeb6b7cc81a61c` 与当前 `patches/native-mod.patch`。补丁 SHA-256 为 `b09b80c1b52ab529e5f3c94365a2b080d88d9353b269b1e9119f6b89a0ba4721`。本次重新装配核验行号与文件哈希；保留既有许可与待核验事项，未将未知来源改为已授权。
 
 [授权范围](../LICENSE_SCOPE.md) · [第三方声明](third-party-notices.md) · [使用说明](../使用协议.md) · [随附许可索引](../licenses/README.md)
 
@@ -20,14 +20,14 @@
 
 | 补丁行 | 目标文件 | 声明 | 实际编译关系 |
 | --- | --- | --- | --- |
-| 6682 | `games/totk/runtime/camera_math.h` | GPL-2.0-only，第 1 行 | 相机数据解码、矩阵与方向校验；由 camera_probe.h 包含。 |
-| 6717 | `games/totk/runtime/camera_probe.h` | GPL-2.0-only，第 1 行 | 有界对象扫描、虚表验证与缓存；由 telemetry.c:8 包含。 |
-| 7144 | `games/totk/runtime/equipment_defaults.h` | GPL-2.0-only，第 1 行 | 默认耐久与余料耐久表；由 pouch_control.h:4 包含。 |
-| 9864 | `games/totk/runtime/pouch_control.h` | GPL-2.0-only，第 1 行 | 武器、弓、盾字段读取、耐久恢复与锁定；由 native_control.c:60 包含。 |
-| 9956 | `games/totk/runtime/quantity_control.h` | GPL-2.0-only，第 1 行 | 材料、料理、胶囊数组读取和数量 99 写入；由 native_control.c:61 包含。 |
-| 10163 | `games/totk/runtime/spawn_catalog.h` | GPL-2.0-only，第 1 行 | 物品白名单、顺序及 catalog hash；由 spawn_control.h:7 包含。 |
-| 10554 | `games/totk/runtime/spawn_control.h` | GPL-2.0-only，第 1 行 | 生成参数 ABI、游戏帧调用与结果观察；由 native_control.c:62 包含。 |
-| 11100 | `games/totk/runtime/weather_control.h` | GPL-2.0-only，第 1 行 | 天气 setter、读回、锁定与状态清除；由 native_control.c:63 包含。 |
+| 8456 | `games/totk/runtime/camera_math.h` | GPL-2.0-only，第 1 行 | 相机数据解码、矩阵与方向校验；由 camera_probe.h 包含。 |
+| 8491 | `games/totk/runtime/camera_probe.h` | GPL-2.0-only，第 1 行 | 有界对象扫描、虚表验证与缓存；由 telemetry.c:8 包含。 |
+| 9088 | `games/totk/runtime/equipment_defaults.h` | GPL-2.0-only，第 1 行 | 默认耐久与余料耐久表；由 pouch_control.h:4 包含。 |
+| 14743 | `games/totk/runtime/pouch_control.h` | GPL-2.0-only，第 1 行 | 武器、弓、盾字段读取、耐久恢复与锁定；由 native_control.c:60 包含。 |
+| 14835 | `games/totk/runtime/quantity_control.h` | GPL-2.0-only，第 1 行 | 材料、料理、胶囊数组读取和数量 99 写入；由 native_control.c:61 包含。 |
+| 15384 | `games/totk/runtime/spawn_catalog.h` | GPL-2.0-only，第 1 行 | 物品白名单、顺序及 catalog hash；由 spawn_control.h:7 包含。 |
+| 15775 | `games/totk/runtime/spawn_control.h` | GPL-2.0-only，第 1 行 | 生成参数 ABI、游戏帧调用与结果观察；由 native_control.c:62 包含。 |
+| 16826 | `games/totk/runtime/weather_control.h` | GPL-2.0-only，第 1 行 | 天气 setter、读回、锁定与状态清除；由 native_control.c:63 包含。 |
 
 ### 来源和逐文件修改记录
 

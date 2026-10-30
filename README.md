@@ -2,6 +2,8 @@
 
 基于上游原生运行实现的深度 Mod 装配工具：本仓库维护**脚本、Skill、文本补丁、版本锁、地图工具源码和说明**，不再携带完整 MacNativeGames 源码树、上游预编译工具或地图 App。
 
+当前源码候选已同步原生控制/手机输入与地图 2.0.24；包含 `Offline/State` 与 `Offline/DataPacks` 目录迁移。已有 Release 附件仍为下列历史版本，本次未替换附件。功能与验证范围见[本次更新](docs/source-update-2026-10-30.md)。
+
 ## 独立下载
 
 - [地图 App v2.0.6](https://github.com/kailous/native-adventure-kit/releases/tag/map-v2.0.6)：macOS arm64 客户端成品、使用说明及运行时通知，不含 DataPacks、游戏或密钥。远程 ngrok Agent 由用户通过随包脚本直接从官方取得，不在公开附件中内置。
@@ -31,7 +33,7 @@ python3 scripts/prepare_native.py --work /absolute/work/native-adventure
 python3 scripts/prepare_native.py --work /absolute/work/native-adventure --verify
 ```
 
-脚本自行从用户运行环境下载锁定上游，按文件哈希校验，应用文本补丁，再校验完整源码。当前锁定提交为 `f3e2f661dfc05d7f6708c903ea513c297db195f1`，不是每次追随最新 main。失败即停止；不调用 AI 猜测合并，不覆盖已有目录，不访问游戏、密钥或存档。
+脚本自行从用户运行环境下载锁定上游，按文件哈希校验，应用文本补丁，再校验完整源码。主源码锁定提交为 `f1d00772df1ac3230268f3124bdeb6b7cc81a61c`（着色器标识清单有单独固定的兼容来源，见装配说明），不是每次追随最新 main。失败即停止；不调用 AI 猜测合并，不覆盖已有目录，不访问游戏、密钥或存档。
 
 装配结果在 `/absolute/work/native-adventure/MacNativeGames/`。执行其 `build_app.py` 并自行提供合法游戏、累计更新、密钥和外部构建目录；参见 [完整步骤与排错](docs/bootstrap.md)。本步骤仅装配源码，不代表 App 已构建或游戏已验收。
 

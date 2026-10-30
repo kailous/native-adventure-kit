@@ -28,6 +28,9 @@ def search(items, keyword='', limit=20):
  return {'items': matches[:limit], 'total': len(matches), 'limit': limit}
 
 def execute(name, args):
+ if name == 'control_link':
+  from link_control import execute as control
+  return control(args)
  if name == 'search_spawn_items':
   from spawn_catalog import ITEMS, CATALOG_HASH
   return {**search(ITEMS, **args), 'catalogHash': CATALOG_HASH}

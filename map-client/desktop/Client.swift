@@ -22,7 +22,22 @@ final class Client: NSObject, NSApplicationDelegate, NSWindowDelegate {
     var importingDataPacks = false
     var pendingDataPacks: [URL] = []
     let settings = UserDefaults.standard
-    let support = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0].appendingPathComponent(Client.nativeEdition ? "TOTK Native Map" : "TOTK Offline", isDirectory: true)
+    let support = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0].appendingPathComponent(Client.nativeEdition ? "MacNativeGames/TOTK/Offline/State" : "TOTK Offline", isDirectory: true)
+    var contentSupport: URL { Self.nativeEdition ? support.deletingLastPathComponent() : support }
+    var storagePrepared = false
+    func prepareStorage() throws {
+        guard Self.nativeEdition && !storagePrepared else { return }
+        let child = Process()
+        child.executableURL = Bundle.main.resourceURL!.appendingPathComponent("backend/totk-service")
+        child.arguments = ["--migrate-offline-layout"]
+        let pipe = Pipe(); child.standardOutput = pipe; child.standardError = pipe
+        try child.run()
+        let data = pipe.fileHandleForReading.readDataToEndOfFile(); child.waitUntilExit()
+        guard child.terminationStatus == 0 else {
+            throw NSError(domain: "TOTK", code: 2, userInfo: [NSLocalizedDescriptionKey: String(data: data, encoding: .utf8) ?? "地图数据目录迁移未完成，原数据已保留"])
+        }
+        storagePrepared = true
+    }
     var runtime: URL { support.appendingPathComponent("connection.json") }
     var logURL: URL { support.appendingPathComponent("service.log") }
     let status = NSTextField(labelWithString: "正在启动服务…")
@@ -320,6 +335,7 @@ final class Client: NSObject, NSApplicationDelegate, NSWindowDelegate {
         progress.stringValue = "等待存档同步"
         qr.image = nil
         do {
+            try prepareStorage()
             try FileManager.default.createDirectory(at: support, withIntermediateDirectories: true)
             try? FileManager.default.removeItem(at: runtime)
             let executable = Bundle.main.resourceURL!.appendingPathComponent("backend/totk-service")
@@ -337,16 +353,14 @@ final class Client: NSObject, NSApplicationDelegate, NSWindowDelegate {
             environment["TOTK_SUPPORT_ROOT"] = support.path
             if Self.nativeEdition {
                 environment["TOTK_CLIENT_EDITION"] = "native"
-                environment["TOTK_DATA_SUPPORT_ROOT"] = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0].appendingPathComponent("TOTK Offline").path
+                environment["TOTK_DATA_SUPPORT_ROOT"] = contentSupport.path
             }
             environment["TOTK_TILE_CACHE"] = support.appendingPathComponent("tiles", isDirectory: true).path
             environment["TOTK_LAN_HOSTS"] = lanAddresses().joined(separator: ",")
-            var webToken = settings.string(forKey: "webToken")
-            if webToken == nil { webToken = UUID().uuidString + UUID().uuidString; settings.set(webToken, forKey: "webToken") }
-            environment["TOTK_WEB_TOKEN"] = webToken
             child.environment = environment
-            FileManager.default.createFile(atPath: logURL.path, contents: nil)
+            if !FileManager.default.fileExists(atPath: logURL.path) { FileManager.default.createFile(atPath: logURL.path, contents: nil) }
             let log = try FileHandle(forWritingTo: logURL)
+            try log.seekToEnd()
             child.standardOutput = log
             child.standardError = log
             try child.run()
@@ -391,7 +405,7 @@ final class Client: NSObject, NSApplicationDelegate, NSWindowDelegate {
         backend = nil
         child?.terminationHandler = nil
         if child?.isRunning == true { child?.terminate(); child?.waitUntilExit() }
-        try? FileManager.default.removeItem(at: runtime)
+        if child != nil { try? FileManager.default.removeItem(at: runtime) }
     }
     func fail(_ message: String) {
         setReady(false); serviceButton.isEnabled = true; serviceButton.title = "启动服务"; serviceButton.symbol = "start"; status.stringValue = "服务启动失败"; serviceDot.textColor = .systemRed; window.subtitle = ""
